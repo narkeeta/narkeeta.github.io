@@ -15,7 +15,8 @@ div {
   background-size: cover;
 }
 #logo {
-  width:40vw;
+  width:20vw;
+  min-width:140px;
   padding-left:5px;
   padding-bottom:5vh;
   padding-top:10px;
@@ -23,7 +24,6 @@ div {
 .page {
   background-color:rgba(255,255,255,.4);
   width:140px;
-  max-width:25vw;
   min-width:140px;
   color:black;
 }
@@ -40,3 +40,19 @@ li:hover {
   cursor:pointer;
   font-family:Permanent Marker;
 }
+
+@media screen and (max-width: 768px) {
+  #about {
+    width:90vw;
+  }
+  .page {
+    width:80vw;
+    text-align:center;
+  }
+  #logo {
+    width:40vw;
+    margin-left:20vw;
+  }
+}
+
+
