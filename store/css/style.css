@@ -1,0 +1,78 @@
+body {
+  background-color:silver;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+}
+div {
+  overflow:scroll;
+}
+
+#home {
+  color:white;
+  width:100%;
+  height:100vh;
+  background: url("https://source.unsplash.com/collection/279045") no-repeat fixed top;
+  background-size: cover;
+}
+#logo {
+  width:20vw;
+  padding-bottom:5vh;
+  padding-top:10px;
+}
+.page {
+  background-color:rgba(255,255,255,.4);
+  width:20vw;
+  color:black;
+}
+
+a, a:hover {
+  text-decoration:none;
+  color:black;
+}
+
+li {
+  margin-left:-30px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom:3px;
+}
+li:hover {
+  cursor:pointer;
+  font-family:Permanent Marker;
+}
+
+#LM {
+  width:100%;
+  height:100vh;
+  background: url("https://source.unsplash.com/r077pfFsdaU") no-repeat fixed top;
+  background-size: cover;
+}
+
+#StoreTitle {
+  font-family:Permanent Marker;
+  font-size:40px;
+}
+
+#StoreMSG {
+  font-family:Permanent Marker;
+  font-size:20px; 
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    width:90vw;
+  }
+  .page {
+    width:80vw;
+    text-align:center;
+  }
+  #logo {
+    width:40vw;
+    margin-left:20vw;
+  }
+}
+
+
+
+
+
+
