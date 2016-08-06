@@ -11,7 +11,7 @@ div {
   color:white;
   width:100%;
   height:100vh;
-  background: url("https://narkeeta.github.io/images/BGImageHome.jpg") no-repeat fixed top;
+  background: url("https://narkeeta.github.io/images/HomeBack.jpg") no-repeat fixed top;
   background-size: contain;
 }
 #logo {
@@ -54,5 +54,3 @@ li:hover {
     margin-left:20vw;
   }
 }
-
-
