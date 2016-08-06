@@ -35,14 +35,14 @@ li {
 }
 li:hover {
   cursor:pointer;
-  font-family:Permanent Marker;
+  font-family:yoga;
 }
 
 #LM {
   width:100%;
   height:100vh;
   background-color: white;
-  background: url("https://narkeeta.github.io/images/NewBackOne.png") no-repeat fixed top right;
+  background: url("https://narkeeta.github.io/images/BackOne.jpg") no-repeat fixed top right;
   background-size: contain;
 }
 
