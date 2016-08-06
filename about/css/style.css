@@ -1,7 +1,12 @@
+@font-face {
+  font-family: yoga;
+  src: url('https://narkeeta.github.io/font/BeginningYoga.ttf');
+}
+
 body {
   background-color:white;
   color:white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'yoga';
 }
 div {
   overflow:scroll;
