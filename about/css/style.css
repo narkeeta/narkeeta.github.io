@@ -49,11 +49,12 @@ nav ul li:hover {
 
 
 #LMTitle {
-  font-family:Montserrat;
+  font-family:yoga;
   font-size:40px;
 }
 
 #about {
+  font-family:Montserrat;
   color:black;
   margin-top:30px;
 }
