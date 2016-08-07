@@ -25,6 +25,10 @@ div {
    font-family:yoga;
    text-decoration: none;
 }
+a, a:hover {
+  text-decoration:none;
+  color:black;
+}
 
 #LM {
   margin-left:22px;
