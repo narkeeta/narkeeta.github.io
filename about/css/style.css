@@ -23,6 +23,7 @@ div {
 #home:hover {
    cursor:pointer;
    font-family:yoga;
+   text-decoration: none;
 }
 
 #LM {
