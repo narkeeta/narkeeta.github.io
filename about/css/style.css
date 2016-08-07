@@ -9,36 +9,34 @@ body {
   font-family: 'yoga';
 }
 div {
-  overflow:scroll;
+  overflow:hidden;
 }
 
-#logo {
-  width:20vw;
-  padding-bottom:5vh;
-  padding-top:10px;
+#prev {
+  float: left;
 }
-.page {
-  background-color:rgba(255,255,255,.4);
-  width:20vw;
-  color:black;
+#next {
+  float: right;
 }
-
-a, a:hover {
-  text-decoration:none;
-  color:black;
+.navbar {
+  background-color: rgba(0,0,0,.7);
 }
-
-li {
-  margin-left:-30px;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom:3px;
+nav ul {
+  text-align: center;
+  margin: 0;
 }
-li:hover {
+nav ul li {
+  font-family:'Montserrat', sans-serif;
+  display: inline;
+  line-height:50px;
+}
+nav ul li:hover {
   cursor:pointer;
-  font-family:yoga;
+   font-family:yoga;
 }
 
 #LM {
+  margin-top:50px;
   width:100%;
   height:100vh;
   background-color: white;
