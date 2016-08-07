@@ -39,7 +39,7 @@ nav ul li:hover {
   height:100vh;
   background-color: white;
   background: url("https://narkeeta.github.io/images/BackOne.jpg") no-repeat fixed top right;
-  background-size: cover;
+  background-size: contain;
 }
 
 
