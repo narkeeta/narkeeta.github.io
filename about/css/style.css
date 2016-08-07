@@ -19,8 +19,9 @@ div {
   float: right;
 }
 .navbar {
-  background-color: rgba(104,207,70,.35);
-  box-shadow: 0px 2px 5px rgba(104,207,70,.65);
+  color:black;
+  background-color: rgba(104,207,70,.65);
+  box-shadow: 0px 2px 5px rgba(104,207,70,.85);
 }
 nav ul {
   text-align: center;
