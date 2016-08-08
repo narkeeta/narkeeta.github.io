@@ -2,6 +2,10 @@
   font-family: yoga;
   src: url('https://narkeeta.github.io/font/BeginningYoga.ttf');
 }
+@font-face {
+  font-family: marker;
+  src: url('https://narkeeta.github.io/font/BPermanentMarker.ttf');
+}
 
 body {
   background-color:white;
@@ -9,7 +13,6 @@ body {
   font-family: 'yoga';
 }
 div {
-  overflow:scroll;
 }
 
 #home {
@@ -23,7 +26,7 @@ div {
 
 #home:hover {
    cursor:pointer;
-   font-family:yoga;
+   font-family:marker;
    text-decoration: none;
 }
 a, a:hover {
