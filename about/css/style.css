@@ -6,7 +6,10 @@
   font-family: marker;
   src: url('https://narkeeta.github.io/font/PermanentMarker.ttf');
 }
-
+@font-face {
+  font-family: logo;
+  src: url('https://narkeeta.github.io/font/SansationBold.ttf');
+}
 body {
   color:white;
   background-color: white;
@@ -44,7 +47,7 @@ a, a:hover {
 #LMTitle {
   color:rgb(129,183,109);
   width:60vw;
-  font-family:yoga;
+  font-family:logo;
   font-size:40px;
 }
 
