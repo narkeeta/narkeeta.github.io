@@ -193,3 +193,6 @@ screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
 @media all and (min-width:768px),
 screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
 screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {}
+.hideme {
+	opacity: 0;
+}
