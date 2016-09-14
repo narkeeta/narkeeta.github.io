@@ -103,11 +103,10 @@ button::after {
 	left: 0;
 	right: 0;
 	text-align: center;
-	font-famly: Inconsolata;
-	font-weight: 400;
-	font-size: 30px;
 }
 .fa-angle-double-down {
+	display: inline;
+	font-size: 30px;
 	color: white;
 	padding: 4px 2px;
 	border-radius: 30%;
