@@ -17,7 +17,7 @@ $(document).ready(function () {
 		});
 	});
 
-	$(".scroll").click(function () {
+	$("#scroll").click(function () {
 		$('html, body').animate({
 			scrollTop: $("#portfolio-page").offset().top
 		}, 800, function () {});
