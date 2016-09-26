@@ -1,143 +1,339 @@
-body {
-	background-color: silver;
-	color: white;
-	padding-top: 40px;
-	font-family: 'Open Sans', sans-serif;
+* {
+	font-family: lato;
+	overflow-x: hidden;
 }
-.navbar-inverse .navbar-brand {
-	color: silver;
-	font-size: 20px;
-	background-color: rgba(25, 25, 25, 0.4);
+h1,h2,h3,h4,h5,h6 {
+	padding:2px 0px;
 }
-.nav {
-	display: inline;
-	margin-right: 1px;
-	width: 50%;
-	text-align: center;
-}
-div {
-	overflow: scroll;
-}
-#home {
-	color: white;
+#menu {
 	width: 100%;
-	height: 100vh;
-	background: url("http://cdn26.us1.fansshare.com/photo/macwallpapers/photography-wallpapers-for-christian-background-tumblr-computer-photo-tumblr-wallpaper-tumblr-1437010670.jpg") no-repeat fixed top;
+	min-height: 60px;
+	background: rgb(250, 250, 250);
+	text-align: center;
+	font-family: lato;
+	font-weight: 400;
+	position: fixed;
+	z-index: 10;
+}
+.mitem {
+	position: relative;
+	line-height: 60px;
+	padding: 0px 10px;
+	color: black;
+}
+.mitem:hover {
+	transition: 1s ease;
+	text-decoration: none;
+	cursor:pointer;
+	color:black;
+	font-weight: 900;
+}
+#logo {
+	height: 60px;
+}
+.clip-text,
+.clip-text2 {
+	margin-top: 60px;
+	font-size: 3em;
+	font-family: lato;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	padding: 20vh .75em;
+	text-align: center;
+	/* Color fallback */
+	color: white;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, .3);
+}
+.clip-text:before,
+.clip-text:after,
+.clip-text2:before,
+.clip-text2:after {
+	position: absolute;
+	content: '';
+}
+
+/* Background */
+
+.clip-text:before,
+.clip-text2:before {
+	z-index: -2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: inherit;
 	background-size: cover;
 }
-#title {
-	padding: 4.4vw;
-	height: 25vw;
-	width: 90%;
-	background-color: rgba(0, 0, 0, 0.8);
-	text-align: center;
+
+/* Text Background (black zone) */
+
+.clip-text:after,
+.clip-text2:after {
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+}
+h13 {
+	display: none;
+}
+#tagline,
+#about {
+	height: 60vh;
+	background-image: url(/images/taglineback.jpg);
+	background-size: cover;
+}
+#upcoming {
+	width: calc(100vw - 6px);
+	height: calc(40vh - 63px);
 	margin: auto;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	bottom: 0px;
-	right: 0px;
+	margin-top: 3px;
+	background: black;
 }
-#title1 {
-	font-size: 5vw;
-	padding-top: 10px;
+h11,
+h12 {
+	text-align: center;
+	display: block;
+	color: white;
+	font-family: DIN;
+	font-size: 30px;
+	padding-top: 20px;
 }
-hr {
-	width: 80%;
-	margin: 0px auto 4px auto;
+#introFull,
+#introRight,
+#introLeft {
+	overflow: hidden;
+	min-height: calc((100vh - 60px) / 3);
+	margin-top: 3px;
+	padding: 10px 20px;
+	padding-bottom: 40px;
+	background: black;
+	color: white;
 }
-#title2 {
-	font-size: 3vw;
+h1,
+h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+h2 {
+	margin-left: 20px;
+}
+h3 {
+	font-family: Nunito;
+	font-weight: 400;
+	font-size: 14px;
+}
+#introRight,
+#introLeft {
+	text-align: center;
+	display: inline-block;
+	width: calc(50vw - 3px);
+}
+.center {
+	text-align: center;
+}
+.clip-text2 {
+	font-size: 40px;
+	padding: 20px .75em;
+}
+.clip-text2:after {
+	background-color: rgba(0, 0, 0, .8);
 }
 #about {
-	width: 100%;
-	min-height: 100vh;
-	background: url("http://images.freecreatives.com/wp-content/uploads/2015/03/Huge-Backgrounds-26.jpg") no-repeat fixed top;
-	background-size: cover;
-}
-#intro {
-	text-align: center;
-	font-family: 'Lato';
-	margin-top: 10vh;
-	background-color: rgba(0, 0, 0, 0.8);
-	width: 70vw;
 	height: auto;
-	margin-right: auto;
-	margin-left: auto;
-}
-#intro1 {
-	font-size: 6vh;
-	padding: 5px;
-}
-#intro2 {
-	font-size: 2.8vh;
-	padding: 5px;
-	margin-bottom: 10px;
-}
-#portfolio {
-	width: 100%;
-	min-height: 100vh;
-	background: url("http://www.pageresource.com/wallpapers/wallpaper/desktop-project-tumblr.jpg") no-repeat fixed bottom;
-	background-size: cover;
-	font-family: 'Lato';
-}
-#port1 {
-	background-color: rgba(0, 0, 0, 0.8);
-	font-size: 6vh;
-	text-align: center;
-	margin: 20px auto;
-	width: 60vw;
-	font-family: 'Lato';
-}
-p {
-	font-family: 'Lato';
-	font-size: 3vh;
-}
-.pens {
-	height: 70vw;
-	margin-left: 3vw;
-}
-img {
-	margin: 10px .5vw 0px;
-	height: 30vw;
-	width: 30vw;
-	box-shadow: 5px 5px 5px;
-	color: black;
+	min-height: calc(40vh - 60px);
+	margin-top: 3px;
+	background-image: url(/images/aboutBack.jpg)
 }
 #contact {
-	width: 100%;
-	min-height: 100vh;
-	background: url("http://wall.wallrage.com/wp-content/uploads/4k-Space-Background-Wallpapers.jpg") no-repeat fixed top;
+	min-height: 70vh;
+	text-align: center;
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/contactBack.jpg);
 	background-size: cover;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 3px;
 }
-#contact1 {
-	font-family: 'Lato';
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0px 5px 20px;
-	margin-top: 60px;
-	font-size: 6vh;
-	background-color: rgba(20, 20, 20, 0.9);
-	width: 55vw;
-	box-shadow: 5px 5px 5px black;
+.contacthalf {
+	width: 300px;
+	padding-bottom: 30px;
+	display: inline-block;
+	vertical-align: top;
 }
-.btn:hover {
-	box-shadow: 3px 3px 5px rgba(4, 183, 73, 0.39);
-	background-color: rgba(219, 215, 211, 0.99);
+.fa {
+	margin: 0px 10px;
+	font-size: 25px;
+	line-height: 40px;
+	border: 1px solid white;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
 }
-.btn {
-	width: 50vw;
-	margin-top: 6px;
-	margin-bottom: 10px;
-	font-family: 'Oleo Script';
-	font-size: 30px;
-	background-color: rgba(255, 251, 246, 0.99);
-	text-align: center;
-	box-shadow: 3px 3px 5px rgba(4, 183, 73, 0.66);
+.fa:hover {
+	transition: 1s ease;
+	cursor: pointer;
+	color: black;
+	background: white;
 }
-a,
-a:hover {
-	text-decoration: none;
+.arrow-up {
+	margin: auto;
+	width: 0;
+	height: 0;
+	margin-top: 10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+}
+.msg-input,
+.msg-send {
+	font-family: DIN;
+	width: 400px;
+	max-width: 90%;
+	margin: 0px auto;
+	margin-bottom: 3px;
+	display: block;
+	background-color: white;
+	color: black;
+	border: none;
+}
+.msg-input:focus {
+	outline: none;
+}
+textarea {
+	height: 100px;
+}
+::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
 	color: black;
 }
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: black;
+}
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: black;
+}
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: black;
+}
+#footer {
+	background-color: black;
+	color: white;
+}
+.footer-left {
+	top: 10px;
+	bottom: 10px;
+	display: inline-block;
+	width: 40%;
+	border-right: 1px solid;
+	padding-right: 10px;
+	margin: 10px 0px 10px 10px;
+}
+.footer-right {
+	display: inline-block;
+	width: 50%;
+}
+h5 {
+	font-size: 10px;
+}
+.small {
+	font-size: 12px;
+	text-align: center;
+	margin: 0px 5px;
+	line-height: 23px;
+	width: 23px;
+	height: 23px;
+}
+h6 {
+	padding-left: 10px;
+	font-family: DIN;
+}
+h17 {
+	font-size: 10px;
+}
+#hrtag {
+	width: 500px;
+	margin-top: -10px;
+	position: relative;
+	left: 20px;
+}
+#abouthr {
+	width: 180px;
+	margin-top: -10px;
+	position: relative;
+	left: 10px;
+}
+
+.hideme {
+	opacity: 0;
+}
+.aniRight {
+	opacity: 0;
+	position: relative;
+	right:100vw;
+}
+.aniLeft {
+	opacity: 0;
+	position: relative;
+	left:100vw;
+}
+
+.poster {
+  display:none;
+  background-size:cover !important;
+  background-color:black;
+  transition:1s ease;
+}
+.poster:hover {
+  cursor:pointer;
+}
+#work {
+	text-align: center;
+  position:relative;
+  width:100vw;
+  height:60vh;
+	padding-top: 20px;
+}
+.poster-center {
+  display:initial;
+  width:30vh;
+  height:40vh;
+  position:absolute;
+  margin:auto;
+  top:0;bottom:0;left:0;right:0;
+  box-shadow: 5px 5px 10px black;
+  z-index:3;
+}
+.poster-left {
+  display:initial;
+  filter: brightness(30%);
+  width:27vh;
+  height:36vh;
+  position:absolute;
+  margin:auto;
+  top:0;bottom:0;right:35vh;left:0px;
+  box-shadow: 5px 5px 10px grey;
+  z-index:2;
+}
+.poster-right {
+  display:initial;
+  filter: brightness(30%);
+  width:27vh;
+  height:36vh;
+  position:absolute;
+  margin:auto;
+  top:0;bottom:0;right:0px;left:35vh;
+  box-shadow: 5px 5px 10px grey;
+  z-index:2;
+}
+
