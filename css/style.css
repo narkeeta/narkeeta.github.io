@@ -352,6 +352,7 @@ h17 {
 }
 #posters {
 	height: 50vw;
+	max-height: clac(100vh - 60px);
 	width: 100%;
 	position: absolute;
 }
