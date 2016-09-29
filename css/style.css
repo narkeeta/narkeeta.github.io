@@ -13,6 +13,9 @@ h6 {
 a:hover {
 	text-decoration: none;
 }
+body {
+	padding-top: 100vh;
+}
 #menu {
 	background: rgba(0, 0, 0, .6);
 	width: 100%;
@@ -21,7 +24,8 @@ a:hover {
 	font-family: lato;
 	font-weight: 400;
 	position: fixed;
-	z-index: 10;
+	top: 0;
+	z-index: 200;
 }
 .mitem {
 	position: relative;
@@ -38,59 +42,38 @@ a:hover {
 #logo {
 	height: 40px;
 }
-.clip-text,
-.clip-text2 {
-	font-size: 5em;
-	font-family: lato;
-	font-weight: 700;
-	text-transform: uppercase;
-	position: relative;
-	padding: 20vh .75em;
-	text-align: center;
-	/* Color fallback */
-	color: white;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: rgba(255, 255, 255, .3);
-}
-.clip-text:before,
-.clip-text:after,
-.clip-text2:before,
-.clip-text2:after {
+.video-tagline {
 	position: absolute;
-	content: '';
-}
-
-/* Background */
-
-.clip-text:before,
-.clip-text2:before {
-	z-index: -2;
-	top: 0;
-	right: 0;
-	bottom: 0;
+	z-index: -99;
+	min-width: 100vw;
+	height: 100vh;
 	left: 0;
-	background-image: inherit;
-	background-size: cover;
-}
-
-/* Text Background (black zone) */
-
-.clip-text:after,
-.clip-text2:after {
-	z-index: -1;
-	top: 0;
 	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, .8);
-}
-h13 {
-	display: none;
+	top: 0;
+	background: black;
+	overflow: hidden;
 }
 #tagline {
+	position: absolute;
+	top: 0px;
+	width: 100%;
 	height: 100vh;
-	background-image: url(/images/taglineback.jpg);
+	opacity: .8;
+	background-image: url(/images/taglinetext.png);
+	background-position: center;
 	background-size: cover;
+	z-index: 0;
+	text-align: center;
+}
+.fa-angle-down {
+	color: white !important;
+	background: none !important;
+	font-size: 40px !important;
+	position: absolute;
+	bottom: 30px;
+}
+.fa-angle-down:hover {
+	color: grey !important;
 }
 #upcoming {
 	width: 100%;
@@ -157,6 +140,7 @@ h31 {
 	background-size: cover;
 	text-align: center;
 	margin-top: 3px;
+	overflow: hidden;
 }
 #introFull {
 	overflow: hidden;
@@ -200,13 +184,12 @@ h3 {
 .fa {
 	margin: 0px 10px;
 	background: white;
-	color:black;
+	color: black;
 	font-size: 20px;
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
 }
-
 .fa:hover {
 	transition: 1s ease;
 	cursor: pointer;
@@ -222,7 +205,9 @@ h3 {
 	border-bottom: 10px solid white;
 }
 .msg-input,
-.msg-send, .email-send, .email-input {
+.msg-send,
+.email-send,
+.email-input {
 	font-family: DIN;
 	width: 400px;
 	max-width: 90%;
@@ -233,7 +218,8 @@ h3 {
 	color: black;
 	border: none;
 }
-.msg-input:focus, .email-input:focus {
+.msg-input:focus,
+.email-input:focus {
 	outline: none;
 }
 textarea {
@@ -262,27 +248,28 @@ textarea {
 	height: 100px;
 }
 .footer-email {
-	position:absolute;
+	position: absolute;
 	top: 5px;
 	left: 5px;
 	display: inline;
-	padding:0px 5px;
+	padding: 0px 5px;
 }
 .footer-legal {
 	position: absolute;
 	display: inline;
-	bottom:5px;
+	bottom: 5px;
 	left: 10px;
 }
 .footer-nav {
 	border-left: 1px solid white;
 	padding-left: 30px;
 	position: absolute;
-	top:5px;
+	top: 5px;
 	left: 220px;
 }
-h5,h6 {
-	color:grey;
+h5,
+h6 {
+	color: grey;
 	font-size: 10px;
 	margin: 3px 0px;
 }
@@ -290,31 +277,31 @@ h6 {
 	padding: 0px;
 }
 h6:hover {
-	color:white;
+	color: white;
 }
 b {
-	color:white;
+	color: white;
 	margin-bottom: 10px;
 }
 .email-input {
 	font-size: 10px;
 	display: inline;
-	height:20px;
-	width:100px;
-	border:none;
-	color:grey;
-	background: rgba(255,255,255,.2);
+	height: 20px;
+	width: 100px;
+	border: none;
+	color: grey;
+	background: rgba(255, 255, 255, .2);
 	vertical-align: top;
 	margin-bottom: 0px;
 }
 .email-send {
 	border: 1px solid grey;
-	background:black;
-	color:grey;
+	background: black;
+	color: grey;
 	font-size: 15px;
-	display:inline;
-	height:20px;
-	width:60px;
+	display: inline;
+	height: 20px;
+	width: 60px;
 	line-height: 15px;
 }
 .small {
@@ -328,9 +315,9 @@ b {
 }
 .left-align {
 	position: absolute;
-	right:10px;
-	top:5px;
-	bottom:5px;
+	right: 10px;
+	top: 5px;
+	bottom: 5px;
 	vertical-align: center;
 }
 h6 {
@@ -355,14 +342,19 @@ h17 {
 	cursor: pointer;
 }
 #work {
-	color:white;
+	color: white;
 	text-align: center;
 	background: black;
 	position: relative;
-	width: 100%;
-	height: 50vw;
+	height: calc(100vh - 60px);
+	min-height: 60vw;
 	padding-top: 20px;
 	margin-top: 3px;
+}
+#posters {
+	height: 50vw;
+	width: 100%;
+	position: absolute;
 }
 .poster-center {
 	display: initial;
@@ -379,7 +371,6 @@ h17 {
 }
 .poster-left {
 	display: initial;
-
 	width: 50vw;
 	height: 25vw;
 	position: absolute;
@@ -404,16 +395,17 @@ h17 {
 	box-shadow: 2px 2px 5px grey;
 	z-index: 2;
 }
-.scroll-left, .scroll-right {
-	display:inline-block;
-	position:absolute;
-	bottom:10px;
+.scroll-left,
+.scroll-right {
+	display: inline-block;
+	position: absolute;
+	bottom: 6vw;
 }
 .scroll-left {
-	left:20px;
+	left: 20px;
 }
 .scroll-right {
-	right:20px;
+	right: 20px;
 }
 .fa-angle-left {
 	padding-right: 3px;
@@ -421,10 +413,47 @@ h17 {
 .fa-angle-right {
 	padding-left: 3px;
 }
-.fa-angle-right, .fa-angle-left {
+.fa-angle-right,
+.fa-angle-left {
 	border-radius: 100%;
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	
+}
+
+/*
+==============================================
+pulse
+==============================================
+*/
+
+.pulse {
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.8);
+	}
+	50% {
+		-webkit-transform: scale(1);
+	}
+	100% {
+		-webkit-transform: scale(0.8);
+	}
 }
