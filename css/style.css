@@ -346,8 +346,7 @@ h17 {
 	text-align: center;
 	background: black;
 	position: relative;
-	height: calc(100vh - 60px);
-	min-height: 60vw;
+	min-height: 55vw;
 	padding-top: 20px;
 	margin-top: 3px;
 }
