@@ -400,6 +400,14 @@
 		$(".pop-up").click(function() {
 			$(this).children("span.image-container").fadeToggle();
 		});
+
+		$(window).click(function() {
+			if ($(".image-container").css("display") != "none") $(".image-container").fadeOut();
+		});
+
+		$(".image-container").click(function(event) {
+			event.stopPropagation();
+		});
 	});
 
 </script>
