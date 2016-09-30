@@ -107,8 +107,7 @@
 			text-decoration: underline !important;
 		}
 		
-		a:hover .image-container,
-		a:focus .image-container {
+		a:hover .image-container {
 			display: inherit;
 			transition: .1s ease;
 		}
@@ -407,13 +406,10 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".pop-up").click(function() {
-			$(this).children("span.image-container").fadeToggle();
+			$(this).children("span.image-container").fadeIn();
 		});
 
 
-		$('a').on('click', function(e) {
-			e.stopPropagation();
-		});
 		$('.image-container').on('click', function(e) {
 			e.stopPropagation();
 		});

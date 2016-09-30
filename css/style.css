@@ -1,5 +1,17 @@
+@font-face {
+	font-family: futura;
+	src: url(/fonts/Futura.ttf);
+}
+@font-face {
+	font-family: futuraBold;
+	src: url(/fonts/FuturaBold.ttf);
+}
+@font-face {
+	font-family: futuraLight;
+	src: url(/fonts/FuturaLight.ttf);
+}
 * {
-	font-family: lato;
+	font-family: Futura;
 	overflow-x: hidden;
 }
 h1,
@@ -17,7 +29,6 @@ body {
 	padding-top: 100vh;
 }
 #menu {
-	background: rgba(0, 0, 0, .6);
 	width: 100%;
 	min-height: 60px;
 	text-align: center;
@@ -117,7 +128,6 @@ body {
 	color: white;
 	text-decoration: none !important;
 	font-size: 12px;
-	font-weight: 100;
 }
 .event-btn:hover {
 	color: white;
@@ -173,18 +183,45 @@ h3 {
 	background-color: rgba(0, 0, 0, .8);
 }
 #contact {
+	position: relative;
 	text-align: center;
 	background: black;
 	color: white;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	height: 50vh;
 	margin: 3px 0px;
 }
-.contacthalf {
-	width: 300px;
-	padding-bottom: 30px;
+#contact-wrapper {
+	padding: 10px;
+	position: absolute;
+	width: 80%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+h4 {
+	font-family: FuturaBold;
+	letter-spacing: 4px;
+}
+#btn-GIT,
+#btn-BAS {
+	font-size: 12px;
+	font-family: FuturaLight;
 	display: inline-block;
-	vertical-align: top;
+	width: 200px;
+	height: 32px;
+	line-height: 30px;
+	border: 1px solid white;
+	border-radius: 50px;
+}
+#btn-GIT {
+	margin-right: 30px;
+}
+#btn-GIT:hover,
+#btn-BAS:hover {
+	background: rgb(20, 20, 20);
+	cursor: pointer;
 }
 .fa {
 	margin: 0px 10px;
