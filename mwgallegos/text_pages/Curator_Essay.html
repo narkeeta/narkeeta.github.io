@@ -369,8 +369,6 @@
 	<h3><!-- InstanceBeginEditable name="EditRegion3" --><br />— Phil Tarley<br>
 			Phil Tarley is a Fellow of the American Film Institute and an artist member of The Los Angeles Art Association. As an art and pop culture critic, he regularly posts stories on The WOW Report and writes about art and photography for Fabrik Magazine and Art Week LA.</h3>
 	<!-- InstanceEndEditable -->
-
-
 </div>
 <!-- extra padding for image popups at the bottom of the site -->
 <br />
@@ -409,7 +407,7 @@
 		$('.image-container').on('click', function(e) {
 			e.stopPropagation();
 		});
-		$(window).on('click', function(e) {
+		$(".gridContainer").on('click', function(e) {
 			$(".image-container").fadeOut();
 		});
 	});
