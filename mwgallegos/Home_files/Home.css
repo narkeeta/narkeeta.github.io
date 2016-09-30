@@ -1,0 +1,132 @@
+html{
+	charset:"UTF-8"; max-width:100%;
+}
+
+*{
+  margin: 0; /*affects placement margins of the page*/
+  padding: 0; /*affects all the defined spaces on the home page, like the buttons and the main page etc but not sub buttons on other pages*/
+  
+}
+p{ 0 0 0 8px}
+
+nav {
+  font-family:  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 50px;  /*this is top margin of home page placement! MINE*/
+ margin-left: 50px; /* location of left edge of menu button on main page MINE*/
+  width: 165px;
+  -webkit-box-shadow: 2px 0px 25px rgba(0,0,0,0.2);
+     -moz-box-shadow: 2px 0px 25px rgba(0,0,0,0.2);
+          box-shadow: 2px 0px 25px rgba(0,0,0,0.2);
+}
+
+.menu-item {
+	left:1; /*don't know what this is either*/
+	color:#333; /*this is the color of the text in the intro box at top of home page*/
+  background: #FFF; /*background color of the top intoductory text in menu MINE*/
+  width: 165px;
+display: inherit ;
+}
+
+/*Menu Header Styles*/
+.menu-item h4 {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: green; /* what is this, i see no green */
+  font-size: 15px;
+  font-weight:300;
+  text-align:left;
+  padding: 8px 8px; /*pads inside of main menu buttons t&b l&r does NOT pad intro copy at top*/
+  
+  /*Gradient*/
+  background: #FFFAFA; /* Old browsers */
+  background: -moz-linear-gradient(top, #FFFAFA 0%, #FAF0E6 44%, #DCDCDC 100%); /* FF3.6+ */ /*Snow to Linen to Gainsboror*/
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFAFA), color-stop(44%,#FAF0E6), color-stop(100%,#DCDCDC)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #FFFAFA 0%,#FAF0E6 44%,#DCDCDC 100%); /* Chrome10+,Safari5.1+ MINE*/
+  background: -o-linear-gradient(top, #FFFAFA 0%,#FAF0E6 44%,#DCDCDC 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #FFFAFA 0%,#FAF0E6 44%,#DCDCDC 100%); /* IE10+ */
+  background: linear-gradient(top, #FFFAFA 0%,#FAF0E6 44%,#DCDCDC 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#FFFAFA, endColorstr=#DCDCDC,GradientType=0 ); /* IE6-9 */
+}
+
+.menu-item h4:hover {  
+  background: #FFF; /* Old browsers */ /*#DCDCDC is gainsboro*/
+  background: -moz-linear-gradient(top,  #FFF 0%, #DCDCDC 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#FFF), color-stop(100%,#DCDCDC)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(bottom,  #FFF 0%,#DCDCDC 100%); /* Chroe10+,Safari5.1+ MINE*/
+ /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF), color-stop(100%,#DCDCDC)); Chrome,Safari4+ */
+ /* background: -webkit-linear-gradient(top,  #FFF 0%,#DCDCDC 100%);  Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #FFF 0%,#DCDCDC 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #FFF 0%,#DCDCDC 100%); /* IE10+ */
+  background: linear-gradient(top,  #FFF 0%,#DCDCDC 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#DCDCDC',GradientType=0 ); /* IE6-9 */
+}
+
+.menu-item h4 a {
+  
+  color: #666; /*This is the text color for the main menu items both before and after a hover but not Intro text in top window*/
+  display: block;
+  font-weight:300;
+  text-decoration: none;
+  width: 165px; /*determines the length of text string allowed in main headers before it will wrap to next line*/
+}
+
+/*ul Styles*/
+.menu-item ul {
+  background: white; /*background color of the submenu styles on  home page before a hover*/
+  font-size: 13px;
+  line-height: 30px;
+  height: 0px;  /*right here is where the definition of active hover ht and if greater than 0 it picks up space under menu h4 button */
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px; /*pads space around the stack of submenu buttons*/
+  
+  /*Animation*/
+  -webkit-transition: height 1s ease;
+     -moz-transition: height 1s ease;
+       -o-transition: height 1s ease;
+      -ms-transition: height 1s ease;
+          transition: height 1s ease;
+}
+
+
+.menu-item:hover ul {
+ height: 124px; /*how many vertical pixels will be revealed by a hover...somewhere else controls how much is open BEFORE a hover i.e. how tall the hover area is? yes, see height of 0 on menu-item definition above which keeps it from opening any more than ht of the menu button*/
+ background-color:cream;
+}
+
+.menu-item ul a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333; /* changes the submenu text color on home page but not text in Intro box below HOME buton MINE */
+  display: block;
+  width: 165px;
+}
+
+/*li Styles*/
+.menu-item li {
+  border-bottom: 1px solid #999;
+}
+
+.menu-item li:hover {
+  color: green; /*not sure what this is, does not affect text color on hover in submenus on main page !?!*/
+  background-color: floralwhite; /*  /*the BG color of the hovered over submenus on home page only*/
+}
+/*First Item Styles*/
+.alpha p: {
+	padding: 0px 1px; /*what is it?/
+	color: crimson;  /*was ccc, changed to black? don't know where it is used could show up as orange somewhere*/
+}
+
+.alpha p a {  /*not sure what this is either, no change but no  italic anywhere that i can see*/
+	color: yellow;
+	font-style: italic;
+}
+
+.alpha p a:hover {
+	color: blue;   /*was #ccc ... change back? did not affect top block of text...not sure what it refers to*/
+}
+
+
+

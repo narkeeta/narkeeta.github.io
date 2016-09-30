@@ -42,6 +42,11 @@ body {
 #logo {
 	height: 40px;
 }
+#video-full {
+	min-width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
 .video-tagline {
 	position: absolute;
 	z-index: -99;
@@ -77,7 +82,7 @@ body {
 }
 #upcoming {
 	width: 100%;
-	min-height: calc(40vh - 63px);
+	min-height: calc(100vh - 60px);
 	margin-top: 3px;
 	background: black;
 	padding-top: 20px;
@@ -346,12 +351,11 @@ h17 {
 	text-align: center;
 	background: black;
 	position: relative;
-	min-height: 55vw;
-	padding-top: 20px;
+	height: calc(100vh - 60px);
 	margin-top: 3px;
 }
 #posters {
-	height: 50vw;
+	height: 80vh;
 	max-height: clac(100vh - 60px);
 	width: 100%;
 	position: absolute;

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+	width: auto;
+	margin-top:2.5em;
+	margin-left: 5%;
+	margin-right: 5%;
+	align-content:center;
+	background-color:#FFF;
+	border: solid 2px #DDD; 
+	opacity: 75%;
+}
+p.Biblio-Heading {
+	-epub-hyphens:none;
+		-epub-ruby-position:over;
+	color:pink;
+	font-family: "Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif;
+	font-size:.9;
+	font-style:normal;
+	font-weight:lighter;
+	line-height:1.25;
+	margin-bottom:0px;
+	margin-right:0px;
+	margin-top:.1em;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+p.para-style-override-4 { /*used for nmy name along with char override-1*/
+	font-family: "Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif; 
+	font:"Myriad Pro Italic";
+	font-size:2em;
+	font-style:italic;
+	font-weight:lighter;
+	font-variant:normal; /*to be consistent with other headers though not with the text below?*/
+	text-align:right;
+	line-height:1em;
+	margin-right:30px;
+}
+span.char-style-override-1 {  /*used for my name in black but lighter and larger*/
+	-epub-ruby-position:over;
+	-epub-text-combine:horizontal;
+	color:#000;
+	font-family: "Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic";
+	font-style:italic;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-variant:normal;
+	line-height: .6;
+	text-decoration:none;
+}
+span.char-style-override-12 { /*doesn't get used here*/
+	color:green;
+	font-family: "Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic",sans-serif;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+}
+p.para-style-override-2 { /*used for ack note for tarley*/
+	-epub-ruby-position:over;
+	-epub-text-combine:horizontal;
+	color:black;
+	font-family: "Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif;
+	font-size:.8em;
+	font-style:normal;
+		font-weight:normal;
+	text-decoration:none;
+	line-height:1em;
+	padding-left:60px;
+}
+img.frame-1 {
+	margin:1em 2em 0px 0px;
+	width:20em;
+	}
+	
+div.frame-2 {
+	text-align:right;
+	
+}
+a:link{color: black;
+}
+a:hover{color:red;
+}
+a:visted{color:green;
+}

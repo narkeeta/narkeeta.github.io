@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html class="" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../MWG_folios/assets/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../MWG_Folios/assets/Folios-1.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../MWG_Folios/assets/LogoStuff.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../MWG_Folios/assets/gallerytemplate.css" media="screen" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+body {
+	font-size:15px;
+	background-color: #FFFFFF;
+	/*padding-top: .5em;*/
+	font-family: "Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif;
+	font-weight:lighter;
+	color: #000000; 
+}
+/*body{ border-color:BBB;
+	border-style:2px;
+	background-color:white;
+	background-size:cover;
+ 	background-repeat: no-repeat;
+	background-position: top+20px:right+0px ;
+	background-image:
+		url("Home_files/Cover_Page_01.jpg");
+}*/
+
+
+	
+h1 {  /*redefined */
+	font-family:"Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif;
+	font-style:italic;
+	/*font:"Myriad Pro Italic";*/
+	font-size: 1.3em;
+	font-weight: normal;
+	color:black;
+	text-align:center;
+}
+h2 {font-family:"Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif;
+	font-size:1em; 
+	font-style:normal;
+	text-align:right;
+	padding-right:4%;
+	font-weight: lighter;
+}
+h3 {font-family:"Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif;
+	font-size:1em; 
+	font-style:normal;
+	text-align:left;
+	padding-right:4%;
+	padding-left:5%;
+	font-weight: lighter;
+}
+p{	
+	padding-left:20px;
+	padding-right:20px;
+	font-family:"Myriad Pro", "Myriad Pro Italic", "Lucida Grande", Verdana, "Verdana Italic", sans-serif;
+	font-size: 1.2em;
+	font-weight:lighter;
+	text-align:left;
+	line-height: 1.5em;
+	color:black;
+	}
+
+</style>
+<!-- TemplateParam name="OptionalRegion1" type="boolean" value="false" -->
+<!-- TemplateParam name="OptionalRegion2" type="boolean" value="false" -->
+</head>
+<div class="gridContainer clearfix"><br><br>
+<div class="frame-2"><img src="../text_pages/Artist_Stm-web-resources/image/Image_002.png" alt="Image_002.png" width="262" height="10" class="frame-1"/>
+		</div>
+<div > 
+				<p class="Biblio-Heading para-style-override-4">  <span class="char-style-override-1">MWGallegos</span></p> </div>
+
+	
+   <!-- insert the navigation bar for home-->
+       
+<br><nav class="menu-item">               
+<div >
+      <h4><a href="../index.html">HOME</a></h4> 
+  </div>
+</nav><br>
+
+<h1>
+<!-- TemplateBeginEditable name="heading"-->Heading Goes Here<!-- TemplateEndEditable -->
+    </h1><br>
+<!-- TemplateBeginIf cond="OptionalRegion2" -->
+<h2 text-align="right">Optional byline or date or something</h2>
+<br>
+<!-- TemplateEndIf -->
+<p><!-- TemplateBeginEditable name="text"--><p>text goes here with breaks for each paragrah and a close paragraph at end</p><!-- TemplateEndEditable -->
+
+<!-- TemplateBeginIf cond="OptionalRegion1" -->
+			<h3><!-- TemplateBeginEditable name="EditRegion3" --><br />— Phil Tarley<br>
+			Phil Tarley is a Fellow of the American Film Institute and an artist member of The Los Angeles Art Association. As an art and pop culture critic, he regularly posts stories on The WOW Report and writes about art and photography for Fabrik Magazine and Art Week LA.</h3><!-- TemplateEndEditable --><!-- TemplateEndIf -->
+            
+</p>  
+</div>
+</html>

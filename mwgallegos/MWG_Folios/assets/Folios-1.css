@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document this one is all about the sliding menus, nothing else*/
+* {
+  margin: 0;
+  padding:0;
+  align:center;
+}
+
+body {
+
+  background: #FFF}
+
+nav { /*applies to the ul's that are operative and in a nav container or just not h4 a ?*/
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif; /*note this differentiates rest of text from nav bars*/
+  font-size: 13px;
+  line-height: 31px;
+  margin:0px;  /*this is where you can move buttons on sub pages to right but 20px uncovers the underlayer...where is that?*/
+  margin-left: 20px; /*move menus to left edge of container,note i have 20px on containers of text pages also* so they line up*/
+  padding-left: 0px;
+  width: 165px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+     -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+          box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-item {
+	left: 0px;  /*changed this from left: to left-margin...helps? no . saturday*/
+  background: red; /*changed from #fff saturday, no diff?*/
+  width: 165px; /*here and elsewhere would like to change inner ones to 100 but affects everything?*/
+}
+
+/*MAIN Menu NAV Styles not on home page. i.e. on target pages of main menu*/
+.menu-item h4 {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 200;  /*changed this from 500 to 200, is better, do same on home-1.css*/
+  text-align:left; 
+  padding: 0px 20px; /*top n bot padding and left and right of 7px on inner page buttons to right moves text away from edges???*/
+  
+  /*Gradient for the menu item outside the home page*/
+  background: #FFFFFF; /* Old browsers */
+  background: -moz-linear-gradient(top, #FFFFFF 0%, #FAF0F6 44%, #DCDCDC 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(44%,#FAF0F6), color-stop(100%,#DCDCDC)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%,Linen 44%,gainsboro 100%); /* Chrome10+,Safari5.1+ MINE*/
+  background: -o-linear-gradient(top, #FFFFFF 0%,#FAF0F6 44%,#DCDCDC 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #FFFFFF 0%,#FAF0F6 44%,#DCDCDC 100%); /* IE10+ */
+  background: linear-gradient(top, #FFFFFF 0%,#FAF0F6 44%,#DCDCDC 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#DCDCDC',GradientType=0 ); /* IE6-9 */
+}
+
+.menu-item h4:hover {  
+  background: #cc002c; /* Old browsers */
+  background: -moz-linear-gradient(top,  #FFFFFF 0%, #DCDCDC 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#DCDCDC)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  white 0%, gainsboro 100%); /* Chrome10+,Safari5.1+ MINE*/
+  background: -o-linear-gradient(top,  #FFFFFF 0%,#DCDCDC 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #FFFFFF 0%,#DCDCDC 100%); /* IE10+ */
+  background: linear-gradient(top,  #FFFFFF 0%,#DCDCDC 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#DCDCDC',GradientType=0 ); /* IE6-9 */
+
+}
+
+.menu-item h4 a {
+
+  color: black; /*determines color of text on the folio HOME button on sub main menu target pages*/
+  display: block;
+  text-decoration: none;
+  width: 165px;  /*changed from 220 to 165 here trying to get text to fit, worked well but at 300 was not working as button*/
+}
+
+/*ul Styles thisis really only for home page for expanding menus*/
+.menu-item ul {
+  background: oldlace; 
+  font-size: 13px;
+  line-height: 31px;
+  height: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  /*padding: 0px;  /*added per guess and search*/
+  /*margin: 0px;*/
+  
+  /*Animation*/
+  -webkit-transition: height 1s ease;
+     -moz-transition: height 1s ease;
+       -o-transition: height 1s ease;
+      -ms-transition: height 1s ease;
+          transition: height 1s ease;
+}
+
+
+.menu-item:hover ul {
+  height: 124px;  /* 31 px if for single page nav i remember calculating very carefully 3 main menu headings all parents and coming up with 124preturn nav but now sure how to make that go to two...was it based on the ht of the menu item including padding?*/
+  
+}
+
+
+
+.menu-item ul a {
+	background-color:linen5 0%;	
+  margin-left: 20px; /*changed to 0 from  20 and now back again */
+  text-decoration: none;
+  color: black; /* sub-items applies only to home page, we have no sub menu items on child pages*/
+  display: block;
+  width: 165px;
+}
+
+/*li Styles none of the following apply to folio pages...
+.menu-item li {
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item li:hover {orange}
+
+/*First Item Styles*/
+/*.alpha p {
+	padding: 8px 12px;
+	color: orange;
+}
+
+.alpha p a {
+	color: red;
+	font-style: italic;
+}
+
+.alpha p a:hover {
+	color: red;
+}*/
+
+

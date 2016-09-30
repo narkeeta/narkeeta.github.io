@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.6521%;
+	padding-left: 1.1739%;
+	padding-right: 1.1739%;
+	border: solid 2px #EEE;  /* goes around the folio page*/
+	background-color: #FFF;
+	
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 88.5326%;
+	padding-left: 0.7336%;
+	padding-right: 0.7336%;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.826%;
+	max-width: 900px; /*instead of 1232px on sept 7 to keep bottom edge in frame even on big screen; looking elsewhere to get those images smaller!!*/
+	padding-left: 0.5869%;
+	padding-right: 0.5869%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+}
+}
+.gridContainer.clearfix #LayoutDiv4 img {
+	-webkit-transition: all 5s ease-out 0s;
+	-moz-transition: all 5s ease-out 0s;
+	-ms-transition: all 5s ease-out 0s;
+	-o-transition: all 5s ease-out 0s;
+	transition: all 5s ease-out 0s;
+}
+.gridContainer.clearfix #LayoutDiv4 img:hover { /* this is not used?*/
+	border-color: #FFF;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
