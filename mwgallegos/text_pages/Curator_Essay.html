@@ -402,15 +402,15 @@
 			$(this).children("span.image-container").fadeToggle();
 		});
 
-		$(window).click(function() {
-			$(".image-container").fadeOut();
-		});
 
-		$(".image-container").click(function(event) {
-			event.stopPropagation();
+		$('a').on('click', function(e) {
+			e.stopPropagation();
 		});
-		$("a").click(function(event) {
-			event.stopPropagation();
+		$('.image-container').on('click', function(e) {
+			e.stopPropagation();
+		});
+		$(document).on('click', function(e) {
+			$(".image-container").fadeOut();
 		});
 	});
 
