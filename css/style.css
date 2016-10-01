@@ -25,6 +25,11 @@ h6 {
 a:hover {
 	text-decoration: none;
 }
+#scroll-starter {
+	top: -140px;
+	position: relative;
+	z-index: 1000;
+}
 body {
 	padding-top: 100vh;
 }
@@ -36,22 +41,21 @@ body {
 	font-weight: 400;
 	position: fixed;
 	top: 0;
+	color:lightgrey;
 	z-index: 200;
+	transition: .7s ease;
 }
 .mitem {
 	position: relative;
 	line-height: 60px;
 	padding: 0px 10px;
-	color: lightgrey;
+	color: inherit;
 }
 .mitem:hover {
 	transition: .5s ease;
 	text-decoration: none;
 	cursor: pointer;
 	color: white;
-}
-#logo {
-	height: 40px;
 }
 #video-full {
 	min-width: 100%;
@@ -94,11 +98,11 @@ body {
 #upcoming {
 	width: 100%;
 	min-height: calc(100vh - 60px);
-	margin-top: 3px;
 	background: black;
 	padding-top: 20px;
 	text-align: center;
 	color: white;
+	position: relative;
 }
 .event {
 	padding: 30px 0px;
@@ -149,19 +153,31 @@ h31 {
 	font-size: 12px;
 	color: grey;
 }
-#scroll-down-text {
+#about {
 	padding-top: 20px;
-	background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/images/aboutBack.jpg) no-repeat fixed top;
-	background-size: cover;
+	background: url(/images/aboutback.png);
+	background-position:center;
+	background-size: auto 100%;	
 	text-align: center;
-	margin-top: 3px;
 	overflow: hidden;
+	position: relative;
+	color:transparent;
+	border:none;
 }
-#introFull {
-	overflow: hidden;
+.video-about {
+	position: fixed;
+	top:0;
+	bottom:0;
+	z-index: -10000;
+	width:100%;
+	overflow:hidden;
+}
+#video-full-about {
+	min-height:100%;
+	min-width:100%;
 }
 h1 {
-	overflow: hidden;
+	overflow:hidden;
 	text-transform: uppercase;
 	font-size: 30px;
 	font-weight: 900;
@@ -175,20 +191,15 @@ h3 {
 	font-weight: 400;
 	font-size: 14px;
 }
-.clip-text2 {
-	font-size: 40px;
-	padding: 20px .75em;
-}
-.clip-text2:after {
-	background-color: rgba(0, 0, 0, .8);
-}
+
 #contact {
 	position: relative;
 	text-align: center;
 	background: black;
 	color: white;
 	height: 50vh;
-	margin: 3px 0px;
+	border-top:3px solid white;
+	border-bottom: 3px solid white;
 }
 #contact-wrapper {
 	padding: 10px;
@@ -268,33 +279,37 @@ textarea {
 	height: 100px;
 }
 ::-webkit-input-placeholder {
-	/* Chrome/Opera/Safari */
 	color: grey;
 }
 ::-moz-placeholder {
-	/* Firefox 19+ */
 	color: grey;
 }
 :-ms-input-placeholder {
-	/* IE 10+ */
 	color: grey;
 }
 :-moz-placeholder {
-	/* Firefox 18- */
 	color: grey;
 }
 #footer {
 	position: relative;
-	background-color: black;
+	background-color: rgb(20,20,20);
 	color: white;
-	height: 100px;
+	height:150px;
+}
+#logo {
+	max-width: 100%;
+	max-height: 50%;
+	position: absolute;
+	margin:auto;
+	left:0;
+	top:10px;
+}
+.logo {
+	height:100%;
 }
 .footer-email {
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	display: inline;
-	padding: 0px 5px;
+	padding: 10px 5px;
+	height:100%;
 }
 .footer-legal {
 	position: absolute;
@@ -303,20 +318,15 @@ textarea {
 	left: 10px;
 }
 .footer-nav {
-	border-left: 1px solid white;
-	padding-left: 30px;
-	position: absolute;
-	top: 5px;
-	left: 220px;
+	height:100%;
+	padding:10px 5px;
+	position: relative;
 }
 h5,
 h6 {
 	color: grey;
 	font-size: 10px;
 	margin: 3px 0px;
-}
-h6 {
-	padding: 0px;
 }
 h6:hover {
 	color: white;
@@ -325,32 +335,37 @@ b {
 	color: white;
 	margin-bottom: 10px;
 }
+#subform {
+	height: 15%;
+	overflow:hidden;
+}
 .email-input {
-	font-size: 10px;
+	font-size: 12px;
 	display: inline;
-	height: 20px;
-	width: 100px;
+	height: 100%;
+	width: 60%;
 	border: none;
-	color: grey;
 	background: rgba(255, 255, 255, .2);
-	vertical-align: top;
-	margin-bottom: 0px;
+	vertical-align: center;
 }
 .email-send {
 	border: 1px solid grey;
-	background: black;
+	background: rgb(30,30,30);
 	color: grey;
-	font-size: 15px;
+	font-size: 12px;
 	display: inline;
-	height: 20px;
-	width: 60px;
+	height: calc(100% - 2px);
+	width: 30%;
 	line-height: 15px;
+}
+.footer-social {
+	top:10px;
 }
 .small {
 	display: block;
 	font-size: 12px;
 	text-align: center;
-	margin: 5px;
+	margin: 5px 0;
 	line-height: 23px;
 	width: 23px;
 	height: 23px;
@@ -361,10 +376,6 @@ b {
 	top: 5px;
 	bottom: 5px;
 	vertical-align: center;
-}
-h6 {
-	padding-left: 10px;
-	font-family: DIN;
 }
 h17 {
 	font-size: 10px;
@@ -389,50 +400,48 @@ h17 {
 	background: black;
 	position: relative;
 	height: calc(100vh - 60px);
-	margin-top: 3px;
 }
 #posters {
-	height: 80vh;
-	max-height: clac(100vh - 60px);
+	height: 90%;
 	width: 100%;
 	position: absolute;
+	top:0;
+	bottom:0;
+	margin:auto;
 }
 .poster-center {
 	display: initial;
-	width: 60vw;
-	height: 30vw;
+	width: calc(90vh * .54);
+	height: 80%;
 	position: absolute;
 	margin: auto;
 	top: 0;
-	bottom: 0;
 	left: 0;
 	right: 0;
-	box-shadow: 5px 7px 7px grey;
+	box-shadow: 2px 2px 2px rgb(100,100,100);
 	z-index: 3;
 }
 .poster-left {
 	display: initial;
-	width: 50vw;
-	height: 25vw;
+	width: calc(90vh * .36);
+	height: 53.33%;
 	position: absolute;
 	margin: auto;
-	top: 0;
-	bottom: 0;
-	right: 45vw;
+	top: calc((80% - 53.33%) / 2);
+	right: calc(90vh * .45);
 	left: 0px;
 	box-shadow: 2px 2px 5px grey;
 	z-index: 2;
 }
 .poster-right {
 	display: initial;
-	width: 50vw;
-	height: 25vw;
+	width: calc(90vh * .36);
+	height: 53.33%;
 	position: absolute;
 	margin: auto;
-	top: 0;
-	bottom: 0;
+	top: calc((80% - 53.33%) / 2);
 	right: 0px;
-	left: 45vw;
+	left: calc(90vh * .45);
 	box-shadow: 2px 2px 5px grey;
 	z-index: 2;
 }
@@ -440,7 +449,11 @@ h17 {
 .scroll-right {
 	display: inline-block;
 	position: absolute;
-	bottom: 6vw;
+	bottom: 6%;
+}
+h2 {
+	bottom:3%;left:0;right:0;
+	position:absolute;
 }
 .scroll-left {
 	left: 20px;

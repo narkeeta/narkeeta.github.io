@@ -1,6 +1,21 @@
 $(function () { // $(document).ready shorthand
 	$('h13').fadeIn(1000);
 });
+
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#scroll-starter');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#menu').css('background-color', 'rgba(255,255,255,.8)').css('color', 'black');
+       } else {
+          $('#menu').css('background-color', 'transparent');
+       }
+   });
+});
+
 $(document).ready(function () {
 	$(window).scroll(function () {
 		/* Check the location of each desired element */

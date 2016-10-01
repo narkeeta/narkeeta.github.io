@@ -18,6 +18,15 @@
 </head>
 
 <body>
+
+	<div class="video-about">
+		<video id="video-full-about" muted autoplay loop>
+			<source src="/videos/BACARDI%20Celebrates%20Cuban%20Independence%20Day.mp4" type="video/mp4">
+			<source src="/videos/BACARDI%20Celebrates%20Cuban%20Independence%20Day.webm" type="video/webm"> Your browser does not support the video tag.
+		</video>
+	</div>
+
+
 	<div id="menu">
 		<a href="#scroll-down-text" class="mitem">UPCOMING SHOWS</a>
 		<a href="#about" class="mitem">ABOUT US</a>
@@ -38,6 +47,7 @@
 	</div>
 
 	<div id="upcoming">
+		<div id="scroll-starter"></div>
 		<h1>UPCOMING EVENTS</h1>
 		<div class="event">
 			<div class="event-date">
@@ -82,7 +92,9 @@
 		</div>
 	</div>
 
-	<div id="scroll-down-text">
+
+	<div id="about">
+
 		<div id="introFull">
 			<div class="aniUp">
 				<h1>Entertainment Brought To Life</h1>
@@ -113,7 +125,7 @@ competition or concert, we plan, produce, and execute all content from the creat
 		</div>
 
 		<div id="introFull" class="aniUp">
-			<h1 id="about">ABOUT US</h1>
+			<h1>ABOUT US</h1>
 			<h3>5678 Media group is a collective of media professionals specializing in exciting and innovative entertainment.
 From corporate events, to concerts, to competitions, to digital content, we bring content forward with bold new ideas, equipment, and technology. Our hands on approach from planning to execution allows us to ensure that all of our clients needs are not only met, but exceeded.
 We are the future of live entertainment, the future of multimedia content. The future of experience.<br><br>We are the future of live entertainment, the future of multimedia content. The future of experience.</h3>
@@ -133,9 +145,8 @@ We are the future of live entertainment, the future of multimedia content. The f
 
 			<div class="poster" style="background-image:url('https://hd.unsplash.com/photo-1468930605463-659a967fc4e8')"> </div>
 
-			<h1>PAST EVENTS</h1>
-
 			<div>
+				<h2>PAST EVENTS</h2>
 				<div class="scroll-left">
 					<i class="fa fa-angle-left"></i>
 				</div>
@@ -186,25 +197,33 @@ We are the future of live entertainment, the future of multimedia content. The f
 	</div>
 -->
 
-	<div id="footer">
-		<div class="footer-email">
+	<div id="footer" class="container-fluid">
+		<div class="logo col-xs-2">
+			<img id=logo src="images/logo.png">
+		</div>
+		<div class="footer-email col-xs-4">
 			<h5><b>GET UPDATES</b> - Join The Mailing List</h5>
 			<form id="subform" action="" method="POST">
 				<input name="email" type="text" class="email-input" placeholder="you@example.email" />
 				<input class="email-send" type="submit" value="SEND" />
 			</form>
-		</div>
-		<div class="footer-legal">
+			<div class="footer-legal">
 			<h5>COPYRIGHT @ ON THE ROCKS DESIGN<br>ALL RIGHTS RESERVED</h5>
+			</div>
 		</div>
-		<div class="footer-nav">
+		<div class="footer-nav col-xs-4">
 			<h5><b>QUICK JUMP</b></h5>
-			<a href="#"><h6>SERVICES</h6></a>
+			<a href="#"><h6>UPCOMING SHOWS</h6></a>
 			<a href="#"><h6>ABOUT US</h6></a>
+			<a href="#"><h6>PAST EVENTS</h6></a>
 			<a href="#"><h6>CONTACT</h6></a>
-			<a href="#"><h6>WORK</h6></a>
+			
+			<div class="footer-legal">
+			<h5>ARISE MEDIA INC - NYC <br> 732.318.0341</h5>
+			</div>
 		</div>
-		<div class="left-align">
+		<div class="footer-social col-xs-2">
+			<h6>CONNECT</h6>
 			<i class="small fa fa-facebook"></i>
 			<i class="small fa fa-instagram"></i>
 			<i class="small fa fa-linkedin"></i>
