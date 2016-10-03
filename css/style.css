@@ -41,7 +41,7 @@ body {
 	font-weight: 400;
 	position: fixed;
 	top: 0;
-	color:lightgrey;
+	color: lightgrey;
 	z-index: 200;
 	transition: .7s ease;
 }
@@ -55,7 +55,8 @@ body {
 	transition: .5s ease;
 	text-decoration: none;
 	cursor: pointer;
-	color: white;
+	color: inherit;
+	opacity: .8;
 }
 #video-full {
 	min-width: 100%;
@@ -156,28 +157,28 @@ h31 {
 #about {
 	padding-top: 20px;
 	background: url(/images/aboutback.png);
-	background-position:center;
-	background-size: auto 100%;	
+	background-position: center;
+	background-size: auto 100%;
 	text-align: center;
 	overflow: hidden;
 	position: relative;
-	color:transparent;
-	border:none;
+	color: transparent;
+	border: none;
 }
 .video-about {
 	position: fixed;
-	top:0;
-	bottom:0;
+	top: 0;
+	bottom: 0;
 	z-index: -10000;
-	width:100%;
-	overflow:hidden;
+	width: 100%;
+	overflow: hidden;
 }
 #video-full-about {
-	min-height:100%;
-	min-width:100%;
+	min-height: 100%;
+	min-width: 100%;
 }
 h1 {
-	overflow:hidden;
+	overflow: hidden;
 	text-transform: uppercase;
 	font-size: 30px;
 	font-weight: 900;
@@ -191,47 +192,54 @@ h3 {
 	font-weight: 400;
 	font-size: 14px;
 }
-
 #contact {
 	position: relative;
 	text-align: center;
 	background: black;
 	color: white;
-	height: 50vh;
-	border-top:3px solid white;
-	border-bottom: 3px solid white;
+	min-height: calc(80vh - 60px);
 }
 #contact-wrapper {
-	padding: 10px;
-	position: absolute;
+	padding-top: 50px;
 	width: 80%;
 	margin: auto;
-	left: 0;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
+}
+#line-spacers {
+	overflow: visible;
+}
+.hr1 ,
+.hr2 {
+	border:1px solid grey;
+	width:50px;
+	margin-top:-13px;
+}
+.hr2 {
+	position: relative;
+	left:10px;
 }
 h4 {
+	text-transform: uppercase;
 	font-family: FuturaBold;
 	letter-spacing: 4px;
 }
 #btn-GIT,
 #btn-BAS {
+	background: white;
+	color: black;
 	font-size: 12px;
 	font-family: FuturaLight;
 	display: inline-block;
 	width: 200px;
-	height: 32px;
-	line-height: 30px;
-	border: 1px solid white;
-	border-radius: 50px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 20px;
 }
 #btn-GIT {
 	margin-right: 30px;
 }
 #btn-GIT:hover,
 #btn-BAS:hover {
-	background: rgb(20, 20, 20);
+	background: rgb(200, 200, 200);
 	cursor: pointer;
 }
 .fa {
@@ -257,6 +265,12 @@ h4 {
 	border-right: 10px solid transparent;
 	border-bottom: 10px solid white;
 }
+#contact-message,
+#contact-sponsor {
+	display: none;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .msg-input,
 .msg-send,
 .email-send,
@@ -280,36 +294,40 @@ textarea {
 }
 ::-webkit-input-placeholder {
 	color: grey;
+	padding-left: 2px;
 }
 ::-moz-placeholder {
 	color: grey;
+	padding-left: 2px;
 }
 :-ms-input-placeholder {
 	color: grey;
+	padding-left: 2px;
 }
 :-moz-placeholder {
 	color: grey;
+	padding-left: 2px;
 }
 #footer {
 	position: relative;
-	background-color: rgb(20,20,20);
+	background-color: rgb(20, 20, 20);
 	color: white;
-	height:150px;
+	height: 150px;
 }
 #logo {
 	max-width: 100%;
 	max-height: 50%;
 	position: absolute;
-	margin:auto;
-	left:0;
-	top:10px;
+	margin: auto;
+	left: 0;
+	top: 10px;
 }
 .logo {
-	height:100%;
+	height: 100%;
 }
 .footer-email {
 	padding: 10px 5px;
-	height:100%;
+	height: 100%;
 }
 .footer-legal {
 	position: absolute;
@@ -318,17 +336,26 @@ textarea {
 	left: 10px;
 }
 .footer-nav {
-	height:100%;
-	padding:10px 5px;
+	text-align: center;
+	height: 100%;
+	padding: 10px 5px;
 	position: relative;
 }
 h5,
-h6 {
+h6,
+h7 {
 	color: grey;
 	font-size: 10px;
 	margin: 3px 0px;
 }
-h6:hover {
+h7 {
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+h6:hover,
+h7:hover {
 	color: white;
 }
 b {
@@ -336,8 +363,8 @@ b {
 	margin-bottom: 10px;
 }
 #subform {
-	height: 15%;
-	overflow:hidden;
+	height: 24%;
+	overflow: hidden;
 }
 .email-input {
 	font-size: 12px;
@@ -345,24 +372,32 @@ b {
 	height: 100%;
 	width: 60%;
 	border: none;
-	background: rgba(255, 255, 255, .2);
+	background: rgba(255, 255, 255, .1);
+	border-radius: 2px;
 	vertical-align: center;
 }
 .email-send {
-	border: 1px solid grey;
-	background: rgb(30,30,30);
-	color: grey;
+	background: white;
 	font-size: 12px;
+	font-family: FuturaLight;
+	height: 35px;
+	border-radius: 20px;
 	display: inline;
 	height: calc(100% - 2px);
 	width: 30%;
-	line-height: 15px;
+	line-height: calc(100% - 2px);
+}
+.email-send:hover {
+	background-color: rgb(200, 200, 200);
 }
 .footer-social {
-	top:10px;
+	top: 10px;
+	max-height: 100%;
+	overflow: hidden;
+	width: 85px;
 }
 .small {
-	display: block;
+	display: inline-block;
 	font-size: 12px;
 	text-align: center;
 	margin: 5px 0;
@@ -405,9 +440,9 @@ h17 {
 	height: 90%;
 	width: 100%;
 	position: absolute;
-	top:0;
-	bottom:0;
-	margin:auto;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 .poster-center {
 	display: initial;
@@ -418,7 +453,7 @@ h17 {
 	top: 0;
 	left: 0;
 	right: 0;
-	box-shadow: 2px 2px 2px rgb(100,100,100);
+	box-shadow: 2px 2px 2px rgb(100, 100, 100);
 	z-index: 3;
 }
 .poster-left {
@@ -452,8 +487,10 @@ h17 {
 	bottom: 6%;
 }
 h2 {
-	bottom:3%;left:0;right:0;
-	position:absolute;
+	bottom: 3%;
+	left: 0;
+	right: 0;
+	position: absolute;
 }
 .scroll-left {
 	left: 20px;
