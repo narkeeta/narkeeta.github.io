@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	var mainImg = $("#LayoutDiv1").children("img").attr("src").replace("myFull", "mytinythumbs");
 
-	if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").prev().is("br")) {
+	if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").is(':first-child')) {
 		var prevLink = $("#LayoutDiv4").children("a:last").attr("href");
 		$("#btn-back").attr("href", prevLink);
 	} else {
