@@ -35,11 +35,17 @@ $(document).ready(function () {
 	$("#btn-GIT").click(function () {
 		$("#contact-sponsor").hide();
 		$("#contact-message").fadeIn(1000);
+		$("#contact").css('background','rgba(0,0,0,.80)');
+		$("#SUAM").css('color','white');
+		$("h4").css('color','white');
 	});
 
 	$("#btn-BAS").click(function () {
 		$("#contact-message").hide();
 		$("#contact-sponsor").fadeIn(1000);
+		$("#contact").css('background','rgba(0,0,0,.80)');
+		$("#SUAM2").css('color','white');
+		$("h4").css('color','white');
 	});
 });
 
