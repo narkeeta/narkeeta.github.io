@@ -10,7 +10,24 @@ img, object, embed, video {
 .ie6 img {
 	width:100%;
 }
-
+#btn-back {
+	position: absolute;
+	margin: auto;
+	left:20px;
+	bottom:0px;
+	top:0px;
+	width:30px;
+	height: 30px;
+}
+#btn-forward {
+	position: absolute;
+	margin: auto;
+	right:20px;
+	bottom:0px;
+	top:0px;
+	width:30px;
+	height: 30px;
+}
 /*
 	Dreamweaver Fluid Grid Properties
 	----------------------------------
@@ -31,6 +48,7 @@ img, object, embed, video {
 img.resize{
    max-width:75%;
    max-height:75%;
+	img
 }
 .gridContainer {
 	margin-left: auto;
@@ -53,6 +71,17 @@ img.resize{
 	margin-left: 0;  /*changed from 0 and made no difference that i could see*/
 	width: 100%;
 	display: block;
+	position: relative;
+}
+
+.fa {
+	font-size: 40px;
+	color:black;
+	line-height: 30px;
+}
+.fa:hover {
+	cursor: pointer;
+	font-size: 45px;
 }
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
