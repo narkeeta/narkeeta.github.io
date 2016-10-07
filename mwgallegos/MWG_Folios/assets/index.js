@@ -19,6 +19,31 @@ $(document).ready(function () {
 	}
 
 
+
+	$(document).on("swiperight", page, function () {
+		if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").next().is("p")) {
+			var nextLink = $("#LayoutDiv4").children("a:first").attr("href");
+			$.mobile.changePage(nextLink);
+		} else {
+			var nextLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").next().attr("href");
+			$.mobile.changePage(nextLink);
+		}
+	});
+
+
+	$(document).on("swipeleft", page, function () {
+		$("#LayoutDiv1").children("img").swiperight(function () {
+			if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").prev().is("br")) {
+				var prevLink = $("#LayoutDiv4").children("a:last").attr("href");
+				$.mobile.changePage(prevLink);
+			} else {
+				var prevLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").prev().attr("href");
+				$.mobile.changePage(prevLink);
+			}
+		});
+	});
+
+
 	$(document).on('pageinit', function (event) {
 		$("#LayoutDiv1").children("img").swiperight(function () {
 			if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").next().is("p")) {
