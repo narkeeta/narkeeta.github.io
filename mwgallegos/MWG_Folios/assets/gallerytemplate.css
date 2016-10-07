@@ -35,6 +35,15 @@ video {
 	width: 30px;
 	height: 30px;
 }
+@media only screen and (max-width: 769px) {
+	#btn-forward {
+		right:5px;
+	}
+	#btn-back {
+		left:5px;
+	}
+}
+
 
 /*
 	Dreamweaver Fluid Grid Properties

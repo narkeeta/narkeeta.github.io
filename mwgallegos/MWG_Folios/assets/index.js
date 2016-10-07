@@ -18,23 +18,29 @@ $(document).ready(function () {
 		$("#btn-forward").attr("href", nextLink);
 	}
 
-	$("#LayoutDiv1").children("img").on("swiperight", function () {
-		if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").next().is("p")) {
-			var nextLink = $("#LayoutDiv4").children("a:first").attr("href");
-			window.location.href = nextLink;
-		} else {
-			var nextLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").next().attr("href");
-			window.location.href = nextLink;
-		}
+
+	$(document).on('pageinit', function (event) {
+		$("#LayoutDiv1").children("img").swiperight(function () {
+			if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").next().is("p")) {
+				var nextLink = $("#LayoutDiv4").children("a:first").attr("href");
+				window.location.href = nextLink;
+			} else {
+				var nextLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").next().attr("href");
+				window.location.href = nextLink;
+			}
+		});
 	});
 
-	$("#LayoutDiv1").children("img").on("swipeleft", function () {
-		if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").prev().is("br")) {
-			var prevLink = $("#LayoutDiv4").children("a:last").attr("href");
-			window.location.href = prevLink;
-		} else {
-			var prevLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").prev().attr("href");
-			window.location.href = prevLink;
-		}
+	$(document).on('pageinit', function (event) {
+		$("#LayoutDiv1").children("img").swipeleft(function () {
+			if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").prev().is("br")) {
+				var prevLink = $("#LayoutDiv4").children("a:last").attr("href");
+				window.location.href = prevLink;
+			} else {
+				var prevLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").prev().attr("href");
+				window.location.href = prevLink;
+			}
+		});
 	});
+
 });
