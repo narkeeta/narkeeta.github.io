@@ -24,13 +24,12 @@ $(document).on('pageinit', function (event) {
 	$("#LayoutDiv1").swiperight(function () {
 		if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").next().is("p")) {
 			var nextLink = $("#LayoutDiv4").children("a:first").attr("href");
-			alert(nextLink);
-			$.mobile.changePage(nextLink);
+			alert(""+nextLink);
 		} else {
 			var nextLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").next().attr("href");
-			alert(nextLink);
-			$.mobile.changePage(nextLink);
+			alert(""+nextLink);
 		}
+		$.mobile.changePage(nextLink);
 	});
 });
 
