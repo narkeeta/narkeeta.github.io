@@ -3,7 +3,7 @@ $("#LayoutDiv4").children('a:first').addClass("firsta");
 $("#LayoutDiv4").children('a:last').addClass("lasta");
 
 
-if ($("#LayoutDiv4").children('img[src='+ mainImg + ']').parent("a").hasClass("firsta")) {
+if ($("#LayoutDiv4").children('a:first').children("img").attr("src") == mainImg) {
 	var prevLink = $("#LayoutDiv4").children("a:last").attr("href");
 } else {
 	var prevLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").prev().attr("href");
@@ -14,7 +14,7 @@ if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").next().i
 } else {
 	var nextLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").next().attr("href");
 }
-alert($("#LayoutDiv4").children('img[src='+ mainImg + ']').attr('src'));
+alert($("#LayoutDiv4").children('a:first').children("img").attr("src"));
 alert(prevLink);
 alert(nextLink);
 
