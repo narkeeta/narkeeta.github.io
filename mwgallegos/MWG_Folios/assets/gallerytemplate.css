@@ -92,12 +92,12 @@ img.resize {
 
 .fa {
 	font-size: 30px;
-	color:gery;
+	color:grey;
 	line-height: 30px;
 }
 .fa:hover {
 	cursor: pointer;
-	font-size: 45px;
+	font-size: 35px;
 }
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
