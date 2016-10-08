@@ -1,7 +1,7 @@
 var mainImg = $("#LayoutDiv1").children("img").attr("src").replace("myFull", "mytinythumbs");
 
 
-if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").is(':first-child')) {
+if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").is('a:first')) {
 	var prevLink = $("#LayoutDiv4").children("a:last").attr("href");
 } else {
 	var prevLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").prev().attr("href");
