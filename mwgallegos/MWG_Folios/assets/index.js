@@ -14,7 +14,7 @@ if ($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").next().i
 } else {
 	var nextLink = $("#LayoutDiv4").find('img[src="' + mainImg + '"]').parent("a").next().attr("href");
 }
-alert($("#LayoutDiv4").children('img[src="' + mainImg + '"]').parent("a").hasClass("firsta"));
+alert($("#LayoutDiv4").children('img[src="' + mainImg + '"]').attr("src"));
 alert(prevLink);
 alert(nextLink);
 
