@@ -22,12 +22,12 @@ $(document).ready(function () {
 
 $(document).on('pageinit', function (event) {
 	$("#LayoutDiv1").swipeleft(function () {
-		$.mobile.changePage(prevLink);
+		$.mobile.changePage(nextLink);
 	});
 });
 
 $(document).on('pageinit', function (event) {
 	$("#LayoutDiv1").swiperight(function () {
-		$.mobile.changePage(nextLink);
+		$.mobile.changePage(prevLink);
 	});
 });
