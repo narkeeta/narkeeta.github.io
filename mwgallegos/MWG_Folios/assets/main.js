@@ -1,3 +1,9 @@
+$(document).bind("mobileinit", function(){
+  $.extend(  $.mobile , {
+    ajaxEnabled: false
+  });
+});
+
 $(document).ready(function () {
 	var mainImg = $("#LayoutDiv1").children("img").attr("src").replace("myFull", "mytinythumbs");
 	$("#LayoutDiv4").children('a:first').addClass("firsta");
