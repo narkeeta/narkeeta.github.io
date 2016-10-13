@@ -1,14 +1,32 @@
+/*
+Theme Name: 5678site
+Theme URI: None
+Author: Collin McCabe
+Author URI: http://narkeeta.github.io
+Description: Theme for 5678 Media Site
+Version: 1.0
+License: None
+License URI: None
+Tags: None
+Text Domain: 5678mediagroup
+
+This theme is copyright by 5678MediaGroup and isn't to be recreated or used
+in any way
+*/
+
+
+
 @font-face {
 	font-family: futura;
-	src: url(../fonts/Futura.ttf);
+	src: url(../5678site/fonts/Futura.ttf);
 }
 @font-face {
 	font-family: futuraBold;
-	src: url(../fonts/FuturaBold.ttf);
+	src: url(../5678site/fonts/FuturaBold.ttf);
 }
 @font-face {
 	font-family: futuraLight;
-	src: url(../fonts/FuturaLight.ttf);
+	src: url(../5678site/fonts/FuturaLight.ttf);
 }
 * {
 	font-family: Futura;
@@ -18,8 +36,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5, {
 	padding: 2px 0px;
 }
 a:hover {
@@ -80,7 +97,7 @@ body {
 	width: 100%;
 	height: 100vh;
 	opacity: .8;
-	background-image: url(../images/taglinetext.png);
+	background-image: url(../5678site/images/taglinetext.png);
 	background-position: center;
 	background-size: cover;
 	z-index: 0;
@@ -92,7 +109,10 @@ body {
 	background: none !important;
 	font-size: 40px !important;
 	position: absolute;
+	margin:auto;
 	bottom: 30px;
+	margin-left:0px !important;
+	margin-right:0px !important;
 }
 .fa-angle-down:hover {
 	color: grey !important;
@@ -115,6 +135,8 @@ body {
 .event-btn {
 	display: inline-block;
 	margin-left: 50px;
+	position:relative;
+	left: 0px;
 }
 .event-date,
 .event-info {
@@ -157,7 +179,7 @@ h31 {
 }
 #about {
 	padding-top: 20px;
-	background: url(../images/aboutback.png);
+	background: url(../5678site/images/aboutback.png);
 	background-position: center;
 	background-size: auto 100%;
 	text-align: center;
@@ -345,6 +367,7 @@ textarea {
 h5,
 h6,
 h7 {
+	overflow: visible !important;
 	color: grey;
 	font-size: 12px;
 	margin: 3px 0px;
@@ -394,7 +417,7 @@ b {
 .footer-social {
 	top: 10px;
 	max-height: 100%;
-	overflow: hidden;
+	overflow: visible;
 	width: 85px;
 }
 .small {
@@ -438,12 +461,37 @@ h17 {
 	height: calc(100vh - 60px);
 }
 #posters {
-	height: 90%;
+	height: 90vh;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	margin: auto;
+}
+.poster-default-cover {
+	width: calc((90vh * .54) * 2 + 60px);
+	height: calc(90vh * .80);
+	position: absolute;
+	margin: auto;
+	top: 90px;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+}
+.poster-default-l {
+	display: inline-block;
+	width: calc(90vh * .54);
+	height: calc(90vh * .80);
+	position: relative;
+	margin-right: 30px;
+	box-shadow: 2px 2px 2px rgb(100, 100, 100);
+}
+.poster-default-r {
+	display: inline-block;
+	width: calc(90vh * .54);
+	height: calc(90vh * .80);
+	position: relative;
+	box-shadow: 2px 2px 2px rgb(100, 100, 100);
 }
 .poster-center {
 	display: initial;
@@ -488,7 +536,7 @@ h17 {
 	bottom: 6%;
 }
 h2 {
-	bottom: 3%;
+	top: 10px;
 	left: 0;
 	right: 0;
 	position: absolute;
@@ -548,4 +596,111 @@ pulse
 	100% {
 		-webkit-transform: scale(0.8);
 	}
+}
+
+
+/* 
+==============================================
+INPUT FORM CODE
+==============================================
+*/
+
+#payment-form {
+  background-color: black;
+  border: 5px solid white;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width:400px;
+  height: calc(100vh - 20px);
+}
+
+h40 {
+  position:absolute;
+  margin:auto;
+  text-align:center;
+  left:0;right:0;top:10px;
+  color:white;
+  font-size:20px;
+}
+#payment-info-form {
+  margin: 50px auto;
+  text-align:center;
+}
+
+.cardinfo {
+  display: block;
+  margin: auto;
+  width:214px;
+  height: 19px;
+  margin-bottom:4px;
+  font-size:16px;
+  text-indent: 7px;
+}
+.cardinfo:focus {
+  outline:none;
+}
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+.select2 {
+  text-align:left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin:auto;
+  margin-bottom:4px;
+  font-size: 16px;
+  color: black;
+  width: 220px;
+  height: 25px;
+}
+.select-styled {
+  text-indent: 10px;
+  height: 25px;
+  background-color: white;
+  transition: all 0.2s ease-in;
+  &:after {
+    content:"";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 7px;
+    right: 10px; 
+  }
+}
+
+.select-options {
+  display: none; 
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: darken(white, 2);
+  li {
+    margin: 0;
+    padding: 1px 0;
+    text-indent: 10px;
+    border-top: 1px solid black;
+    @include transition(all 0.15s ease-in);
+    &:hover {
+      color: black;
+      background: white;
+    }
+  }
+}
+#buy-btn {
+  cursor:pointer;
+  height:20px;
+  width:220px;
 }

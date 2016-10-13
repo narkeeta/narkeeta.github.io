@@ -48,12 +48,12 @@ img.resize{
 	
 }
 #LayoutDiv1 {
+	position: relative;
 	clear: both;
 	float: left;
 	margin-left: 0;  /*changed from 0 and made no difference that i could see*/
 	width: 100%;
 	display: block;
-	position: relative;
 }
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
@@ -99,6 +99,7 @@ img.resize{
 	-moz-opacity: 1;
 	opacity: 1;
 }
+
 
 #btn-back {
 	position: absolute;
