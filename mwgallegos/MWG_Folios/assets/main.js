@@ -28,7 +28,7 @@ $(document).ready(function () {
 	$("#btn-forward").attr("href", nextLink);
 
 	$("#LayoutDiv1").swiperight(function () {
-		window.location.href = prevLink;
+		window.location.href = nextLink;
 	});
 
 	$("#LayoutDiv1").swipeleft(function () {

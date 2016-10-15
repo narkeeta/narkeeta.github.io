@@ -9,6 +9,7 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>Margaret W Gallegos: Images Cited in Essay</title>
 <!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 <link href="../MWG_Folios/assets/boilerplate.css" rel="stylesheet" type="text/css">
 <link href="../MWG_Folios/assets/gallerytemplate.css" rel="stylesheet" type="text/css">
 <link href="../MWG_Folios/assets/Folios-1.css" media="screen" rel="stylesheet" type="text/css"> 
@@ -67,7 +68,10 @@ Do the following if you're using your customized build of modernizr (http://www.
    
     
 
-  <div id="LayoutDiv1"><!-- TemplateBeginEditable name="Image Area" -->Add image here<!-- TemplateEndEditable --></div>
+  <div id="LayoutDiv1">
+  <a href="#" id="btn-back"><i class="fa fa-angle-left"></i></a>
+  <a href="#" id="btn-forward"><i class="fa fa-angle-right"></i></a>
+  <!-- TemplateBeginEditable name="Image Area" -->Add image here<!-- TemplateEndEditable --></div>
   <div><br />  <p> <br></p> </div>    
   <div id="LayoutDiv2"> Margaret W Gallegos: <!-- TemplateBeginEditable name="Text Area" -->Add text here<!-- TemplateEndEditable --></div>
          <div id="LayoutDiv4"> 
@@ -91,5 +95,10 @@ Do the following if you're using your customized build of modernizr (http://www.
       <p><p>&nbsp;</p></p>
     </div>
 </div>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src="../assets/main.js" type="text/javascript"></script>
+	<link rel="stylesheet" href=../assets/jquery.mobile.structure-1.4.5.min.css>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </body>
 </html>
