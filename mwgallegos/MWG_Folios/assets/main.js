@@ -25,13 +25,19 @@ $(document).ready(function () {
 
 
 	$("#btn-back").attr("href", prevLink);
+	if ($("#btn-back").attr("href") == 'undefined'){
+		alert("page contains image name error, main image does not match any of the tumbnail image names please correct or ignore if you are just a visitor");
+	}
 	$("#btn-forward").attr("href", nextLink);
+	if ($("#btn-forward").attr("href") == 'undefined'){
+		alert("page contains image name error, main image does not match any of the tumbnail image names please correct or ignore if you are just a visitor");
+	}
 
 	$("#LayoutDiv1").swiperight(function () {
-		window.location.href = nextLink;
+		window.location.href = prevLink;
 	});
 
 	$("#LayoutDiv1").swipeleft(function () {
-		window.location.href = prevLink;
+		window.location.href = nextLink;
 	});
 });
