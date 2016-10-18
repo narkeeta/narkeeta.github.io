@@ -160,7 +160,8 @@
 			background: #FDB913;
 			text-align: center;
 			padding-top: 50px;
-			min-height: 430px;
+			padding-bottom: 60px;
+			min-height: 420px;
 			position: relative;
 		}
 		
@@ -178,33 +179,18 @@
 		#printer-left,
 		#printer-right {
 			display: inline-block;
-			height: 230px;
-			width: calc(50% - 90px);
+			height: auto;
+			width: 500px;
+			max-width: 50%;
 			margin-top: 60px;
 			text-align: center;
 			vertical-align: top;
 		}
 		
-		#printer-left {
-			position: absolute;
-			left: 90px;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-		}
-		
-		#printer-right {
-			position: absolute;
-			right: 90px;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-		}
-		
 		#printer-left-img,
 		#printer-left-text {
 			position: relative;
-			width: 230px;
+			width: 220px;
 			display: inline-block;
 			vertical-align: top;
 		}
@@ -214,9 +200,8 @@
 			max-height: 100%;
 		}
 		
-		
 		#printer-left-text img {
-			width: 240px;
+			width: 220px;
 			height: 140px;
 			border: 2px solid white;
 		}
@@ -643,6 +628,20 @@
 				margin-right: 0;
 				padding: 0;
 			}
+			#footer-top,
+			#footer-mid,#footer-bottom-one, .hr-footer, #footer-bottom-two {
+				width:90%;
+				margin:auto;
+			} 
+			#about-text {
+				width: 90%;
+				padding: 0;
+				margin: auto;
+				line-height: 30px;
+			}
+			#logo {
+				margin: auto;
+			}
 			#header-bottom {
 				position: relative;
 				padding-top: 30px;
@@ -665,8 +664,8 @@
 			#printer-left,
 			#printer-right {
 				position: relative;
-				left:0;
-				right:0;
+				left: 0;
+				right: 0;
 				display: inline-block;
 				height: auto;
 				width: 90%;
@@ -692,7 +691,7 @@
 			#printer-left-text img {
 				margin: auto;
 				display: block;
-				width: 240px;
+				width: 220px;
 				height: 140px;
 				border: 2px solid white;
 			}
