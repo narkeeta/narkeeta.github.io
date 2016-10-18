@@ -17,7 +17,7 @@
 		}
 		
 		#logo {
-			margin-left: 70px;
+			margin-left: 90px;
 			height: 102px;
 			width: 245px;
 			display: inline-block;
@@ -28,13 +28,19 @@
 			position: absolute;
 			right: 0;
 			top: 0;
+			bottom: 0;
 			text-align: right;
-			margin-right: 100px;
+			margin-right: 90px;
 		}
 		
 		#header-bottom,
 		#header-top {
 			text-align: center;
+		}
+		
+		#header-bottom {
+			position: absolute;
+			bottom: 5px;
 		}
 		
 		h1 {
@@ -125,7 +131,8 @@
 		
 		.product-dev-img {
 			width: 230px;
-			border-radius: 20px;
+			height: 134px;
+			border-radius: 5px;
 		}
 		
 		h4 {
@@ -153,8 +160,8 @@
 			background: #FDB913;
 			text-align: center;
 			padding-top: 50px;
-			padding-bottom: 60px;
-			min-height: 443px;
+			min-height: 430px;
+			position: relative;
 		}
 		
 		#printer-header h6 {
@@ -172,10 +179,26 @@
 		#printer-right {
 			display: inline-block;
 			height: 230px;
-			width: 550px;
+			width: calc(50% - 90px);
 			margin-top: 60px;
 			text-align: center;
 			vertical-align: top;
+		}
+		
+		#printer-left {
+			position: absolute;
+			left: 90px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		
+		#printer-right {
+			position: absolute;
+			right: 90px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
 		}
 		
 		#printer-left-img,
@@ -191,7 +214,6 @@
 			max-height: 100%;
 		}
 		
-		#printer-left-text {}
 		
 		#printer-left-text img {
 			width: 240px;
@@ -279,7 +301,8 @@
 		}
 		
 		#about-text {
-			width: 80%;
+			width: 100%;
+			padding: 0 90px;
 			margin: auto;
 			line-height: 30px;
 		}
@@ -293,7 +316,7 @@
 		}
 		
 		#testimonials-header {
-			margin-bottom: 30px;
+			margin-bottom: 50px;
 		}
 		
 		#testimonials-header h6 {
@@ -377,8 +400,8 @@
 		#tech-header {
 			background: #D80F64;
 			color: white;
-			height: 80px;
-			line-height: 80px;
+			height: 110px;
+			line-height: 110px;
 		}
 		
 		.tech-logo-imgs {
@@ -397,7 +420,7 @@
 		
 		#footer-top,
 		#footer-mid {
-			width: 80%;
+			width: calc(100% - 200px);
 			margin: auto;
 			padding-bottom: 60px;
 			line-height: 20px;
@@ -425,7 +448,7 @@
 			position: relative;
 			text-align: center;
 			margin: auto;
-			width: 80%;
+			width: calc(100% - 200px);
 			height: 70px;
 		}
 		
@@ -460,13 +483,13 @@
 		.hr-footer {
 			height: 2px;
 			padding-bottom: 10px;
-			width: 80%;
+			width: calc(100% - 200px);
 			margin: auto;
 		}
 		
 		#footer-bottom-two {
 			position: relative;
-			width: 80%;
+			width: calc(100% - 200px);
 			margin: auto;
 			text-align: center;
 		}
@@ -608,16 +631,26 @@
 		@media all and (max-width:360px),
 		screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
 		screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
-			html, body {
-				width: 100vw;
-				overflow-x:hidden; 
+			html,
+			body {
+				width: 100%;
+				overflow-x: hidden;
 			}
 			h1 {
 				display: block;
 				text-align: center;
-				width:100%;
+				width: 100%;
 				margin-right: 0;
 				padding: 0;
+			}
+			#header-bottom {
+				position: relative;
+				padding-top: 30px;
+				bottom: 5px;
+			}
+			#product-dev-header {
+				padding: 40px 0;
+				width: 95%;
 			}
 			.product-dev-box {
 				margin-left: 0px;
@@ -631,10 +664,14 @@
 			}
 			#printer-left,
 			#printer-right {
+				position: relative;
+				left:0;
+				right:0;
 				display: inline-block;
 				height: auto;
 				width: 90%;
 				margin-top: 60px;
+				margin-bottom: 60px;
 				text-align: center;
 				vertical-align: top;
 			}
@@ -654,6 +691,7 @@
 			}
 			#printer-left-text img {
 				margin: auto;
+				display: block;
 				width: 240px;
 				height: 140px;
 				border: 2px solid white;
@@ -724,7 +762,7 @@
 				position: absolute;
 				right: 0;
 				left: 0;
-				bottom:-5px;
+				bottom: -5px;
 				margin: auto;
 			}
 			h17 {
