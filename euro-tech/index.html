@@ -186,17 +186,16 @@
 			vertical-align: top;
 		}
 		
-		
 		#printer-left-img img {
 			max-width: 100%;
 			max-height: 100%;
 		}
 		
-		#printer-left-text {
-		}
+		#printer-left-text {}
+		
 		#printer-left-text img {
 			width: 240px;
-			height:140px;
+			height: 140px;
 			border: 2px solid white;
 		}
 		
@@ -243,9 +242,11 @@
 			padding-top: 80px;
 			padding-bottom: 80px;
 		}
+		
 		#work-header {
 			margin-bottom: 40px;
 		}
+		
 		#work-header h6 {
 			color: #AB0400;
 		}
@@ -607,23 +608,58 @@
 		@media all and (max-width:360px),
 		screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
 		screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
-			#header-right {
+			html, body {
+				width: 100vw;
+				overflow-x:hidden; 
+			}
+			h1 {
 				display: block;
-				text-align: right;
-				margin-right: 10px;
+				text-align: center;
+				width:100%;
+				margin-right: 0;
+				padding: 0;
 			}
 			.product-dev-box {
 				margin-left: 0px;
 				margin-right: 0px;
 			}
+			.fa-print {
+				font-size: 29px;
+				margin-left: 5px;
+				vertical-align: middle;
+				color: white;
+			}
 			#printer-left,
 			#printer-right {
-				display: block;
+				display: inline-block;
+				height: auto;
 				width: 90%;
-				margin-top: 30px;
-				margin: auto;
+				margin-top: 60px;
 				text-align: center;
 				vertical-align: top;
+			}
+			#printer-left-img,
+			#printer-left-text {
+				position: relative;
+				width: 50%;
+				display: inline-block;
+				vertical-align: top;
+			}
+			#printer-left-img img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+			#printer-left-text {
+				width: 100%;
+			}
+			#printer-left-text img {
+				margin: auto;
+				width: 240px;
+				height: 140px;
+				border: 2px solid white;
+			}
+			.fa-long-arrow-left {
+				display: none;
 			}
 			.hr-white {
 				display: none;
@@ -641,6 +677,9 @@
 				text-align: center;
 				margin: auto;
 			}
+			#work-header {
+				padding-bottom: 50px;
+			}
 			#tech-header {
 				width: 100%;
 			}
@@ -652,6 +691,13 @@
 				margin: auto;
 				display: block;
 				border-radius: 0;
+			}
+			.t-block-left {
+				border-radius: 10px 10px 0 0;
+			}
+			.t-block-right {
+				margin-top: 10px;
+				border-radius: 0 0 10px 10px;
 			}
 			.t-block {
 				margin-top: 40px;
@@ -678,8 +724,11 @@
 				position: absolute;
 				right: 0;
 				left: 0;
+				bottom:-5px;
 				margin: auto;
-				top: 20px;
+			}
+			h17 {
+				margin-bottom: 10px;
 			}
 			#footer-bottom-two {
 				padding-bottom: 30px;
