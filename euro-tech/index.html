@@ -12,19 +12,21 @@
 	<style>
 		#header {
 			position: relative;
-			background: #F2F2F2;
+			background: #F1F0F0;
 			display: flex;
 			justify-content: space-between;
+			height: 90px;
 		}
 		
 		#logo {
-			max-height: 100px;
+			padding-left: 30px;
+			height: 90px !important;
 			display: inline-block;
-			vertical-align: top;
 		}
 		
 		#header-right {
-			width: 80vw;
+			text-align: right;
+			margin-right: 100px;
 			display: inline-block;
 		}
 		
@@ -36,6 +38,7 @@
 		h1 {
 			display: inline-block;
 			font-size: 16px;
+			font-weight: bold;
 			padding-right: 20px;
 		}
 		
@@ -46,7 +49,7 @@
 		
 		h3 {
 			display: inline;
-			font-size: 13px;
+			font-size: 12px;
 			padding-right: 3px;
 		}
 		
@@ -65,7 +68,7 @@
 		#product-dev-header {
 			text-align: center;
 			margin-bottom: 20px;
-			margin-top: 40px;
+			margin-top: 50px;
 		}
 		
 		.hr-blue {
@@ -83,38 +86,38 @@
 		}
 		
 		#product-dev-header h6 {
-			color: darkred;
+			color: #AB0400;
 		}
 		
 		h6 {
 			font-weight: normal;
-			font-size: 30px;
+			font-size: 26px;
 			display: inline;
 			vertical-align: middle;
 		}
 		
 		#product-dev-boxes {
-			max-width: 1300px;
+			max-width: 1400px;
 			margin: auto;
 			text-align: center;
 		}
 		
 		.product-dev-box {
-			margin-left: 60px;
-			margin-right: 60px;
-			padding-bottom: 30px;
+			margin-left: 90px;
+			margin-right: 90px;
+			padding-bottom: 50px;
 			display: inline-block;
 			text-align: center;
-			width: 300px;
+			width: 230px;
 		}
 		
 		.product-dev-img {
-			width: 90%;
+			width: 230px;
 			border-radius: 20px;
 		}
 		
 		h4 {
-			color: #026C78;
+			color: #27757D;
 		}
 		
 		h5 {
@@ -123,7 +126,7 @@
 		
 		.product-dev-btn {
 			font-weight: bold;
-			background: #026C78;
+			background: #27757D;
 			display: inline;
 			padding: 5px 10px;
 			border-radius: 50px;
@@ -135,14 +138,14 @@
 		}
 		
 		#printer {
-			background: #FFB812;
+			background: #FDB913;
 			text-align: center;
-			padding-top: 20px;
-			padding-bottom: 30px;
+			padding-top: 50px;
+			padding-bottom: 70px;
 		}
 		
 		#printer-header h6 {
-			color: #960008;
+			color: #AB0400;
 		}
 		
 		.fa-print {
@@ -155,8 +158,9 @@
 		#printer-left,
 		#printer-right {
 			display: inline-block;
-			width: 40%;
-			margin-top: 30px;
+			height: 240px;
+			width: 45%;
+			margin-top: 70px;
 			text-align: center;
 			vertical-align: top;
 		}
@@ -164,25 +168,29 @@
 		#printer-left-img,
 		#printer-left-text {
 			position: relative;
-			width: 40%;
+			width: 45%;
 			display: inline-block;
+			vertical-align: top;
 		}
 		
-		#printer-left-img img,
-		#printer-left-text img {
+		#printer-left-img img {
 			width: 100%;
+		}
+		#printer-left-text img {
+			height: 140px;
+			border: 2px solid white;
 		}
 		
 		.fa-long-arrow-left {
 			position: absolute;
 			left: -25px;
-			top: 20px;
-			color: #960008;
+			top: 0px;
+			color: #AB0400;
 			font-size: 28px;
 		}
 		
 		h7 {
-			color: #960008;
+			color: #AB0400;
 			font-size: 20px;
 			width: 90%;
 		}
@@ -196,7 +204,7 @@
 			color: white;
 			font-weight: bold;
 			margin-top: 10px;
-			background: #960008;
+			background: #AB0400;
 			display: inline-block;
 			border: 1px solid white;
 			border-radius: 50px;
@@ -220,7 +228,7 @@
 		}
 		
 		#work-header h6 {
-			color: #960008;
+			color: #AB0400;
 		}
 		
 		.fa-desktop {
@@ -238,9 +246,9 @@
 		}
 		
 		#about {
-			background: #760096;
-			padding-top: 30px;
-			padding-bottom: 40px;
+			background: #7B0297;
+			padding-top: 60px;
+			padding-bottom: 120px;
 			text-align: center;
 			color: white;
 		}
@@ -256,7 +264,7 @@
 		}
 		
 		#testimonials {
-			padding-top: 30px;
+			padding-top: 60px;
 			padding-bottom: 50px;
 			text-align: center;
 			background: url("https://s-media-cache-ak0.pinimg.com/originals/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg") no-repeat top;
@@ -268,13 +276,13 @@
 		}
 		
 		#testimonials-header h6 {
-			color: #960008;
+			color: #AB0400;
 		}
 		
 		.fa-comments {
 			font-size: 29px;
 			vertical-align: middle;
-			color: #C9C9C9;
+			color: #CCCCCC;
 		}
 		
 		.t-block {
@@ -289,7 +297,7 @@
 			position: relative;
 			width: 150px;
 			height: 150px;
-			background: #C9C9C9;
+			background: #CCCCCC;
 			border-radius: 10px 0 0 10px;
 		}
 		
@@ -306,7 +314,7 @@
 		
 		.t-block-left:after {
 			border-color: rgba(255, 255, 255, 0);
-			border-bottom-color: #C9C9C9;
+			border-bottom-color: #CCCCCC;
 			border-width: 19px;
 			left: 50px;
 			margin-left: -19px;
@@ -321,7 +329,7 @@
 		.t-block-right {
 			display: inline-block;
 			width: 340px;
-			background: #C9C9C9;
+			background: #CCCCCC;
 			height: 150px;
 			vertical-align: top;
 			border-radius: 0 10px 10px 0;
@@ -330,8 +338,13 @@
 		}
 		
 		h10 {
-			color: #960008;
+			color: #AB0400;
 			display: block;
+		}
+		.fablack {
+			color:black;
+			font-size: 20px;
+			padding-left: 10px;
 		}
 		
 		#tech {
@@ -339,21 +352,21 @@
 		}
 		
 		#tech-header {
-			background: #D10054;
+			background: #D80F64;
 			color: white;
-			padding: 25px 0;
+			padding: 40px 0;
 		}
 		
 		.tech-logo-imgs {
-			margin-top: 20px;
-			margin-bottom: 20px;
+			margin-top: 40px;
+			margin-bottom: 50px;
 			height: 60px;
 			display: inline-block;
 			vertical-align: bottom;
 		}
 		
 		#footer {
-			padding: 30px 0;
+			padding: 20px 0;
 			background: black;
 			color: white !important;
 		}
@@ -362,7 +375,7 @@
 		#footer-mid {
 			width: 80%;
 			margin: auto;
-			padding-bottom: 20px;
+			padding-bottom: 60px;
 			line-height: 20px;
 		}
 		
@@ -381,26 +394,34 @@
 		}
 		
 		#footer-bottom-one {
-			padding-left: 10%;
-			text-align: left;
-			width: 50%;
-			justify-content: space-between;
+			position: relative;
+			text-align: center;
+			margin: auto;
+			width: 80%;
+			height: 70px;
 		}
 		
 		h14 {
-			display: inline;
-			padding-right: 30%;
-			line-height: 0;
-			font-size: 24px;
+			position: absolute;
+			left: 0;
+			bottom:5px;
+			font-size: 20px;
 		}
 		
 		#footer-accept {
+			width: 100%;
+			margin: auto;
+			position: absolute;
+			bottom: 5px;
+			left: 0;
 			display: inline-block;
 			text-align: center;
 		}
 		
 		h15 {
 			display: block;
+			font-size: 10px;
+			padding-bottom: 20px;
 		}
 		
 		.accept-icons {
@@ -410,7 +431,7 @@
 		
 		.hr-footer {
 			height: 2px;
-			padding: 1px;
+			padding-bottom: 10px;
 			width: 80%;
 			margin: auto;
 		}
@@ -423,7 +444,7 @@
 		
 		h17 {
 			padding-left: 5px;
-			color: #960008;
+			color: #AB0400;
 		}
 		
 		.social-logo {
@@ -581,6 +602,9 @@
 				width:80%;
 				text-align: center;
 				margin:auto;
+			}
+			#tech-header {
+				width: 100%;
 			}
 			.t-block-right, .t-block-left, .t-block {
 				width:90vw;
@@ -808,14 +832,14 @@
 		<div class="t-block">
 			<div class="t-block-left"><img src="https://photos.smugmug.com/Portraits-and-Headshots/Portraits-and-Headshots/i-DkW6zWc/0/L/HAL_6173%20Chris%20Bubacz%20headshot%20s2%20square%20crop-L.jpg" alt=""></div>
 			<div class="t-block-right">
-				<h10>MR / Steve Joe</h10>
+				<h10>MR / Steve Joe <i class="fa fa-comments fablack"></i></h10>
 				<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
 			</div>
 		</div>
 		<div class="t-block">
 			<div class="t-block-left"><img src="https://photos.smugmug.com/Portraits-and-Headshots/Portraits-and-Headshots/i-DkW6zWc/0/L/HAL_6173%20Chris%20Bubacz%20headshot%20s2%20square%20crop-L.jpg" alt=""></div>
 			<div class="t-block-right">
-				<h10>MR / Steve Joe</h10>
+				<h10>MR / Steve Joe <i class="fa fa-comments fablack"></i></h10>
 				<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
 			</div>
 		</div>
