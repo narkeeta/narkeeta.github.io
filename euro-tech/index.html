@@ -129,8 +129,9 @@
 			border-radius: 50px;
 			color: white;
 		}
+		
 		.product-dev-btn:hover {
-			cursor:pointer;
+			cursor: pointer;
 		}
 		
 		#printer {
@@ -201,6 +202,7 @@
 			border-radius: 50px;
 			padding: 3px 8px;
 		}
+		
 		#printer-btn:hover {
 			cursor: pointer;
 		}
@@ -474,11 +476,13 @@
 		}
 		
 		.slide img {
-			width: 100%;
+			min-width: 100%;
+			min-height: 80vh;
 		}
 		
 		.nav label {
 			width: 200px;
+			max-width: 50%;
 			height: 100%;
 			display: none;
 			position: absolute;
@@ -549,6 +553,45 @@
 		input#img-5:checked ~ .nav-dots label#img-dot-5,
 		input#img-6:checked ~ .nav-dots label#img-dot-6 {
 			background: rgba(0, 0, 0, 0.8);
+		}
+		
+		@media all and (max-width:360px),
+		screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
+		screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
+			.product-dev-box {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+			#printer-left,
+			#printer-right {
+				display:block;
+				width: 90%;
+				margin-top: 30px;
+				margin:auto;
+				text-align: center;
+				vertical-align: top;
+			}
+			.hr-white {
+				display: none;
+			}
+			.hr-blue {
+				display: none;
+			}
+			#printer-header, #product-dev-header, #work-header, #about-header, #testimonials-header, #tech-header {
+				width:80%;
+				text-align: center;
+				margin:auto;
+			}
+			.t-block-right, .t-block-left, .t-block {
+				width:90vw;
+				margin-bottom: 20px;
+				margin:auto;
+				display: block;
+				border-radius: 0;
+			}
+			.t-block {
+				margin-top:40px;
+			}
 		}
 
 	</style>
