@@ -13,8 +13,6 @@
 		#header {
 			position: relative;
 			background: #F1F0F0;
-			display: flex;
-			justify-content: space-between;
 			min-height: 102;
 		}
 		
@@ -26,6 +24,9 @@
 		
 		#header-right {
 			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 0;
 			text-align: right;
 			margin-right: 100px;
 		}
@@ -88,11 +89,13 @@
 		#product-dev-header h6 {
 			color: #AB0400;
 		}
+		
 		.fa-cogs {
 			font-size: 48px;
 			color: grey;
 			vertical-align: middle;
 		}
+		
 		h6 {
 			font-weight: normal;
 			font-size: 26px;
@@ -180,6 +183,7 @@
 		#printer-left-img img {
 			width: 100%;
 		}
+		
 		#printer-left-text img {
 			height: 140px;
 			border: 2px solid white;
@@ -345,8 +349,9 @@
 			color: #AB0400;
 			display: block;
 		}
+		
 		.fablack {
-			color:black;
+			color: black;
 			font-size: 20px;
 			padding-left: 10px;
 		}
@@ -408,7 +413,7 @@
 		h14 {
 			position: absolute;
 			left: 0;
-			bottom:5px;
+			bottom: 5px;
 			font-size: 20px;
 		}
 		
@@ -583,16 +588,21 @@
 		@media all and (max-width:360px),
 		screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
 		screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
+			#header-right {
+				display: block;
+				text-align: right;
+				margin-right: 10px;
+			}
 			.product-dev-box {
 				margin-left: 0px;
 				margin-right: 0px;
 			}
 			#printer-left,
 			#printer-right {
-				display:block;
+				display: block;
 				width: 90%;
 				margin-top: 30px;
-				margin:auto;
+				margin: auto;
 				text-align: center;
 				vertical-align: top;
 			}
@@ -602,23 +612,42 @@
 			.hr-blue {
 				display: none;
 			}
-			#printer-header, #product-dev-header, #work-header, #about-header, #testimonials-header, #tech-header {
-				width:80%;
+			#printer-header,
+			#product-dev-header,
+			#work-header,
+			#about-header,
+			#testimonials-header,
+			#tech-header {
+				width: 80%;
 				text-align: center;
-				margin:auto;
+				margin: auto;
 			}
 			#tech-header {
 				width: 100%;
 			}
-			.t-block-right, .t-block-left, .t-block {
-				width:90vw;
+			.t-block-right,
+			.t-block-left,
+			.t-block {
+				width: 90vw;
 				margin-bottom: 20px;
-				margin:auto;
+				margin: auto;
 				display: block;
 				border-radius: 0;
 			}
 			.t-block {
-				margin-top:40px;
+				margin-top: 40px;
+			}
+		}
+		
+		@media only screen and (max-width: 830px) {
+			#header-right {
+				display: inline-block;
+				position: relative;
+				right: 0;
+				top: 0;
+				width: 100%;
+				text-align: right;
+				margin-right: 100px;
 			}
 		}
 
