@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Euro Tech</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<style>
+		#header {
+			position: relative;
+			background: #F2F2F2;
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		#logo {
+			max-height: 100px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		#header-right {
+			width: 80vw;
+			display: inline-block;
+		}
+		
+		#header-bottom,
+		#header-top {
+			text-align: center;
+		}
+		
+		h1 {
+			display: inline-block;
+			font-size: 16px;
+			padding-right: 20px;
+		}
+		
+		h2 {
+			display: inline;
+			font-size: 12px;
+		}
+		
+		h3 {
+			display: inline;
+			font-size: 13px;
+			padding-right: 3px;
+		}
+		
+		h3:hover,
+		h3:active,
+		h2:hover,
+		h2:active {
+			color: red;
+			cursor: pointer;
+		}
+		
+		.slider-imgs {
+			width: 100%;
+		}
+		
+		#product-dev-header {
+			text-align: center;
+			margin-bottom: 20px;
+			margin-top: 40px;
+		}
+		
+		.hr-blue {
+			display: inline-block;
+			width: 40px;
+			border-color: #026C78;
+			vertical-align: middle;
+		}
+		
+		.hr-white {
+			display: inline-block;
+			width: 40px;
+			border-color: white;
+			vertical-align: middle;
+		}
+		
+		#product-dev-header h6 {
+			color: darkred;
+		}
+		
+		h6 {
+			font-weight: normal;
+			font-size: 30px;
+			display: inline;
+			vertical-align: middle;
+		}
+		
+		#product-dev-boxes {
+			max-width: 1300px;
+			margin: auto;
+			text-align: center;
+		}
+		
+		.product-dev-box {
+			margin-left: 60px;
+			margin-right: 60px;
+			padding-bottom: 30px;
+			display: inline-block;
+			text-align: center;
+			width: 300px;
+		}
+		
+		.product-dev-img {
+			width: 90%;
+			border-radius: 20px;
+		}
+		
+		h4 {
+			color: #026C78;
+		}
+		
+		h5 {
+			font-weight: normal;
+		}
+		
+		.product-dev-btn {
+			font-weight: bold;
+			background: #026C78;
+			display: inline;
+			padding: 5px 10px;
+			border-radius: 50px;
+			color: white;
+		}
+		
+		#printer {
+			background: #FFB812;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+		
+		#printer-header h6 {
+			color: #960008;
+		}
+		
+		.fa-print {
+			font-size: 29px;
+			margin-left: 5px;
+			vertical-align: middle;
+			color: white;
+		}
+		
+		#printer-left,
+		#printer-right {
+			display: inline-block;
+			width: 40%;
+			margin-top: 30px;
+			text-align: center;
+			vertical-align: top;
+		}
+		
+		#printer-left-img,
+		#printer-left-text {
+			position: relative;
+			width: 40%;
+			display: inline-block;
+		}
+		
+		#printer-left-img img,
+		#printer-left-text img {
+			width: 100%;
+		}
+		
+		.fa-long-arrow-left {
+			position: absolute;
+			left: -25px;
+			top: 20px;
+			color: #960008;
+			font-size: 28px;
+		}
+		
+		h7 {
+			color: #960008;
+			font-size: 20px;
+			width: 90%;
+		}
+		
+		h8 {
+			text-align: left;
+			display: block;
+		}
+		
+		#printer-btn {
+			color: white;
+			font-weight: bold;
+			margin-top: 10px;
+			background: #960008;
+			display: inline-block;
+			border: 1px solid white;
+			border-radius: 50px;
+			padding: 3px 8px;
+		}
+		
+		#work {
+			text-align: center;
+			max-width: 900px;
+			margin: auto;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		
+		#work-header {
+			padding-bottom: 20px;
+		}
+		
+		#work-header h6 {
+			color: #960008;
+		}
+		
+		.fa-desktop {
+			color: grey;
+			font-size: 29px;
+			vertical-align: middle;
+			padding-left: 10px;
+		}
+		
+		.work-img {
+			width: 300px;
+			margin-right: -2px;
+			margin-left: -2px;
+			border: none;
+		}
+		
+		#about {
+			background: #760096;
+			padding-top: 30px;
+			padding-bottom: 40px;
+			text-align: center;
+			color: white;
+		}
+		
+		#about-header {
+			padding-bottom: 20px;
+		}
+		
+		#about-text {
+			width: 80%;
+			margin: auto;
+			line-height: 30px;
+		}
+		
+		#testimonials {
+			padding-top: 30px;
+			padding-bottom: 50px;
+			text-align: center;
+			background: url("https://s-media-cache-ak0.pinimg.com/originals/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg") no-repeat top;
+			background-size: cover;
+		}
+		
+		#testimonials-header {
+			margin-bottom: 30px;
+		}
+		
+		#testimonials-header h6 {
+			color: #960008;
+		}
+		
+		.fa-comments {
+			font-size: 29px;
+			vertical-align: middle;
+			color: #C9C9C9;
+		}
+		
+		.t-block {
+			margin-bottom: 30px;
+			width: 500px;
+			display: inline-block;
+		}
+		
+		.t-block-left {
+			display: inline-block;
+			top: 0px;
+			position: relative;
+			width: 150px;
+			height: 150px;
+			background: #C9C9C9;
+			border-radius: 10px 0 0 10px;
+		}
+		
+		.t-block-left:after,
+		.t-block-left:before {
+			bottom: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+		
+		.t-block-left:after {
+			border-color: rgba(255, 255, 255, 0);
+			border-bottom-color: #C9C9C9;
+			border-width: 19px;
+			left: 50px;
+			margin-left: -19px;
+		}
+		
+		.t-block-left img {
+			margin: 25px auto;
+			height: 100px;
+			border-radius: 50px;
+		}
+		
+		.t-block-right {
+			display: inline-block;
+			width: 340px;
+			background: #C9C9C9;
+			height: 150px;
+			vertical-align: top;
+			border-radius: 0 10px 10px 0;
+			padding: 10px;
+			text-align: left;
+		}
+		
+		h10 {
+			color: #960008;
+			display: block;
+		}
+		
+		#tech {
+			text-align: center;
+		}
+		
+		#tech-header {
+			background: #D10054;
+			color: white;
+			padding: 25px 0;
+		}
+		
+		.tech-logo-imgs {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			height: 60px;
+			display: inline-block;
+			vertical-align: bottom;
+		}
+		
+		#footer {
+			padding: 30px 0;
+			background: black;
+			color: white !important;
+		}
+		
+		#footer-top,
+		#footer-mid {
+			width: 80%;
+			margin: auto;
+			padding-bottom: 20px;
+			line-height: 20px;
+		}
+		
+		#footer-top a,
+		#footer-mid a {
+			line-height: 40px;
+			padding-right: 10px;
+			color: white;
+			text-decoration: none;
+		}
+		
+		#footer-top a:hover,
+		#footer-mid a:hover {
+			color: lightgrey;
+			text-decoration: none;
+		}
+		
+		#footer-bottom-one {
+			padding-left: 10%;
+			text-align: left;
+			width: 50%;
+			justify-content: space-between;
+		}
+		
+		h14 {
+			display: inline;
+			padding-right: 30%;
+			line-height: 0;
+			font-size: 24px;
+		}
+		
+		#footer-accept {
+			display: inline-block;
+			text-align: center;
+		}
+		
+		h15 {
+			display: block;
+		}
+		
+		.accept-icons {
+			height: 20px;
+			padding-bottom: 4px;
+		}
+		
+		.hr-footer {
+			height: 2px;
+			padding: 1px;
+			width: 80%;
+			margin: auto;
+		}
+		
+		#footer-bottom-two {
+			width: 80%;
+			margin: auto;
+			text-align: center;
+		}
+		
+		h17 {
+			padding-left: 5px;
+			color: #960008;
+		}
+		
+		.social-logo {
+			height: 20px;
+		}
+		
+		#social-btns {
+			display: inline-block;
+			position: absolute;
+			right: 10%;
+		}
+		
+		.slides {
+			padding: 0;
+			width: 100%;
+			height: 60vw;
+			height: 80vh;
+			display: block;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		.slides * {
+			user-select: none;
+			-ms-user-select: none;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+		}
+		
+		.slides input {
+			display: none;
+		}
+		
+		.slide-container {
+			display: block;
+		}
+		
+		.slide {
+			top: 0;
+			opacity: 0;
+			width: 100%;
+			height: 80vh;
+			overflow: hidden;
+			display: block;
+			position: absolute;
+			transform: scale(0);
+			transition: all .7s ease-in-out;
+		}
+		
+		.slide img {
+			width: 100%;
+		}
+		
+		.nav label {
+			width: 200px;
+			height: 100%;
+			display: none;
+			position: absolute;
+			opacity: 0;
+			z-index: 9;
+			cursor: pointer;
+			transition: opacity .2s;
+			color: #FFF;
+			font-size: 56px;
+			text-align: center;
+			line-height: 80vh;
+			font-family: "Varela Round", sans-serif;
+			background-color: rgba(255, 255, 255, .3);
+			text-shadow: 0px 0px 15px rgb(119, 119, 119);
+		}
+		
+		.slide:hover + .nav label {
+			opacity: 0.5;
+		}
+		
+		.nav label:hover {
+			opacity: 1;
+		}
+		
+		.nav .next {
+			right: 0;
+		}
+		
+		input:checked + .slide-container .slide {
+			opacity: 1;
+			transform: scale(1);
+			transition: opacity 1s ease-in-out;
+		}
+		
+		input:checked + .slide-container .nav label {
+			display: block;
+		}
+		
+		.nav-dots {
+			width: 100%;
+			bottom: 9px;
+			height: 11px;
+			display: block;
+			position: absolute;
+			text-align: center;
+		}
+		
+		.nav-dots .nav-dot {
+			top: -5px;
+			width: 11px;
+			height: 11px;
+			margin: 0 4px;
+			position: relative;
+			border-radius: 100%;
+			display: inline-block;
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		
+		.nav-dots .nav-dot:hover {
+			cursor: pointer;
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+		
+		input#img-1:checked ~ .nav-dots label#img-dot-1,
+		input#img-2:checked ~ .nav-dots label#img-dot-2,
+		input#img-3:checked ~ .nav-dots label#img-dot-3,
+		input#img-4:checked ~ .nav-dots label#img-dot-4,
+		input#img-5:checked ~ .nav-dots label#img-dot-5,
+		input#img-6:checked ~ .nav-dots label#img-dot-6 {
+			background: rgba(0, 0, 0, 0.8);
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id='header'>
+		<img id='logo' src="www.narkeeta.github.io/euro-tech/Euro-Tech-Logo.jpg">
+		<div id="header-right">
+			<div id='header-top'>
+				<h1>Telephone: 0161 850 2266</h1>
+				<h2>Healthcare ERP</h2>
+				<h2>Portfolio</h2>
+				<h2>Partners</h2>
+				<h2>Support</h2>
+			</div>
+			<div id="header-bottom">
+				<h3>Home</h3>
+				<h3>Services</h3>
+				<h3>Web Development</h3>
+				<h3>Mobile Apps</h3>
+				<h3>ERP</h3>
+				<h3>POS Software</h3>
+				<h3>Quote</h3>
+				<h3>Contact</h3>
+			</div>
+		</div>
+	</div>
+
+	<ul class="slides">
+		<input type="radio" name="radio-btn" id="img-1" checked />
+		<li class="slide-container">
+			<div class="slide">
+				<img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+			</div>
+			<div class="nav">
+				<label for="img-6" class="prev">◀</label>
+				<label for="img-2" class="next">▶</label>
+			</div>
+		</li>
+
+		<input type="radio" name="radio-btn" id="img-2" />
+		<li class="slide-container">
+			<div class="slide">
+				<img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+			</div>
+			<div class="nav">
+				<label for="img-1" class="prev">◀</label>
+				<label for="img-3" class="next">▶</label>
+			</div>
+		</li>
+
+		<input type="radio" name="radio-btn" id="img-3" />
+		<li class="slide-container">
+			<div class="slide">
+				<img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+			</div>
+			<div class="nav">
+				<label for="img-2" class="prev">◀</label>
+				<label for="img-4" class="next">▶</label>
+			</div>
+		</li>
+
+		<input type="radio" name="radio-btn" id="img-4" />
+		<li class="slide-container">
+			<div class="slide">
+				<img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+			</div>
+			<div class="nav">
+				<label for="img-3" class="prev">◀</label>
+				<label for="img-5" class="next">▶</label>
+			</div>
+		</li>
+
+		<input type="radio" name="radio-btn" id="img-5" />
+		<li class="slide-container">
+			<div class="slide">
+				<img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+			</div>
+			<div class="nav">
+				<label for="img-4" class="prev">◀</label>
+				<label for="img-6" class="next">▶</label>
+			</div>
+		</li>
+
+		<input type="radio" name="radio-btn" id="img-6" />
+		<li class="slide-container">
+			<div class="slide">
+				<img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+			</div>
+			<div class="nav">
+				<label for="img-5" class="prev">◀</label>
+				<label for="img-1" class="next">▶</label>
+			</div>
+		</li>
+
+		<li class="nav-dots">
+			<label for="img-1" class="nav-dot" id="img-dot-1"></label>
+			<label for="img-2" class="nav-dot" id="img-dot-2"></label>
+			<label for="img-3" class="nav-dot" id="img-dot-3"></label>
+			<label for="img-4" class="nav-dot" id="img-dot-4"></label>
+			<label for="img-5" class="nav-dot" id="img-dot-5"></label>
+			<label for="img-6" class="nav-dot" id="img-dot-6"></label>
+		</li>
+	</ul>
+
+
+	<div id="product-dev">
+		<div id="product-dev-header">
+			<hr class="hr-blue">
+			<h6>Product Development</h6>
+			<i class="fa fa-cogs"></i>
+			<hr class="hr-blue">
+		</div>
+		<div id="product-dev-boxes">
+			<div class="product-dev-box">
+				<img src="https://hd.unsplash.com/photo-1470378639897-89788e74b7bf" alt="" class="product-dev-img">
+				<h4>Schools Software</h4>
+				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+				<div class="product-dev-btn">Read More...</div>
+			</div>
+			<div class="product-dev-box">
+				<img src="https://hd.unsplash.com/photo-1470378639897-89788e74b7bf" alt="" class="product-dev-img">
+				<h4>Hospitals</h4>
+				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+				<div class="product-dev-btn">Read More...</div>
+			</div>
+			<div class="product-dev-box">
+				<img src="https://hd.unsplash.com/photo-1470378639897-89788e74b7bf" alt="" class="product-dev-img">
+				<h4>ERP</h4>
+				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+				<div class="product-dev-btn">Read More...</div>
+			</div>
+			<div class="product-dev-box">
+				<img src="https://hd.unsplash.com/photo-1470378639897-89788e74b7bf" alt="" class="product-dev-img">
+				<h4>Restaurant POS</h4>
+				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+				<div class="product-dev-btn">Read More...</div>
+			</div>
+			<div class="product-dev-box">
+				<img src="https://hd.unsplash.com/photo-1470378639897-89788e74b7bf" alt="" class="product-dev-img">
+				<h4>Hotels</h4>
+				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+				<div class="product-dev-btn">Read More...</div>
+			</div>
+			<div class="product-dev-box">
+				<img src="https://hd.unsplash.com/photo-1470378639897-89788e74b7bf" alt="" class="product-dev-img">
+				<h4>Online Food Order</h4>
+				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+				<div class="product-dev-btn">Read More...</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="printer">
+		<div id="printer-header">
+			<hr class="hr-white">
+			<h6>GPRS/SMS PRINTER</h6>
+			<i class="fa fa-print"></i>
+			<hr class="hr-white">
+		</div>
+		<div id="printer-left">
+			<div id="printer-left-img">
+				<img src="http://truemerchant.victorymerchants.netdna-cdn.com/wp-content/uploads/2015/10/pax-s80-creditcard-machine.png" alt="">
+			</div>
+			<div id="printer-left-text">
+				<i class="fa fa-long-arrow-left"></i>
+				<h7>For Online Food Ordering</h7>
+				<img src="http://images.apple.com/ca/ipad/business/profiles/carmel-cafe/images/sidebar_menu_app.jpg">
+			</div>
+		</div>
+		<div id="printer-right">
+			<h8>We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers.</h8>
+			<div id="printer-btn">Read More...</div>
+		</div>
+	</div>
+
+	<div id="work">
+		<div id="work-header">
+			<hr class="hr-blue">
+			<h6>Some Work</h6>
+			<i class="fa fa-desktop"></i>
+			<hr class="hr-blue">
+		</div>
+		<div id="work-images">
+			<a href="#"><img src="http://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Digital%20globalization%20The%20new%20era%20of%20global%20flows/MGIGlobalFlows1536x1536_Standard_Standard.ashx?mw=768&car=16:9" alt="" class="work-img"></a>
+			<a href="#"><img src="http://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Digital%20globalization%20The%20new%20era%20of%20global%20flows/MGIGlobalFlows1536x1536_Standard_Standard.ashx?mw=768&car=16:9" alt="" class="work-img"></a>
+			<a href="#"><img src="http://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Digital%20globalization%20The%20new%20era%20of%20global%20flows/MGIGlobalFlows1536x1536_Standard_Standard.ashx?mw=768&car=16:9" alt="" class="work-img"></a>
+			<a href="#"><img src="http://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Digital%20globalization%20The%20new%20era%20of%20global%20flows/MGIGlobalFlows1536x1536_Standard_Standard.ashx?mw=768&car=16:9" alt="" class="work-img"></a>
+			<a href="#"><img src="http://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Digital%20globalization%20The%20new%20era%20of%20global%20flows/MGIGlobalFlows1536x1536_Standard_Standard.ashx?mw=768&car=16:9" alt="" class="work-img"></a>
+			<a href="#"><img src="http://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Digital%20globalization%20The%20new%20era%20of%20global%20flows/MGIGlobalFlows1536x1536_Standard_Standard.ashx?mw=768&car=16:9" alt="" class="work-img"></a>
+
+		</div>
+	</div>
+
+	<div id="about">
+		<div id="about-header">
+			<hr class="hr-white">
+			<h6>Welcome To euro Tecnology</h6>
+			<hr class="hr-white">
+		</div>
+		<div id="about-text">
+			<h9>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable english. It is a long established fact that a reader will be distracted by the readable content of a page when looking</h9>
+		</div>
+	</div>
+
+	<div id="testimonials">
+		<div id="testimonials-header">
+			<hr class="hr-blue">
+			<h6>Testimonials</h6>
+			<i class="fa fa-comments"></i>
+			<hr class="hr-blue">
+		</div>
+		<div class="t-block">
+			<div class="t-block-left"><img src="https://photos.smugmug.com/Portraits-and-Headshots/Portraits-and-Headshots/i-DkW6zWc/0/L/HAL_6173%20Chris%20Bubacz%20headshot%20s2%20square%20crop-L.jpg" alt=""></div>
+			<div class="t-block-right">
+				<h10>MR / Steve Joe</h10>
+				<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
+			</div>
+		</div>
+		<div class="t-block">
+			<div class="t-block-left"><img src="https://photos.smugmug.com/Portraits-and-Headshots/Portraits-and-Headshots/i-DkW6zWc/0/L/HAL_6173%20Chris%20Bubacz%20headshot%20s2%20square%20crop-L.jpg" alt=""></div>
+			<div class="t-block-right">
+				<h10>MR / Steve Joe</h10>
+				<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
+			</div>
+		</div>
+	</div>
+
+	<div id="tech">
+		<div id="tech-header">
+			<hr class="hr-white">
+			<h6>Some Technologies We Use</h6>
+			<hr class="hr-white">
+		</div>
+		<div id="tech-logos">
+			<img src="https://www.mageewp.com/wp-content/uploads/2015/07/wordpress-logo-680x400.png" alt="" class="tech-logo-imgs">
+			<img src="http://www.ecinternet.com/wp-content/uploads/2015/10/drupal-logo-big.png" alt="" class="tech-logo-imgs">
+			<img src="https://www.gamthemes.com/wp-content/uploads/2014/05/logo1.png" alt="" class="tech-logo-imgs">
+			<img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/12/1418614449magento-ecommerce-square-logo.png" alt="" class="tech-logo-imgs">
+			<img src="http://www.mediawonderz.com/images/PHPMySQL_logo.png" alt="" class="tech-logo-imgs">
+			<img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/052011/microsoft_.net_.png?itok=yeSwxY-i" alt="" class="tech-logo-imgs">
+			<img src="http://devstickers.com/assets/img/pro/2p4i.png" alt="" class="tech-logo-imgs">
+			<img src="https://northerncomputer.ca/wp-content/uploads/2015/08/msdynamics.png" alt="" class="tech-logo-imgs">
+			<img src="http://vignette2.wikia.nocookie.net/logopedia/images/2/26/Apple_2003_logo.png/revision/latest?cb=20121102224024" alt="" class="tech-logo-imgs">
+			<img src="http://famouslogos.net/images/android-logo.jpg" alt="" class="tech-logo-imgs">
+			<img src="https://upload.wikimedia.org/wikipedia/de/8/8c/Microsoft_SQL_Server_Logo.svg" alt="" class="tech-logo-imgs">
+			<img src="" alt="" class="tech-logo-imgs">
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="footer-top">
+			<a href="#">
+				<h12>Home</h12>
+			</a>
+			<a href="#">
+				<h12>About</h12>
+			</a>
+			<a href="#">
+				<h12>Services</h12>
+			</a>
+			<a href="#">
+				<h12>Web Development</h12>
+			</a>
+			<a href="#">
+				<h12>Mobile Apps</h12>
+			</a>
+			<a href="#">
+				<h12>ERP</h12>
+			</a>
+			<a href="#">
+				<h12>POS Software</h12>
+			</a>
+			<a href="#">
+				<h12>Support</h12>
+			</a>
+			<a href="#">
+				<h12>Contact Us</h12>
+			</a>
+			<a href="#">
+				<h12>Quotes</h12>
+			</a>
+			<a href="#">
+				<h12>Partnerships</h12>
+			</a>
+			<a href="#">
+				<h12>Healthcare ERP</h12>
+			</a>
+			<a href="#">
+				<h12>Portfolio</h12>
+			</a>
+			<a href="#">
+				<h12>Sitemap</h12>
+			</a>
+			<a href="#">
+				<h12>Terms and Conditions</h12>
+			</a>
+		</div>
+		<div id="footer-mid">
+			<a href="">
+				<h13>Restaurant POS Software</h13>
+			</a>
+			<a href="">
+				<h13>Retail Supermarket ERP</h13>
+			</a>
+			<a href="">
+				<h13>Hotel ERP</h13>
+			</a>
+			<a href="">
+				<h13>School ERP</h13>
+			</a>
+			<a href="">
+				<h13>Management ERP Apps</h13>
+			</a>
+			<a href="">
+				<h13>Hospital ERP</h13>
+			</a>
+			<a href="">
+				<h13>Pharmacy Software</h13>
+			</a>
+			<a href="">
+				<h13>Manufacturing</h13>
+			</a>
+			<a href="">
+				<h13>ERP Warehouse Management</h13>
+			</a>
+			<a href="">
+				<h13>Business Management</h13>
+			</a>
+			<a href="">
+				<h13>Hr Payrol</h13>
+			</a>
+			<a href="">
+				<h13>Accounting Software</h13>
+			</a>
+			<a href="">
+				<h13>Inventory Software</h13>
+			</a>
+		</div>
+		<div id="footer-bottom">
+			<div id="footer-bottom-one">
+				<h14>We use Cookies</h14>
+				<div id="footer-accept">
+					<h15>We Accept:</h15>
+					<img src="http://blog.newzealandartwork.com/wp-content/uploads/2013/04/Visa-MasterCard-American-Express-PayPal-Logo-Sofia-Minson-Painting-New-Zealand-Artwork.jpg" alt="" class="accept-icons">
+				</div>
+			</div>
+			<hr class="hr-footer">
+			<div id="footer-bottom-two">
+				<h16>All Copyrights<i class="fa fa-copyright"></i> 2016 reserved to</h16>
+				<h17>euro Technology</h17>
+				<div id="social-btns">
+					<a href="#"><img src="http://www.duels.ucsb.edu/sites/secure.lsit.ucsb.edu.ltsc.d7_uged/themes/at_lsit/images/department/socialmedia/PinterestLogo.png" class='social-logo'></a>
+					<a href="#"><img src="http://icons.iconarchive.com/icons/martz90/circle/256/google-plus-icon.png" class='social-logo'></a>
+					<a href="#"><img src="http://www.freeiconspng.com/uploads/twitter-icon--basic-round-social-iconset--s-icons-0.png" class='social-logo'></a>
+					<a href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-circle/512/social_3-512.png" class='social-logo'></a>
+					<a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/youtube_circle-512.png" class='social-logo'></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
