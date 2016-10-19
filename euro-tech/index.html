@@ -114,9 +114,18 @@
 		}
 		
 		#product-dev-boxes {
-			max-width: 1400px;
+			width: 100%;
 			padding-bottom: 30px;
 			margin: auto;
+			text-align: center;
+		}
+		
+		#dev-boxes-one {
+			width: calc(100% - 180px);
+			margin: auto;
+			height: auto;
+			min-height: 320px;
+			position: relative;
 			text-align: center;
 		}
 		
@@ -127,6 +136,30 @@
 			display: inline-block;
 			text-align: center;
 			width: 230px;
+		}
+		
+		.db1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			margin: auto;
+		}
+		
+		.db2 {
+			position: absolute;
+			height: 300px;
+			width: 240px;
+			margin: auto;
+			right: 0;
+			left: 0;
+			top: 0;
+		}
+		
+		.db3 {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin: auto;
 		}
 		
 		.product-dev-img {
@@ -174,6 +207,13 @@
 			margin-left: 5px;
 			vertical-align: middle;
 			color: white;
+		}
+		
+		#printers-wrap {
+			width: calc(100% - 180px);
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
 		}
 		
 		#printer-left,
@@ -244,7 +284,6 @@
 		
 		#work {
 			text-align: center;
-			max-width: 1080px;
 			margin: auto;
 			padding-top: 80px;
 			padding-bottom: 80px;
@@ -265,9 +304,16 @@
 			padding-left: 10px;
 		}
 		
+		#work-images {
+			width: calc(100% - 180px);
+			margin: auto;
+		}
+		
 		.work-img {
-			width: 350px;
-			height: 200px;
+			width: calc((100vw - 180px) / 3);
+			height: calc(((100vw - 180px) / 3) * .57);
+			min-width: 300px;
+			min-height: 200px;
 			margin-right: -2px;
 			margin-left: -2px;
 			border: none;
@@ -314,10 +360,27 @@
 			color: #CCCCCC;
 		}
 		
+		.t-blocks {
+			width: calc(100% - 180px);
+			margin: auto;
+			height: 200px;
+			position: relative;
+		}
+		
 		.t-block {
 			margin-bottom: 30px;
 			width: 550px;
 			display: inline-block;
+		}
+		
+		.t-block-1 {
+			position: absolute;
+			left: 0;
+		}
+		
+		.t-block-2 {
+			position: absolute;
+			right: 0;
 		}
 		
 		.t-block-left {
@@ -387,6 +450,13 @@
 			color: white;
 			height: 110px;
 			line-height: 110px;
+		}
+		
+		#tech-logos {
+			width: calc(100% - 180px);
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
 		}
 		
 		.tech-logo-imgs {
@@ -539,7 +609,7 @@
 		}
 		
 		.nav label {
-			width: 200px;
+			width: 100%;
 			max-width: 50%;
 			height: 100%;
 			display: none;
@@ -553,7 +623,7 @@
 			text-align: center;
 			line-height: 420px;
 			font-family: "Varela Round", sans-serif;
-			background-color: rgba(255, 255, 255, .3);
+			background-color: rgba(255, 255, 255, 0);
 			text-shadow: 0px 0px 15px rgb(119, 119, 119);
 		}
 		
@@ -613,13 +683,22 @@
 			background: rgba(0, 0, 0, 0.8);
 		}
 		
-		@media all and (max-width:360px),
-		screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
-		screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
+		@media only screen and (max-width: 768px) {
 			html,
 			body {
 				width: 100%;
 				overflow-x: hidden;
+			}
+			#printers-wrap {
+				width: 100%;
+				margin: auto;
+				display: inline-block;
+			}
+			#tech-logos {
+				width: 100%;
+				margin: auto;
+				display: inline-block;
+				justify-content: space-between;
 			}
 			h1 {
 				display: block;
@@ -629,10 +708,13 @@
 				padding: 0;
 			}
 			#footer-top,
-			#footer-mid,#footer-bottom-one, .hr-footer, #footer-bottom-two {
-				width:90%;
-				margin:auto;
-			} 
+			#footer-mid,
+			#footer-bottom-one,
+			.hr-footer,
+			#footer-bottom-two {
+				width: 90%;
+				margin: auto;
+			}
 			#about-text {
 				width: 90%;
 				padding: 0;
@@ -770,6 +852,13 @@
 			#footer-bottom-two {
 				padding-bottom: 30px;
 			}
+			.t-blocks {
+				width: 100%;
+				height: auto;
+			}
+			#testimonials {
+				height: 830px;
+			}
 		}
 		
 		@media only screen and (max-width: 1030px) {
@@ -784,6 +873,64 @@
 			}
 			h1 {
 				display: block;
+			}
+			
+			
+			#logo {
+				margin: auto;
+			}
+			#header-bottom {
+				position: relative;
+				padding-top: 30px;
+				bottom: 5px;
+			}
+			
+			.product-dev-boxes {
+				margin-left: 90px;
+				margin-right: 90px;
+				padding-bottom: 50px;
+				display: inline-block;
+				text-align: center;
+				width: 230px;
+			}
+			#dev-boxes-one {
+				width: 100%;
+				height: inherit;
+			}
+			.db1 {
+				position: relative;
+				left: 0;
+				top: 0;
+				margin: 0 90px;
+			}
+			.db2 {
+				position: relative;
+				height: 300px;
+				width: 230px;
+				margin: 0 90px;
+				right: 0;
+				left: 0;
+				top: 0;
+			}
+			.db3 {
+				position: relative;
+				right: 0;
+				top: 0;
+				margin: 0 90px;
+			}
+		}
+		
+		@media only screen and (max-width: 1250px) {
+			.t-blocks {
+				height: 400px;
+			}
+			.t-block-1 {
+				position: relative;
+				left: 0;
+			}
+			.t-block-2 {
+				position: relative;
+				right: 0;
 			}
 		}
 
@@ -821,7 +968,6 @@
 				<img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
 			</div>
 			<div class="nav">
-				<label for="img-6" class="prev"></label>
 				<label for="img-2" class="next"></label>
 			</div>
 		</li>
@@ -832,7 +978,6 @@
 				<img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
 			</div>
 			<div class="nav">
-				<label for="img-1" class="prev"></label>
 				<label for="img-3" class="next"></label>
 			</div>
 		</li>
@@ -843,7 +988,6 @@
 				<img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
 			</div>
 			<div class="nav">
-				<label for="img-2" class="prev"></label>
 				<label for="img-4" class="next"></label>
 			</div>
 		</li>
@@ -854,7 +998,6 @@
 				<img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
 			</div>
 			<div class="nav">
-				<label for="img-3" class="prev"></label>
 				<label for="img-5" class="next"></label>
 			</div>
 		</li>
@@ -865,7 +1008,6 @@
 				<img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
 			</div>
 			<div class="nav">
-				<label for="img-4" class="prev"></label>
 				<label for="img-6" class="next"></label>
 			</div>
 		</li>
@@ -876,7 +1018,6 @@
 				<img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
 			</div>
 			<div class="nav">
-				<label for="img-5" class="prev"></label>
 				<label for="img-1" class="next"></label>
 			</div>
 		</li>
@@ -900,41 +1041,45 @@
 			<hr class="hr-blue">
 		</div>
 		<div id="product-dev-boxes">
-			<div class="product-dev-box">
-				<img src="https://narkeeta.github.io/euro-tech/images/product_development/img1.jpg" alt="" class="product-dev-img">
-				<h4>Schools Software</h4>
-				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
-				<div class="product-dev-btn">Read More...</div>
+			<div id="dev-boxes-one">
+				<div class="product-dev-box db1">
+					<img src="https://narkeeta.github.io/euro-tech/images/product_development/img1.jpg" alt="" class="product-dev-img">
+					<h4>Schools Software</h4>
+					<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+					<div class="product-dev-btn">Read More...</div>
+				</div>
+				<div class="product-dev-box db2">
+					<img src="https://narkeeta.github.io/euro-tech/images/product_development/img2.jpg" alt="" class="product-dev-img">
+					<h4>Hospitals</h4>
+					<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+					<div class="product-dev-btn">Read More...</div>
+				</div>
+				<div class="product-dev-box db3">
+					<img src="https://narkeeta.github.io/euro-tech/images/product_development/img3.jpg" alt="" class="product-dev-img">
+					<h4>ERP</h4>
+					<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+					<div class="product-dev-btn">Read More...</div>
+				</div>
 			</div>
-			<div class="product-dev-box">
-				<img src="https://narkeeta.github.io/euro-tech/images/product_development/img2.jpg" alt="" class="product-dev-img">
-				<h4>Hospitals</h4>
-				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
-				<div class="product-dev-btn">Read More...</div>
-			</div>
-			<div class="product-dev-box">
-				<img src="https://narkeeta.github.io/euro-tech/images/product_development/img3.jpg" alt="" class="product-dev-img">
-				<h4>ERP</h4>
-				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
-				<div class="product-dev-btn">Read More...</div>
-			</div>
-			<div class="product-dev-box">
-				<img src="https://narkeeta.github.io/euro-tech/images/product_development/img4.jpg" alt="" class="product-dev-img">
-				<h4>Restaurant POS</h4>
-				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
-				<div class="product-dev-btn">Read More...</div>
-			</div>
-			<div class="product-dev-box">
-				<img src="https://narkeeta.github.io/euro-tech/images/product_development/img5.jpg" alt="" class="product-dev-img">
-				<h4>Hotels</h4>
-				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
-				<div class="product-dev-btn">Read More...</div>
-			</div>
-			<div class="product-dev-box">
-				<img src="https://narkeeta.github.io/euro-tech/images/product_development/img6.jpg" alt="" class="product-dev-img">
-				<h4>Online Food Order</h4>
-				<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
-				<div class="product-dev-btn">Read More...</div>
+			<div id="dev-boxes-one">
+				<div class="product-dev-box db1">
+					<img src="https://narkeeta.github.io/euro-tech/images/product_development/img4.jpg" alt="" class="product-dev-img">
+					<h4>Restaurant POS</h4>
+					<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+					<div class="product-dev-btn">Read More...</div>
+				</div>
+				<div class="product-dev-box db2">
+					<img src="https://narkeeta.github.io/euro-tech/images/product_development/img5.jpg" alt="" class="product-dev-img">
+					<h4>Hotels</h4>
+					<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+					<div class="product-dev-btn">Read More...</div>
+				</div>
+				<div class="product-dev-box db3">
+					<img src="https://narkeeta.github.io/euro-tech/images/product_development/img6.jpg" alt="" class="product-dev-img">
+					<h4>Online Food Order</h4>
+					<h5>It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader will be distracted by</h5>
+					<div class="product-dev-btn">Read More...</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -946,19 +1091,21 @@
 			<i class="fa fa-print"></i>
 			<hr class="hr-white">
 		</div>
-		<div id="printer-left">
-			<div id="printer-left-img">
-				<img src="http://truemerchant.victorymerchants.netdna-cdn.com/wp-content/uploads/2015/10/pax-s80-creditcard-machine.png" alt="">
+		<div id="printers-wrap">
+			<div id="printer-left">
+				<div id="printer-left-img">
+					<img src="http://truemerchant.victorymerchants.netdna-cdn.com/wp-content/uploads/2015/10/pax-s80-creditcard-machine.png" alt="">
+				</div>
+				<div id="printer-left-text">
+					<i class="fa fa-long-arrow-left"></i>
+					<h7>For Online Food Ordering</h7>
+					<img src="https://narkeeta.github.io/euro-tech/images/gprs_sms_printer/gprs_printer_2.jpg">
+				</div>
 			</div>
-			<div id="printer-left-text">
-				<i class="fa fa-long-arrow-left"></i>
-				<h7>For Online Food Ordering</h7>
-				<img src="https://narkeeta.github.io/euro-tech/images/gprs_sms_printer/gprs_printer_2.jpg">
+			<div id="printer-right">
+				<h8>We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers.</h8>
+				<div id="printer-btn">Read More...</div>
 			</div>
-		</div>
-		<div id="printer-right">
-			<h8>We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers. We supply wholesale and export gprs / sms printers. We also supply firm-ware and script for printers.</h8>
-			<div id="printer-btn">Read More...</div>
 		</div>
 	</div>
 
@@ -998,18 +1145,20 @@
 			<i class="fa fa-comments"></i>
 			<hr class="hr-blue">
 		</div>
-		<div class="t-block">
-			<div class="t-block-left"><img src="https://narkeeta.github.io/euro-tech/images/testimonials/testimonials_pic.jpg" alt=""></div>
-			<div class="t-block-right">
-				<h10>MR / Steve Joe <i class="fa fa-comments fablack"></i></h10>
-				<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
+		<div class="t-blocks">
+			<div class="t-block t-block-1">
+				<div class="t-block-left"><img src="https://narkeeta.github.io/euro-tech/images/testimonials/testimonials_pic.jpg" alt=""></div>
+				<div class="t-block-right">
+					<h10>MR / Steve Joe <i class="fa fa-comments fablack"></i></h10>
+					<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
+				</div>
 			</div>
-		</div>
-		<div class="t-block">
-			<div class="t-block-left"><img src="https://narkeeta.github.io/euro-tech/images/testimonials/testimonials_pic.jpg" alt=""></div>
-			<div class="t-block-right">
-				<h10>MR / Steve Joe <i class="fa fa-comments fablack"></i></h10>
-				<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
+			<div class="t-block t-block-2">
+				<div class="t-block-left"><img src="https://narkeeta.github.io/euro-tech/images/testimonials/testimonials_pic.jpg" alt=""></div>
+				<div class="t-block-right">
+					<h10>MR / Steve Joe <i class="fa fa-comments fablack"></i></h10>
+					<h11>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</h11>
+				</div>
 			</div>
 		</div>
 	</div>
