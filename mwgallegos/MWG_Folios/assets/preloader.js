@@ -1,6 +1,6 @@
 function preload(arrayOfImages) {
-    $(arrayOfImages).each(function(){
-        $('<img/>')[0].src = this;
+    $(arrayOfImages).each(function () {
+        $('<img />').attr('src',this).appendTo('body').css('display','none');
     });
 }
 preload("./MWG_Folios/images/myFull/Tournament_Player.jpg",
