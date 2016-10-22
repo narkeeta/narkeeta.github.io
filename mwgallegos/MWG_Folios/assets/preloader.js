@@ -1,10 +1,7 @@
-var images = new Array()
-
-function preload() {
-	for (i = 0; i < preload.arguments.length; i++) {
-		images[i] = new Image();
-		images[i].src = preload.arguments[i];
-	}
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
 }
 preload("./MWG_Folios/images/myFull/Tournament_Player.jpg",
 	"./MWG_Folios/images/myFull/The_Seeress.jpg",
