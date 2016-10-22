@@ -101,7 +101,20 @@ img.resize{
 }
 
 
+a#btn-forward {
+	width:45%;
+	height: 100%;
+	text-align: right;
+	
+}
+a#btn-back {
+	width:45%;
+	height: 100%;
+	text-align: left;
+	
+}
 #btn-back {
+	z-index: 100;
 	position: absolute;
 	margin: auto;
 	left: 20px;
@@ -111,9 +124,12 @@ img.resize{
 	height: 30px;
 }
 #btn-forward {
+	z-index: 100;
+	padding-right: 20px;
+	width:50vw;
 	position: absolute;
 	margin: auto;
-	right: 20px;
+	right: 0px;
 	bottom: 0px;
 	top: 0px;
 	width: 30px;
@@ -122,7 +138,11 @@ img.resize{
 .fa {
 	font-size: 30px;
 	color:grey;
-	line-height: 30px;
+	position: absolute;
+	height: 0px;
+	top:0;
+	bottom:0;
+	margin: auto;
 }
 .fa:hover {
 	cursor: pointer;
@@ -130,9 +150,9 @@ img.resize{
 }
 @media only screen and (max-width: 769px) {
 	#btn-forward {
-		right:5px;
+		padding-right:5px;
 	}
 	#btn-back {
-		left:5px;
+		padding-left:5px;
 	}
 }
