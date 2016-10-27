@@ -1,11 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,900';
 @import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+@font-face {
+	font-family: futura;
+	src: url('../fonts/Futura.ttc');
+}
 body {
-	font-family: Inconsolata;
+	font-family: futura;
 }
 #landing-page {
 	height: calc(100vh + 40px);
-	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("https://hd.unsplash.com/photo-1444159759392-aeeb3d5851c1") no-repeat fixed top;
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/background.jpg") no-repeat fixed top;
 	background-size: cover;
 }
 #title,
