@@ -1,0 +1,110 @@
+#main-page {
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./images/background.jpeg") no-repeat fixed top;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	height: 100vh;
+	position: relative;
+}
+h1 {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 20vh;
+	font-size: 70px;
+	font-weight: bold;
+	border: 1px solid white;
+}
+h1:after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	border: 1px solid white;
+	z-index: 3;
+}
+h2 {
+	font-weight: normal;
+}
+#intro-page {
+	height: 90vh;
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/green-background.jpg") no-repeat fixed top;
+	background-size: cover;
+	color: white;
+	padding-top: 60px;
+	text-align: center;
+}
+h3 {
+	margin: 0;
+	font-size: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+h4,
+h5 {
+	width: 900px;
+	max-width: 90vw;
+	margin: auto;
+}
+h4 {
+	padding-bottom: 20px;
+	font-size: 26px;
+}
+#donate-title {
+	padding: 50px 0;
+	color: black;
+	height: auto;
+	text-align: center;
+	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./images/white-background.jpeg") no-repeat fixed top;
+	background-size: cover;
+}
+#donate-page {
+	padding-top: 30px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+#candles a {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+}
+#candles img {
+	width: 200px;
+	height: 200px;
+}
+#donate-page a h4 {
+	color: lightblue;
+}
+#donate-page a h4:hover {
+	color: dodgerblue;
+}
+#donate-page a:hover {
+	text-decoration: none;
+}
+h10 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	padding-right: 22px;
+}
+
+#background-page {
+	color: black;
+	padding: 30px 0;
+	text-align: center;
+	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./images/border-background.jpeg") no-repeat fixed top;
+	background-size: cover;
+}
+#background-page h4 {
+	text-align: justify;
+	text-align-last: center;
+}
