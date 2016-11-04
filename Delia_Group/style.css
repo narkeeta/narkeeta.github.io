@@ -12,11 +12,9 @@ body {
 	text-align: center;
 }
 #landing-page img {
-	position: absolute;
-	top:0;
-	left:0;
-	height: auto;
+	position: relative;
 	width: 200px;
+	height: auto;
 }
 h1 {
 	max-width: 90vw;
@@ -34,6 +32,10 @@ h1 {
 }
 h2 {
 	font-weight: bold;
+	text-transform: uppercase;
+}
+h3 {
+	font-family: Vollkorn;
 }
 
 #about-page img {
