@@ -3,7 +3,7 @@ body {
 	padding-bottom: 30vh;
 }
 #landing-page {
-	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("https://narkeeta.github.io/images/DG_background.jpg") no-repeat fixed bottom;
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("https://narkeeta.github.io/images/DeliaGroup/DG_background.jpg") no-repeat fixed bottom;
 	background-size: cover;
 	height: 70vh;
 	width:100vw;
@@ -40,7 +40,7 @@ h3 {
 	font-family: Vollkorn;
 }
 
-#about-page img {
+#img1 {
 	display: block;
 	margin: auto;
 	max-width: 100%;
@@ -83,3 +83,27 @@ input[type='submit']:hover {
 	color: white;
 	border-color: #482222;
 }
+
+.test {
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.test img {
+	display: inline-block;
+	width: 720px;
+	max-width: 50%;
+	vertical-align: top;
+}
+.test h3 {
+	display: inline-block;
+	width:45%;
+	vertical-align: top;
+	margin: 0 10px;
+}
+.test i {
+	font-size: 17px;
+}
+
