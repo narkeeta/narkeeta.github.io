@@ -20,6 +20,6 @@ $(document).ready(function () {
 	});
 	
 	$("#submit-btn").click(function () {
-		$("form#email-form").submit();
+		$("#form1").submit();
 	});
 });
