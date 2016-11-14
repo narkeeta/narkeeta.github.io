@@ -1,25 +1,21 @@
-$(function () { // $(document).ready shorthand
-	$('.monster').fadeIn('slow');
-});
 $(document).ready(function () {
-	/* Every time the window is scrolled ... */
-	$(window).scroll(function () {
-		/* Check the location of each desired element */
-		$('.hideme').each(function (i) {
-			var bottom_of_object = $(this).position().top + $(this).outerHeight();
-			var bottom_of_window = $(window).scrollTop() + $(window).height();
-			/* If the object is completely visible in the window, fade it it */
-			if (bottom_of_window > bottom_of_object) {
-				$(this).animate({
-					'opacity': '1'
-				}, 1500);
-			}
-		});
+	$("#about").hide();
+	$("#hire").hide();
+	$("#portfolio").hide();
+	
+	$("#about-btn").click(function () {
+		$("#hire").hide();
+		$("#portfolio").hide();
+		$("#about").fadeIn();
 	});
-
-	$("#scroll").click(function () {
-		$('html, body').animate({
-			scrollTop: $("#portfolio-page").offset().top
-		}, 800, function () {});
+	$("#hire-btn").click(function () {
+		$("#about").hide();
+		$("#portfolio").hide();
+		$("#hire").fadeIn();
+	});
+	$("#portfolio-btn").click(function () {
+		$("#hire").hide();
+		$("#about").hide();
+		$("#portfolio").fadeIn();
 	});
 });

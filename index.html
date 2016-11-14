@@ -7,58 +7,126 @@
 	<title>On The Rocks Design</title>
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,500,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-	<link rel="stylesheet" href="css/newstyle.css">
+
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div id="landing-page">
-		<div id="title">
-			ON THE ROCKS
-		</div>
-		<div id="title2">
-			Web Development
-		</div>
-		<div id="center">
-			<a href="http://www.upwork.com/o/profiles/users/_~016bab4077cb085f6e/">
-				<button class="spin circle">Hire Me</button>
-			</a>
-		</div>
-		<div id="scroll">
-			<div class="fa fa-angle-double-down"></div>
-		</div>
+
+	<div id="title">
+		<!--<div id="cutout-right"></div>-->
+		<!--<div id="cutout-left"></div>-->
+		<h1>NARKEETA DESIGN</h1>
 	</div>
-	<div id="portfolio-page">
-		<div class="hideme" id="intro">
-			<h>Website Design Made Simple</h>
-			<h1>I specialise in custom website design, coded in html, css, javascript, and php if needed. I can make custom websites as well as custom backend if needed. With every site I design I take a special pride in my designs and in making sure that my clients get exactly what they want/need.</h1>
-		</div>
-		<div class="hideme" id="portfolio-wrapper">
-			<h3>portfolio</h3>
-			<h2>A Look At My Work</h2>
-			<div id="img-wrapper">
-				<a class="blackback" href="http://www.globalcandlelight.com">
-					<img src="images/candle.png">
-				</a>
-				<a class="blackback" href="https://lucymethod.github.io">
-					<img src="images/LucyMethodSiteImg.png">
-				</a>
-				<a class="blackback" href="http://codepen.io/narkeeta/full/dGBgJE/">
-					<img src="images/wiki.png">
-				</a>
-				<a class="blackback" href="http://codepen.io/narkeeta/full/zrpBNR">
-					<img src="images/clac.png">
-				</a>
-				<a class="blackback" href="http://www.ppotf.com">
-					<img src="images/ppotf.png">
-				</a>
-			</div>
-		</div>
+	<div id="nav">
+		<div id="about-btn" class="box foo">ABOUT</div>
+		<div id="hire-btn" class="box foo">HIRE ME</div>
+		<div id="portfolio-btn" class="box foo">PORTFOLIO</div>
+	</div>
+	<div id="about">
+		<h2>ABOUT</h2>
+		<h3>My name is Collin McCabe and I specalize in custom web development. I live in Tucson Arizona and work through the University of Arizona computer science program. I have over a year of experience in professional website design, working mostly throught UpWork. I code in html, css, javascript, and php to make beautiful websites and custom content management systems for my clients. I can also create custom wordpress templates if that is what you want. I'm always avalible for work so send me a message if you are interested in hiring me for a job.</h3>
 	</div>
 
-	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script src="js/index.js" type="text/javascript"></script>
+	<div id="hire">
+		<h2>HIRE ME</h2>
+		<form action="https://formspree.io/cmccabe4363.com" method="POST">
+			<input name="name" type="text" class="feedback-input" placeholder="Name" />
+			<input name="age" type="text" class="feedback-input" placeholder="Email" />
+			<input name="gender" type="text" class="feedback-input" placeholder="Budget" />
+			<input name="their residence" type="text" class="feedback-input" placeholder="City" />
+			<textarea name="text" class="feedback-input" placeholder="What's Your Job?"></textarea>
+			<div class="submit-btn box foo">HIRE ME</div>
+		</form>
+	</div>
+
+	<div id="portfolio">
+		<h2>PORTFOLIO</h2>
+		<div class="port-box">
+			<a class="blackback" href="http://codepen.io/narkeeta/full/zrpBNR">
+				<img src="images/5678sitepic.png">
+			</a>
+			<h4>5678 HOME PAGE</h4>
+			<hr>
+			<div id="second-row">
+				<h5 class="border-right">Client: aRise Media</h5>
+				<h5>Date: Oct 2016</h5>
+			</div>
+			<hr>
+		</div>
+
+		<div class="port-box">
+			<a class="blackback" href="http://codepen.io/narkeeta/full/zrpBNR">
+				<img src="images/candle.png">
+			</a>
+			<h4>CANDLE LIGHT VIGIL</h4>
+			<hr>
+			<div id="second-row">
+				<h5 class="border-right">Client: Float Pod Tech</h5>
+				<h5>Date: Nov 2016</h5>
+			</div>
+			<hr>
+		</div>
+
+		<div class="port-box">
+			<a class="blackback" href="http://codepen.io/narkeeta/full/zrpBNR">
+				<img src="images/deliagrouppic.jpg">
+			</a>
+			<h4>DELIA GROUP HIRING PAGE</h4>
+			<hr>
+			<div id="second-row">
+				<h5 class="border-right">Client: Delia Group</h5>
+				<h5>Date: Oct 2016</h5>
+			</div>
+			<hr>
+		</div>
+
+		<div class="port-box">
+			<a class="blackback" href="http://codepen.io/narkeeta/full/zrpBNR">
+				<img src="images/LucyMethodSiteImg.png">
+			</a>
+			<h4>LUCY METHOD WEBSITE</h4>
+			<hr>
+			<div id="second-row">
+				<h5 class="border-right">Client: Lior Melikson</h5>
+				<h5>Date: Aug 2016</h5>
+			</div>
+			<hr>
+		</div>
+
+		<div class="port-box">
+			<a class="blackback" href="http://codepen.io/narkeeta/full/zrpBNR">
+				<img src="images/ppotf.png">
+			</a>
+			<h4>PIZZA PIE ON THE FLY</h4>
+			<hr>
+			<div id="second-row">
+				<h5 class="border-right">Client: PPOTF</h5>
+				<h5>Date: Aug 2016</h5>
+			</div>
+			<hr>
+		</div>
+		
+		<div class="port-box">
+			<a class="blackback" href="http://codepen.io/narkeeta/full/zrpBNR">
+				<img src="images/clac.png">
+			</a>
+			<h4>JAVASCRIPT CALCULATOR</h4>
+			<hr>
+			<div id="second-row">
+				<h5 class="border-right">Client: Personal</h5>
+				<h5>Date: June 2016</h5>
+			</div>
+			<hr>
+		</div>
+	</div>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="js/index.js"></script>
 </body>
 
 </html>
