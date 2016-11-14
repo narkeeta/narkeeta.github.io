@@ -18,4 +18,8 @@ $(document).ready(function () {
 		$("#about").hide();
 		$("#portfolio").fadeIn();
 	});
+	
+	$("#submit-btn").click(function () {
+		$("#email-form").submit();
+	});
 });
