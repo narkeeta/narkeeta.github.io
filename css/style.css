@@ -208,7 +208,7 @@ textarea {
 	overflow: auto;
 	border: 2px solid black;
 }
-.submit-btn {
+#submit-btn {
 	display: block;
 	margin: auto;
 	margin-top: 10px;
