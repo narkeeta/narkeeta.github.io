@@ -128,13 +128,17 @@ h1 {
 	-webkit-transform: scale(1);
 }
 
+.title-container {
+    position: relative;
+    padding-top: 80px;
+}
 
 #about {
 	width:90%;
 	background:#F2F3EB;
 	margin: auto;
 	position: relative;
-	padding-top: 70px;
+	padding-top: 80px;
 	margin-top: 30px;
 }
 h2 {
@@ -165,8 +169,10 @@ h2:before {
 	border-bottom: 0 solid transparent;
 }
 h3 {
+    text-align: left;
 	font-family: Raleway;
 	font-size: 15px;
+    width: 900px;
 	max-width: 90%;
 	padding-bottom: 20px;
 	margin-left: 20px;
