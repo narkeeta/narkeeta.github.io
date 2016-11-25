@@ -1,6 +1,8 @@
 $(document).ready(function () {
-	$("#menu-expand").click(function () {
+	$("#menu-expand-white").click(function () {
 		$("#menu").fadeIn();
-		alert("clicked");
+	});
+	$("#menu-collapse").click(function () {
+		$("#menu").fadeOut();
 	});
 });
