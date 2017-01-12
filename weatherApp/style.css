@@ -13,7 +13,7 @@ body {
 #wrapper {
 	width: 100%;
 	height: 100vh;
-	background: url("/Links/background.png") no-repeat fixed top;
+	background: url("./Links/background.png") no-repeat fixed top;
 	background-size: cover;
 }
 
