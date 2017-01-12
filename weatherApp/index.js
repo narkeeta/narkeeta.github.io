@@ -1,5 +1,5 @@
 var KEY = "610daeeceb415e34f1e37eed8de60657";
-$.getJSON("https://api.openweathermap.org/data/2.5/forecast/daily?id=5318313&units=metric&appid=" + KEY, function (data) {
+$.getJSON("https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast/daily?id=5318313&units=metric&appid=" + KEY, function (data) {
 	//FIRST DAY CODE
 	var day;
 	switch (new Date(data.list[0].dt * 1000).getDay()) {
