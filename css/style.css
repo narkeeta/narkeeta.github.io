@@ -142,6 +142,7 @@ h1 {
 
 #about {
 	width:90%;
+	max-width: 1200px;
 	background:#f7f7f7;
 	margin: auto;
 	position: relative;
@@ -189,6 +190,7 @@ h3 {
 
 #hire {
 	width: 90%;
+	max-width: 1200px;
 	margin: auto;
 	background: #f7f7f7;
 	position: relative;
@@ -254,6 +256,7 @@ textarea {
 
 #portfolio {
 	width:90%;
+	max-width: 1200px;
 	margin: auto;
 	position: relative;
 	margin-top: 30px;
