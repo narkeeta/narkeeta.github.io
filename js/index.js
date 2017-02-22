@@ -6,17 +6,17 @@ $(document).ready(function () {
 	$("#about-btn").click(function () {
 		$("#hire").hide();
 		$("#portfolio").hide();
-		$("#about").fadeIn();
+		$("#about").fadeIn(1000);
 	});
 	$("#hire-btn").click(function () {
 		$("#about").hide();
 		$("#portfolio").hide();
-		$("#hire").fadeIn();
+		$("#hire").fadeIn(1000);
 	});
 	$("#portfolio-btn").click(function () {
 		$("#hire").hide();
 		$("#about").hide();
-		$("#portfolio").fadeIn();
+		$("#portfolio").fadeIn(1000);
 	});
 	
 	$("#submit-btn").click(function () {

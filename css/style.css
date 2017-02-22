@@ -17,8 +17,15 @@ body:before {
 	top:0;
 	left: 0;
 }
+a {
+	color: black;
+}
+a:hover {
+	text-decoration: none;
+}
 #title {
-	width: 300px;
+	width: 350px;
+	max-width: 100%;
 	border: 5px solid black;
 	position: relative;
 	margin: auto;
@@ -91,8 +98,8 @@ h1 {
 	position: relative;
 	vertical-align: middle;
 	display: inline-block;
-	height: 26px;
-	line-height: 26px;
+	height: 30px;
+	line-height: 35px;
 	text-align: center;
 	transition: 0.5s;
 	padding: 0 20px;
@@ -129,17 +136,18 @@ h1 {
 }
 
 .title-container {
-    position: relative;
-    padding-top: 80px;
+	position: relative;
+	padding-top: 80px;
 }
 
 #about {
 	width:90%;
-	background:#F2F3EB;
+	background:#f7f7f7;
 	margin: auto;
 	position: relative;
 	padding-top: 80px;
 	margin-top: 30px;
+	box-shadow: 1px 1px 25px grey;
 }
 h2 {
 	font-family: lato;
@@ -147,7 +155,7 @@ h2 {
 	line-height: 30px;
 	font-weight: normal;
 	text-align: left;
-	
+
 	position: absolute;
 	top: 0;
 	width: 150px;
@@ -169,10 +177,10 @@ h2:before {
 	border-bottom: 0 solid transparent;
 }
 h3 {
-    text-align: left;
+	text-align: left;
 	font-family: Raleway;
 	font-size: 15px;
-    width: 900px;
+	width: 900px;
 	max-width: 90%;
 	padding-bottom: 20px;
 	margin-left: 20px;
@@ -182,10 +190,11 @@ h3 {
 #hire {
 	width: 90%;
 	margin: auto;
-	background: #F2F3EB;
+	background: #f7f7f7;
 	position: relative;
 	padding-top: 70px;
 	margin-top: 30px;
+	box-shadow: 1px 1px 25px grey;
 }
 
 form {
@@ -224,82 +233,92 @@ textarea {
 
 ::-webkit-input-placeholder {
 	font-family: Raleway;
-   color: black;
+	color: black;
 }
 
 :-moz-placeholder { /* Firefox 18- */
 	font-family: Raleway;
-   color: black;  
+	color: black;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
 	font-family: Raleway;
-   color: black;  
+	color: black;  
 }
 
 :-ms-input-placeholder { 
 	font-family: Raleway;
-   color: black;  
+	color: black;  
 }
 
 
 #portfolio {
 	width:90%;
 	margin: auto;
-	background-color:#F2F3EB;
 	position: relative;
 	margin-top: 30px;
-	padding-top: 80px;
-	text-align: center;
-	padding-bottom: 50px;
 }
 .port-box {
-	width:300px;
-	max-width: 100%;
+	background: white;
+	width:100%;
+	min-height: 250px;
 	position: relative;
 	display: inline-block;
+	text-align: left;
 	margin-top: 20px;
+
 }
-img {
-	width: 100%;;
+.port-box img {
+	height: 250px;
+	display: inline-block;
 	margin: auto;
 }
-h4, h5 {
-	font-size: 16px;
-	font-family: Old Standard TT;
-	height: 30px;
-	line-height: 30px;
-	margin: 0;
+.port-text {
+	height: 100%;
+	width:calc(100% - 300px);
+	min-width: 250px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
 }
-h4 {	
-	border-top: 3px solid black;
+h4 {
 	font-weight: bold;
-	display: block;
-	position: relative;
-	width:100%;
-}
-#second-row {
-	justify-content: space-around;
-	width: 100%;
-	display: inline-flex;
+	font-size: 24px;
+	font-family: Raleway;
 }
 h5 {
-	width: auto;
-	text-align: right;
-	padding-right: 10px;
-}
-.border-right {
-	border-right: 1px solid black;
-	text-align: center;
-}
-hr {
-	border-color: black;
-	margin: 0;
+	font-size: 16px;
+	font-family: Raleway;
+	line-height:22px;
 }
 
 
-
-
+@media only screen and (max-width: 776px) {
+	.port-box {
+		background: white;
+		width:400px;
+		max-width: 100%;
+		min-height: 250px;
+		position: relative;
+		display: inline-block;
+		text-align: left;
+		margin-top: 20px;
+	}
+	.port-box img {
+		height: auto;
+		width:100%;
+		display: inline-block;
+		margin: auto;
+	}
+	.port-text {
+		height: auto;
+		width:100%;
+		min-width: 250px;
+		display: inline-block;
+		vertical-align: top;
+		padding: 10px;
+	}
+}
 
 
 
