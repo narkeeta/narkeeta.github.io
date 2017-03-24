@@ -8,7 +8,7 @@ body {
   font-size: 16px;
 }
 .header {
-  height:95px;
+  height:105px;
   width:100%;
   position:fixed;
   z-index: 100;
@@ -16,7 +16,7 @@ body {
   left:0;
   border-bottom: 1px solid #e6e6e6;
   background:white;
-  padding:10px 0 10px 70px;
+  padding:5px 0 5px 70px;
 }
 .header img, .logo {
   height:100%;
@@ -63,5 +63,8 @@ h1 {
   .header{
     text-align:center;
     padding-left:0;
+  }
+  .about_us, .contact_us {
+    padding: 25px 0;
   }
 }
