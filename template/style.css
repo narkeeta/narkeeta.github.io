@@ -126,12 +126,12 @@ INTRO SECTION
     padding: 5px 20px;
     border-radius: 3px;
 }
-.slide__button a {
+.slide__button a, .infoBox__button a {
     color:white;
     text-decoration:none;
     transition:.3s ease;
 }
-.slide__button a:hover {
+.slide__button a:hover, .infoBox__button a {
     color:#0061a7;
 }
 
