@@ -177,7 +177,9 @@ INTRO SECTION
     letter-spacing: 1px;
     font-size: 20px;
 }
-
+/************************************
+SECOND SECTION
+************************************/
 .boxes {
     background: #0061a7;
     color: white;
@@ -214,7 +216,9 @@ INTRO SECTION
     width: auto;
     margin-top: 20px;
 }
-
+/************************************
+THIRD SECTION
+************************************/
 .main {
     margin: 25px 0;
 }
@@ -223,6 +227,16 @@ INTRO SECTION
     width: 1010px;
     max-width: 95%;
 }
+
+.main__title {
+    color: #0061a7;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
 
 .testimonials, .updates {
     width: 600px;
@@ -233,15 +247,6 @@ INTRO SECTION
     margin-right: 50px;
     float: left;
     margin-bottom: 50px;
-}
-
-.main__title {
-    color: #0061a7;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: bolder;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eeeeee;
 }
 
 .testimonial__text, .testimonal__author {
@@ -307,6 +312,9 @@ INTRO SECTION
     font-weight: bold;
 }
 
+/************************************
+FOOTER
+************************************/
 .footer {
     background: #00375f;
     text-align: center;
@@ -324,6 +332,10 @@ INTRO SECTION
     margin: 0 20px;
 }
 
+
+/************************************
+RESPONSIVE CODE
+************************************/
 @media only screen and (max-width: 1064px) {
     .testimonials, .updates, .twitter {
         display:block;
