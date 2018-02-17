@@ -7,26 +7,29 @@ body {
 	min-height: 100vh;
 	text-align: center;
 }
+
 body:before {
 	content: "";
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: rgba(0,0,0,.2);
+	background: rgba(0, 0, 0, .2);
 	background-size: cover;
-	top:0;
+	top: 0;
 	left: 0;
 }
+
 a {
 	color: black;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 #title {
 	width: 350px;
 	max-width: 100%;
-	border: 5px solid black;
 	position: relative;
 	margin: auto;
 	text-align: center;
@@ -37,8 +40,8 @@ h1 {
 	color: black;
 	font-family: Old Standard TT;
 	font-weight: bold;
-
 }
+
 #cutout-right {
 	content: '';
 	position: absolute;
@@ -49,6 +52,7 @@ h1 {
 	border-right: 25px solid #BFBFAA;
 	border-bottom: 25px solid transparent;
 }
+
 #cutout-left {
 	content: '';
 	position: absolute;
@@ -59,28 +63,31 @@ h1 {
 	border-left: 25px solid #BFBFAA;
 	border-bottom: 25px solid transparent;
 }
+
 #cutout-sr {
 	content: '';
 	position: absolute;
 	right: 0;
-	top:0;
+	top: 0;
 	width: 0;
 	height: 0;
 	border-top: 18px solid transparent;
 	border-right: 18px solid #BFBFAA;
 	border-bottom: 18px solid transparent;
 }
+
 #cutout-sl {
 	content: '';
 	position: absolute;
 	left: 0;
-	top:0;
+	top: 0;
 	width: 0;
 	height: 0;
 	border-top: 18px solid transparent;
 	border-left: 18px solid #BFBFAA;
 	border-bottom: 18px solid transparent;
 }
+
 #nav {
 	display: inline-block;
 	margin: auto;
@@ -91,6 +98,7 @@ h1 {
 	margin-top: 5px;
 	border-bottom: 3px solid black;
 }
+
 .box {
 	font-size: 16px;
 	font-family: Old Standard TT;
@@ -106,6 +114,7 @@ h1 {
 	cursor: pointer;
 	-webkit-transition: 0.5s;
 }
+
 .box::before,
 .box::after {
 	width: 100%;
@@ -120,16 +129,19 @@ h1 {
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
+
 .foo::before {
 	border-bottom: 2px solid black;
 	border-left: 2px solid black;
 	-webkit-transform-origin: 0 100%;
 }
+
 .foo::after {
 	border-top: 2px solid black;
 	border-right: 2px solid black;
 	-webkit-transform-origin: 100% 0%;
 }
+
 .box:hover::after,
 .box:hover::before {
 	-webkit-transform: scale(1);
@@ -141,42 +153,44 @@ h1 {
 }
 
 #about {
-	width:90%;
+	width: 90%;
 	max-width: 1200px;
-	background:#f7f7f7;
+	background: #f7f7f7;
 	margin: auto;
 	position: relative;
 	padding-top: 80px;
 	margin-top: 30px;
 	box-shadow: 1px 1px 25px grey;
 }
+
 h2 {
 	font-family: lato;
 	font-size: 25px;
 	line-height: 30px;
 	font-weight: normal;
 	text-align: left;
-
 	position: absolute;
 	top: 0;
 	width: 150px;
 	height: 40px;
 	background: #2b2b2b;
-	color:white;
+	color: white;
 	padding: 5px;
-	left:-10px;
+	left: -10px;
 }
+
 h2:before {
 	content: '';
 	position: absolute;
 	left: 0;
-	top:-10px;
+	top: -10px;
 	width: 0;
 	height: 0;
 	border-top: 10px solid transparent;
 	border-right: 10px solid black;
 	border-bottom: 0 solid transparent;
 }
+
 h3 {
 	text-align: left;
 	font-family: Raleway;
@@ -205,7 +219,9 @@ form {
 	margin: auto;
 	padding: 20px 0;
 }
-input, textarea {
+
+input,
+textarea {
 	display: inline-block;
 	vertical-align: bottom;
 	width: 49%;
@@ -216,15 +232,19 @@ input, textarea {
 	position: relative;
 	margin-top: 5px;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
 	border-radius: 0;
 	outline: none;
 }
+
 textarea {
 	width: 99%;
 	overflow: auto;
 	border: 2px solid black;
 }
+
 #submit-btn {
 	display: block;
 	margin: auto;
@@ -238,68 +258,72 @@ textarea {
 	color: black;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
+	/* Firefox 18- */
 	font-family: Raleway;
-	color: black;  
+	color: black;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder {
+	/* Firefox 19+ */
 	font-family: Raleway;
-	color: black;  
+	color: black;
 }
 
-:-ms-input-placeholder { 
+:-ms-input-placeholder {
 	font-family: Raleway;
-	color: black;  
+	color: black;
 }
-
 
 #portfolio {
-	width:90%;
+	width: 90%;
 	max-width: 1200px;
 	margin: auto;
 	position: relative;
 	margin-top: 30px;
 }
+
 .port-box {
 	background: white;
-	width:100%;
+	width: 100%;
 	min-height: 250px;
 	position: relative;
 	display: inline-block;
 	text-align: left;
 	margin-top: 20px;
-
 }
+
 .port-box img {
 	height: 250px;
 	display: inline-block;
 	margin: auto;
 }
+
 .port-text {
 	height: 100%;
-	width:calc(100% - 300px);
+	width: calc(100% - 300px);
 	min-width: 250px;
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px;
 }
+
 h4 {
 	font-weight: bold;
 	font-size: 24px;
 	font-family: Raleway;
 }
+
 h5 {
 	font-size: 16px;
 	font-family: Raleway;
-	line-height:22px;
+	line-height: 22px;
 }
-
 
 @media only screen and (max-width: 776px) {
 	.port-box {
 		background: white;
-		width:400px;
+		width: 400px;
 		max-width: 100%;
 		min-height: 250px;
 		position: relative;
@@ -309,22 +333,16 @@ h5 {
 	}
 	.port-box img {
 		height: auto;
-		width:100%;
+		width: 100%;
 		display: inline-block;
 		margin: auto;
 	}
 	.port-text {
 		height: auto;
-		width:100%;
+		width: 100%;
 		min-width: 250px;
 		display: inline-block;
 		vertical-align: top;
 		padding: 10px;
 	}
 }
-
-
-
-
-
-
