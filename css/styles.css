@@ -143,21 +143,21 @@ a:hover {
   .about .p_box:first-of-type:after {
     border: none;
     width: 48px;
-    right: 0; }
+    right: -10px; }
   .about .p_box:nth-of-type(2):after {
-    right: 48px;
+    right: 38px;
     z-index: 2; }
   .about .p_box:nth-of-type(3):after {
-    right: 106px;
+    right: 96px;
     z-index: 3; }
   .about .p_box:nth-of-type(4):after {
-    right: 164px;
+    right: 154px;
     z-index: 4; }
   .about .p_box:nth-of-type(5):after {
-    right: 222px;
+    right: 212px;
     z-index: 5; }
   .about .p_box:nth-of-type(6):after {
-    right: 280px;
+    right: 270px;
     z-index: 6; }
   @media only screen and (max-width: 768px) {
     .about {
