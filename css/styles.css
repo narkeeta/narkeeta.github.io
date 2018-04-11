@@ -131,6 +131,8 @@ a:hover {
     .about .p_box p {
       margin: 0;
       font-family: "GilroyBold"; }
+  .about .p_box:last-child {
+    margin-bottom: 20px; }
   .about .p_box:after {
     content: "";
     background: #fa715d;

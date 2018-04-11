@@ -159,6 +159,9 @@ a:hover {
 			font-family: "GilroyBold";
 		}
 	}
+	.p_box:last-child {
+		margin-bottom:20px;
+	}
 	.p_box:after {
 		content: "";
 		background: #fa715d;
