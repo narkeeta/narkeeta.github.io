@@ -1,5 +1,5 @@
-$pageSpeed: .65s ease-in-out;
-$aniSpeed: .3s ease-in-out;
+$pageSpeed: .7s cubic-bezier(0.22, 0.61, 0.36, 1);
+$aniSpeed: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 body {
 	font-size: 16px;
 	font-family: "GilroyLight";
@@ -267,6 +267,7 @@ a:hover {
 		}
 	}
 	.active_item {
+		z-index: 3;
 		.text {
 			transform:none;
 			opacity:1;

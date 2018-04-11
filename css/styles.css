@@ -14,7 +14,7 @@ p {
   font-size: 18px; }
 
 a {
-  transition: 0.3s ease-in-out; }
+  transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
 a:hover {
   text-decoration: none; }
@@ -33,7 +33,7 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 10;
-  transition: border-color 0.65s ease-in-out; }
+  transition: border-color 0.7s cubic-bezier(0.22, 0.61, 0.36, 1); }
   .cool_border .menu {
     position: absolute;
     bottom: 3px;
@@ -46,7 +46,7 @@ a:hover {
       font-size: 14px;
       color: #1e1b22;
       cursor: pointer;
-      transition: 0.65s ease-in-out; }
+      transition: 0.7s cubic-bezier(0.22, 0.61, 0.36, 1); }
     .cool_border .menu span:first-child {
       background-color: #e0ede8; }
     .cool_border .menu span:nth-child(2) {
@@ -191,7 +191,7 @@ a:hover {
       padding: 30px;
       transform: translateX(-100%);
       opacity: 0;
-      transition: 0.65s ease-in-out; }
+      transition: 0.7s cubic-bezier(0.22, 0.61, 0.36, 1); }
     .portfolio .portfolio_item .images {
       width: 55%;
       height: 100%;
@@ -200,7 +200,7 @@ a:hover {
       padding: 30px;
       transform: translateX(100%);
       opacity: 0;
-      transition: 0.65s ease-in-out; }
+      transition: 0.7s cubic-bezier(0.22, 0.61, 0.36, 1); }
       .portfolio .portfolio_item .images img {
         border: 10px solid white;
         display: inline-block;
@@ -216,12 +216,14 @@ a:hover {
         width: 30%;
         float: right;
         transform: translateY(-30%) translateX(-20px); }
-  .portfolio .active_item .text {
-    transform: none;
-    opacity: 1; }
-  .portfolio .active_item .images {
-    transform: none;
-    opacity: 1; }
+  .portfolio .active_item {
+    z-index: 3; }
+    .portfolio .active_item .text {
+      transform: none;
+      opacity: 1; }
+    .portfolio .active_item .images {
+      transform: none;
+      opacity: 1; }
   .portfolio .jeany {
     border-color: #a856ef; }
     .portfolio .jeany .text a {
@@ -300,7 +302,7 @@ a:hover {
         line-height: 30px;
         min-height: 32px !important;
         margin: 20px 0;
-        transition: 0.3s ease-in-out; }
+        transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
         .contact .form form input::-webkit-input-placeholder,
         .contact .form form textarea::-webkit-input-placeholder {
           color: #1e1b22; }
@@ -324,7 +326,7 @@ a:hover {
         padding: 7px 20px;
         float: right;
         cursor: pointer;
-        transition: 0.3s ease-in-out; }
+        transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
         .contact .form form #submit-btn:hover {
           background: #1e1b22;
           color: #4bd6bc; }

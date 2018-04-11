@@ -4,7 +4,7 @@ $(document).ready(function () {
 		sectionName: "section-name",
 		interstitialSection: "",
 		easing: "easeOutCubic",
-		scrollSpeed: 650,
+		scrollSpeed: 700,
 		offset: 0,
 		scrollbars: false,
 		standardScrollElements: "",
