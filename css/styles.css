@@ -27,7 +27,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   border: 10px solid white;
-  background: none !important;
+  background: none;
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -55,6 +55,9 @@ a:hover {
       background-color: #a755ef; }
     .cool_border .menu span:nth-child(4) {
       background-color: #49d6bc; }
+  .cool_border.active_image {
+    pointer-events: all;
+    background: rgba(0, 0, 0, 0.566); }
 
 .home {
   height: 100vh;
@@ -206,16 +209,24 @@ a:hover {
         display: inline-block;
         vertical-align: top;
         box-shadow: 0px 0px 24px #b7b7b77a; }
-      .portfolio .portfolio_item .images img:first-child {
-        width: 70%;
-        float: right; }
-      .portfolio .portfolio_item .images img:nth-child(2) {
-        width: 55%;
-        transform: translateY(-20%); }
-      .portfolio .portfolio_item .images img:nth-child(3) {
-        width: 30%;
-        float: right;
-        transform: translateY(-30%) translateX(-20px); }
+        .portfolio .portfolio_item .images img:first-child {
+          width: 70%;
+          float: right; }
+        .portfolio .portfolio_item .images img:nth-child(2) {
+          width: 55%;
+          transform: translateY(-20%); }
+        .portfolio .portfolio_item .images img:nth-child(3) {
+          width: 30%;
+          float: right;
+          transform: translateY(-30%) translateX(-20px); }
+        .portfolio .portfolio_item .images img.isBig {
+          position: fixed;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          left: 0;
+          margin: auto;
+          z-index: 100; }
   .portfolio .active_item {
     z-index: 3; }
     .portfolio .active_item .text {
