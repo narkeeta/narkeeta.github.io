@@ -40,7 +40,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	z-index: 10;
-	transition: border-color .9s ease;
+	transition: border-color .7s ease;
 	.menu {
 		position: absolute;
 		bottom: 3px;
@@ -53,7 +53,7 @@ a:hover {
 			font-size: 14px;
 			color: #1e1b22;
 			cursor: pointer;
-			transition:.9s ease;
+			transition:.7s ease;
 		}
 		span:first-child {
 			background-color: #e0ede8;
@@ -232,7 +232,7 @@ a:hover {
 			padding: 30px;
 			transform:translateX(-100%);
 			opacity:0;
-			transition:.9s ease;
+			transition:.7s ease;
 		}
 		.images {
 			width: 55%;
@@ -242,7 +242,7 @@ a:hover {
 			padding: 30px;
 			transform:translateX(100%);
 			opacity:0;
-			transition:.9s ease;
+			transition:.7s ease;
 			img {
 				border: 10px solid white;
 				display: inline-block;
@@ -368,7 +368,7 @@ a:hover {
 				line-height: 30px;
 				min-height: 32px !important;
 				margin: 20px 0;
-				transition: .4s ease;
+				transition: .3s ease;
 				&::-webkit-input-placeholder {
 					color: #1e1b22;
 				}
@@ -393,7 +393,7 @@ a:hover {
 				padding: 7px 20px;
 				float: right;
 				cursor: pointer;
-				transition: .5s ease;
+				transition: .3s ease;
 				&:hover {
 					background: #1e1b22;
 					color: #4bd6bc;
