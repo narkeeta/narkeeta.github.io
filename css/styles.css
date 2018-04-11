@@ -253,6 +253,8 @@ a:hover {
           padding: 0 20px;
           transform: none;
           opacity: 1; }
+          .portfolio .portfolio_item .text h1 {
+            margin-top: 0; }
         .portfolio .portfolio_item .images {
           width: 100%;
           height: auto;
