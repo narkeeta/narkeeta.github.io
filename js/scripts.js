@@ -8,7 +8,7 @@ $(document).ready(function () {
 		offset: 0,
 		scrollbars: false,
 		standardScrollElements: "",
-		setHeights: false,
+		setHeights: true,
 		overflowScroll: true,
 		updateHash: true,
 		touchScroll: true,
