@@ -1,194 +1,107 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="UTF-8">
-		<title>Narkeeta Design</title>
-		<link rel="stylesheet" target="_blank" href="font-awesome/css/font-awesome.min.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Narkeeta Design</title>
+	<link rel="stylesheet" target="_blank" href="font-awesome/css/font-awesome.min.css">
+	<link rel='stylesheet prefetch' target="_blank" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" target="_blank" href="css/styles.css">
+</head>
 
-		<link target="_blank" href="https://fonts.googleapis.com/css?family=Raleway:300,500,400,700" rel="stylesheet">
-		<link target="_blank" href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
-		<link target="_blank" href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
-
-		<link rel='stylesheet prefetch' target="_blank" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-
-		<link rel="stylesheet" target="_blank" href="css/style.css">
-	</head>
-
-	<body>
-
-		<div id="title">
-			<!--<div id="cutout-right"></div>-->
-			<!--<div id="cutout-left"></div>-->
-			<h1>NARKEETA DEVELOPMENT</h1>
+<body>
+	<div class="cool_border">
+		<div class="menu">
+			<span id="home">Start</span>
+			<span id="about">About Me</span>
+			<span id="jeany">Projects</span>
+			<span id="contact">Contact Me</span>
 		</div>
-		<div id="nav">
-			<div id="about-btn" class="box foo">ABOUT</div>
-			<div id="hire-btn" class="box foo">HIRE ME</div>
-			<div id="portfolio-btn" class="box foo">PORTFOLIO</div>
+	</div>
+	<div class="home scrollify" data-section-name="home">
+		<div class="left">
+			<h1>Hello, I'm</h1>
 		</div>
-		<div id="about">
-			<h2>About</h2>
-			<h3>My name is Collin McCabe and I'm a professional web developer in Tucson Arizona with over a years experience as a full stack web developer on UpWork. I specialize in PHP mostly working as a Wordpress developer making custom templates. I'm fluent in PHP, Javascript/Jquery, CSS, HTML, with some experience with ReactJS. I can also work with APIs and CRMs integrating them into sites. I'm available 7 days a week during the day, so feel free to get in touch anytime.</h3>
-
-			<div class="title-container">
-				<h2>Pricing</h2>
-				<h3>I charge 50 dollars an hour, however I also work on fixed price contracts so I can rate a job based on how long I think it would take to complete them, and therefor any extra time needed to be spent on a project wouldn't be charged to a client. I generally code websites for 500-3000 dollars depending on the ammount of work involved with the site.</h3>
+		<div class="right">
+			<img src="./images/logo.png" alt="logo" class="logo">
+			<h1>And I make websites</h1>
+		</div>
+	</div>
+	<div class="about scrollify" data-section-name="about">
+		<h1 class="title">About Me</h1>
+		<p>I’m currently working as a freelance web developer in Tucson Arizona. I got my start in the summer of 2016 working through UpWork, flash forward two years and I’ve worked on over 40 contracts for clients all across the globe, doing everything from designing and developing websites from scratch, to revamping and building on top of existing sites. Some of my skills include { </p>
+		<div class="p_box">
+			<p>Converting PSD files to fully responsive websites</p>
+		</div>
+		<div class="p_box">
+			<p>Creating custom Wordpress themes</p>
+		</div>
+		<div class="p_box">
+			<p>Web & Logo Design</p>
+		</div>
+		<div class="p_box">
+			<p>Site maintenance and bug fixing</p>
+		</div>
+		<div class="p_box">
+			<p>Custom plugin creation</p>
+		</div>
+		<div class="p_box">
+			<p>API integration</p>
+		</div>
+		<p>} Outside of work I love to read, write poetry, go hiking, play guitar, and goof around with my dogs. You can find me any day cooped up at a local coffee shops working on websites or hanging out with my friends.</p>
+	</div>
+	<div class="portfolio">
+		<div class="portfolio_item jeany scrollify" data-section-name="jeany">
+			<div class="text">
+				<h1>Jeany Ngo's Portfolio Site</h1>
+				<p>For this project I was tasked with making a custom portfolio site for my client. I coded it as a custom Wordpress theme so that she would be able to easily add new work to the site in the future. I was given designs for the full screen version of the site. I took her designs and went to work translating it to PHP, CSS, and Javascript. Once I had the site made, I went in and added custom animations to the pages, using css keyframes and jascript. You can find the site live at: <a href="http://www.jeanyngo.com/">www.jeanyngo.com</a></p>
 			</div>
-
-
-			<div class="title-container">
-				<h2>Testimonials</h2>
-				<h3>"Collin is a pleasure to work with, he always over delivers! I will carry on using Colin for all of my development work in the future"<br><i>&nbsp&nbsp&nbsp&nbsp&nbsp -Aaron Short</i></h3>
-				<h3>"Awesome Guy, and really smart! Will be working closely with him for the future!"<br><i>&nbsp&nbsp&nbsp&nbsp&nbsp -Kunal Kumar</i>
-				</h3>
-				<h3>"Collin was great to work with, helped deliver on exactly what I was looking for and was very easy to communicate with! Definitely recommend him!"<br><i>&nbsp&nbsp&nbsp&nbsp&nbsp -Sarah Jones</i>
-				</h3>
-				<h3>"Collin is an amazing person to work with. Highly recommended. The task which I asked him to do was really complicated and demanding and needed to be done in 24 hours time. He showed lots of patience and delivered right on time."<br><i>&nbsp&nbsp&nbsp&nbsp&nbsp -Anges Ong</i>
-				</h3>
-				<h3>"Collin was great, very responsive to changes. Got us a great, functional site for our 2 pizza places. Would definitely reccomend!"<br><i>&nbsp&nbsp&nbsp&nbsp&nbsp -Ryan Seigfreid</i>
-				</h3>
+			<div class="images">
+				<img src="./images/jeany_1.png" alt="">
+				<img src="./images/jeany_2.png" alt="">
+				<img src="./images/jeany_3.png" alt="">
 			</div>
 		</div>
-
-		<div id="hire">
-			<h2>HIRE ME</h2>
+		<div class="portfolio_item sugar scrollify" data-section-name="sugar">
+			<div class="text">
+				<h1>Sugar Website</h1>
+				<p>My client for this project provided me a few PSD designs for their new website. I coded the site as a custom wordpress theme, using advanced custom fields as the only main plugin. I made everything modular so that they could add and edit the pages easily once I was finsihed coding the theme. The site was focused on being minimalist so I simply added a few fade in animations to some of the pages elements to give it a little extra flare. Check it out here: <a href="https://www.sugarintolerance.com">www.sugarintolerance.com</a></p>
+			</div>
+			<div class="images">
+				<img src="./images/sugar_1.png" alt="">
+				<img src="./images/sugar_2.png" alt="">
+				<img src="./images/sugar_3.png" alt="">
+			</div>
+		</div>
+		<div class="portfolio_item freshrent scrollify" data-section-name="freshrent">
+			<div class="text">
+				<h1>FreshRent Redesign</h1>
+				<p>For this project I did a full redesign of Freshrent's website design. The site was originally built with a pre-made theme, and I wen't in and added custom elements and designs to the site, including custom property pages. I also created a front end interface for their clients to use to update info on the site, and connected everything up with their CRM. In all I made around 10 custom page templates for the site and redesigned the rest. Sadly the client hasn't kept up with maintenance on the site, and now a few pages are unfunctional, however you can find still find it at: <a href="https://freshrent.co.uk">freshrent.co.uk</a></p>
+			</div>
+			<div class="images">
+				<img src="./images/freshrent_1.png" alt="">
+				<img src="./images/freshrent_2.png" alt="">
+				<img src="./images/freshrent_3.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="contact scrollify" data-section-name="contact">
+		<div class="text">
+			<h1>Lets Chat!</h1>
+		</div>
+		<div class="form">
 			<form id="form1" action="https://formspree.io/narkeetadesign@gmail.com" method="POST">
 				<input name="name" type="text" class="feedback-input" placeholder="Name" />
 				<input name="age" type="text" class="feedback-input" placeholder="Email" />
-				<input name="budget" type="text" class="feedback-input" placeholder="Budget" />
-				<input name="their residence" type="text" class="feedback-input" placeholder="City" />
-				<textarea name="text" class="feedback-input" placeholder="What's Your Job?"></textarea>
-				<div id="submit-btn" class="box foo">Send Request</div>
+				<textarea name="text" class="feedback-input" placeholder="Tell me about what you need done!"></textarea>
+				<div id="submit-btn" class="box foo">Send Email</div>
 			</form>
 		</div>
-
-		<div id="portfolio">
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="http://www.jeanyngo.com/">
-					<img src="images/jeanyngo.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="http://www.jeanyngo.com/"><h4>Jeany Ngo Portfolio</h4></a>
-					<h5>Client: Jeany Ngo</h5>
-					<h5>Date: November 2017</h5>
-					<h5>About: For this project I was given psd design files and was tasked to create a portfolio website. The site was built ontop of Wordpress and involved a lot of animation including a custom glitch animation that runs on the text of the site. The site also uses snap scrolling on desktop and uses a template built to be modular.</h5>
-				</div>
-			</div>
-			
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="https://www.sugarintolerance.com/">
-					<img src="images/sugar.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="https://www.sugarintolerance.com/"><h4>Sugar Landing Page</h4></a>
-					<h5>Client: Seth Hayward</h5>
-					<h5>Date: September 2017</h5>
-					<h5>About: I coded a custom theme for the client on Wordpress so they could have the site be editable rather than a static HTML page. I completed the project in four days.</h5>
-				</div>
-			</div>
-			
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="http://www.gmgwide.com/">
-					<img src="images/GMG.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="http://www.gmgwide.com/"><h4>GMG Wide Website Redesign</h4></a>
-					<h5>Client: Aquairus Design</h5>
-					<h5>Date: June 2017</h5>
-					<h5>About The Project: Working off a PDF and text outlines for the site's redesign I recoded the css on the site to match the new style and added in a few new sections to the site along with a small ammount of javascript code for new transitions on the homepage's slideshow. I also added in google analytic code into the site.</h5>
-				</div>
-			</div>
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="https://francesca-balbi.squarespace.com/newhome">
-					<img src="images/bluecherry.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="https://francesca-balbi.squarespace.com/newhome"><h4>Blue Cherry Group Homepage</h4></a>
-					<h5>Client: Blue Cherry Group</h5>
-					<h5>Date: May 2017</h5>
-					<h5>About The Project: I developed a squarespace theme for Blue Cherry Group, the theme was a single page serving as their new homepage for the site.</h5>
-				</div>
-			</div>
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="http://nowalchemy.com/">
-					<img src="images/nowalchemy.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="http://nowalchemy.com/"><h4>Now Alchemy</h4></a>
-					<h5>Client: Archer Love</h5>
-					<h5>Date: March 2017</h5>
-					<h5>About The Project: I first worked on customizing ecommerce refurals for Archer, and then I redeveloped his site for him with a custom theme involving custom ecommerce templates and custom post types so he could edit the site's content in the future. The design was roughly based on apple.com and uses a few custom plugins for ecommerce on the backend.</h5>
-				</div>
-			</div>
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="https://freshrent.co.uk">
-					<img src="images/Screen%20Shot%202017-02-22%20at%202.47.52%20PM.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="https://freshrent.co.uk"><h4>Fresh Rent</h4></a>
-					<h5>Client: Aaron Short</h5>
-					<h5>Date: Jan 2017</h5>
-					<h5>About The Project: I worked with the Freshrent group to redevelop their property search website targeted towards students in the UK. I connected their CRM to the website, along with adding google analytics, facebook pixle, and custom user profile pages. The site was built on wordpress.</h5>
-				</div>
-			</div>
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="images/Weather_App_Example_Photo.png">
-					<img src="images/weatherapppic.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="images/Weather_App_Example_Photo.png"><h4>Weather Application</h4></a>
-					<h5>Client: Patrick Berry</h5>
-					<h5>Date: Jan 2017</h5>
-					<h5>About The Project: I built a local weather application for 4one4 real estate. The app takes weather data from an api and displays a three day forcast for his the city his company is in. In the full version of the app it also transitioned every 20 seconds to show a total of nine days. Note: the link for the project is an image. </h5>
-				</div>
-			</div>
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="https://ariseincnyc.com">
-					<img src="images/arisepic.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="https://ariseincnyc.com"><h4>a(Rise) Website</h4></a>
-					<h5>Client: aRise Media</h5>
-					<h5>Date: Dec 2016</h5>
-					<h5>About The Project: I developed the Arise Inc. website based off of PSD designs provided by their company. The site was built on wordpress and incorperated custom fields so the company could edit the text/images of the site in the future.</h5>
-				</div>
-			</div>
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="http://isde.staging.wpengine.com">
-					<img src="images/isde.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="http://isde.staging.wpengine.com"><h4>ISDE USA Home Page</h4></a>
-					<h5>Client: ISDE</h5>
-					<h5>Date: Dec 2016</h5>
-					<h5>About The Project: I moved the ISDE home page over from a durpal theme to wordpress in order for the company to have more ease of use. Along with that I redesigned certain aspects of the site in order for it to match the parent companies website design.</h5>
-				</div>
-			</div>
-
-			<div class="port-box">
-				<a class="blackback" target="_blank" href="http://globalcandlelight.com">
-					<img src="images/candle.png">
-				</a>
-				<div class="port-text">
-					<a target="_blank" href="http://globalcandlelight.com"><h4>CANDLE LIGHT VIGIL</h4></a>
-					<h5>Client: Float Pod Tech</h5>
-					<h5>Date: Nov 2016</h5>
-					<h5>About The Project: I made a website for my client to advertise the candle light vigil fundraiser he was holding. The site contained a google map with custom icons and the ability for users to donate to the cause. The site was built upon wordpress. </h5>
-				</div>
-			</div>
-
-		</div>
-		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-		<script src="js/index.js"></script>
-	</body>
+	</div>
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src="js/jquery.scrollify.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
 
 </html>
