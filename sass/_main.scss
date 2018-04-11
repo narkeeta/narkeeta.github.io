@@ -1,3 +1,5 @@
+$pageSpeed: .65s ease-in-out;
+$aniSpeed: .3s ease-in-out;
 body {
 	font-size: 16px;
 	font-family: "GilroyLight";
@@ -18,7 +20,7 @@ p {
 }
 
 a {
-	transition: .3s ease;
+	transition: $aniSpeed;
 }
 
 a:hover {
@@ -40,7 +42,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	z-index: 10;
-	transition: border-color .7s ease;
+	transition: border-color $pageSpeed;
 	.menu {
 		position: absolute;
 		bottom: 3px;
@@ -53,7 +55,7 @@ a:hover {
 			font-size: 14px;
 			color: #1e1b22;
 			cursor: pointer;
-			transition:.7s ease;
+			transition: $pageSpeed;
 		}
 		span:first-child {
 			background-color: #e0ede8;
@@ -232,7 +234,7 @@ a:hover {
 			padding: 30px;
 			transform:translateX(-100%);
 			opacity:0;
-			transition:.7s ease;
+			transition: $pageSpeed;
 		}
 		.images {
 			width: 55%;
@@ -242,7 +244,7 @@ a:hover {
 			padding: 30px;
 			transform:translateX(100%);
 			opacity:0;
-			transition:.7s ease;
+			transition: $pageSpeed;
 			img {
 				border: 10px solid white;
 				display: inline-block;
@@ -368,7 +370,7 @@ a:hover {
 				line-height: 30px;
 				min-height: 32px !important;
 				margin: 20px 0;
-				transition: .3s ease;
+				transition: $aniSpeed;
 				&::-webkit-input-placeholder {
 					color: #1e1b22;
 				}
@@ -393,7 +395,7 @@ a:hover {
 				padding: 7px 20px;
 				float: right;
 				cursor: pointer;
-				transition: .3s ease;
+				transition: $aniSpeed;
 				&:hover {
 					background: #1e1b22;
 					color: #4bd6bc;
