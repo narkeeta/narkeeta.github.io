@@ -341,6 +341,10 @@ a:hover {
 				transform: none;
 				opacity: 1;
 				display: block;
+				padding:10px 15px;
+				img {
+					border-width:5px;
+				}
 			}
 		}
 	}
