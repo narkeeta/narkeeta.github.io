@@ -241,6 +241,12 @@ a:hover {
       color: #a856ef; }
       .portfolio .jeany .text a:hover {
         color: #530695; }
+  .portfolio .swych {
+    border-color: #44aed7; }
+    .portfolio .swych .text a {
+      color: #44aed7; }
+      .portfolio .swych .text a:hover {
+        color: #e24b9c; }
   .portfolio .sugar {
     border-color: #ff6dbe; }
     .portfolio .sugar .text a {
