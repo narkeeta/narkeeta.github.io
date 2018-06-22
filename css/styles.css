@@ -247,6 +247,12 @@ a:hover {
       color: #44aed7; }
       .portfolio .swych .text a:hover {
         color: #e24b9c; }
+  .portfolio .dusk {
+    border-color: #ed742a; }
+    .portfolio .dusk .text a {
+      color: #ed742a; }
+      .portfolio .dusk .text a:hover {
+        color: #ed742a; }
   .portfolio .sugar {
     border-color: #ff6dbe; }
     .portfolio .sugar .text a {

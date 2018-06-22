@@ -310,6 +310,15 @@ a:hover {
 			}
 		}
 	}
+	.dusk {
+		border-color:#ed742a;
+		.text a {
+			color:#ed742a;
+			&:hover {
+				color:#ed742a;
+			}
+		}
+	}
 	.sugar {
 		border-color: #ff6dbe;
 		.text a {
