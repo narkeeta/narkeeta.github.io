@@ -205,6 +205,14 @@ a:hover {
 		right: 220px;
 		z-index: 6;
 	}
+	.p_box:nth-of-type(7):after {
+		right: 268px;
+		z-index: 7;
+	}
+	.p_box:nth-of-type(8):after {
+		right: 316px;
+		z-index: 7;
+	}
 	@media only screen and (max-width: 768px) {
 		padding-bottom: 100px;
 		.title {
