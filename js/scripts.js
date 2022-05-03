@@ -1,53 +1,41 @@
 $(document).ready(function () {
-	$.scrollify({
-		section: ".scrollify",
-		sectionName: "section-name",
-		interstitialSection: "",
-		easing: "easeOutCubic",
-		scrollSpeed: 700,
-		offset: 0,
-		scrollbars: false,
-		standardScrollElements: "",
-		setHeights: false,
-		overflowScroll: true,
-		updateHash: true,
-		touchScroll: true,
-		before: function (index, sections) {
-			if ($.scrollify.current().hasClass("portfolio_item")) {
-				$(".active_item").removeClass("active_item");
-				$.scrollify.current().addClass("active_item");
-				$(".menu span:nth-child(3)").css('background-color', $.scrollify.current().css('border-color'));
-				$(".menu span:nth-child(3)").attr("ID", $.scrollify.current().data("section-name"));
-			} else if ($.scrollify.currentIndex() < 2) {
-				$(".active_item").removeClass("active_item");
-				$(".portfolio_item:first-child").addClass("active_item")
-			} else {
-				$(".active_item").removeClass("active_item");
-				$(".portfolio_item:last-child").addClass("active_item")
-			}
-			var bColor = $.scrollify.current().css('border-color');
-			$('.cool_border').css('border-color', bColor);
-		},
-		after: function () {
-		},
-		afterResize: function () {
-		},
-		afterRender: function () {
-			if ($.scrollify.current().hasClass("portfolio_item")) {
-				$.scrollify.current().addClass("active_item"); 
-			} else if ($.scrollify.currentIndex() < 2) {
-				$(".portfolio_item:first-child").addClass("active_item")
-			} else {
-				$(".portfolio_item:last-child").addClass("active_item")
-			}
-		},
+	//home
+	var titles = $(".home h1 .name, #aboutMeTitle"); //elements you need to animate
+	titles.each(function () {
+		var textWrapper = $(this)[0];
+		textWrapper.innerHTML = textWrapper.innerHTML.replace(/(\w+)(?!>|r>)/g, "<span class='word'>$&</span>");
+		$(this).find('.word').each(function() {
+			var word = $(this)[0];
+			word.innerHTML = word.innerHTML.replace(/[^<>\s](?!>|r>)/g, "<span class='letter'>$&</span>");
+		})
 	});
-	$(".menu span").click(function() {
-		$.scrollify.move("#" + $(this).attr("ID"));
-	});
+	console.log(titles);
+	window.addEventListener("scroll", scrollWatcher);
+	function scrollWatcher() {
+		var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+		var top_of_screen = $(window).scrollTop();
+		var screen_height = bottom_of_screen - top_of_screen;
+		titles.each(function() {
+			var top_of_element =  $(this).offset().top;
+			var bottom_of_element =  $(this).offset().top +  $(this).outerHeight();
+			var middle_of_element =  $(this).offset().top +  ($(this).outerHeight() / 2);
+			var element_percent = (((screen_height - (top_of_element - top_of_screen)) / screen_height));
+			if (element_percent >= .25 && element_percent <= .90 && !$(this).hasClass('animated')){
+				console.log($(this).attr('id')+' .letter');
+				$(this).addClass('animated')
+				anime({
+					targets: '#'+$(this).attr('id')+' .letter',
+					translateY: [-100,0],
+					opacity: [0,1],
+					easing: "easeOutExpo",
+					duration: 1400,
+					delay: (el, i) => 30 * i
+				});
+			}
+		});
+	}
+	setTimeout(scrollWatcher, 500);
 	$("#submit-btn").click(function () {
 		$("#form1").submit();
-	});
-	$(".portfolio_item .images img").click(function() {
 	});
 });

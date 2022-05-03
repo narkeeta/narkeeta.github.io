@@ -1,5 +1,24 @@
 $pageSpeed: .7s cubic-bezier(0.22, 0.61, 0.36, 1);
 $aniSpeed: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+$blue: #5CCEFA;
+$darkBlue: #418FAE;
+$pink: #F6A8B7;
+$darkPink: #A9737E;
+$textColor: #1e1b22;
+$olive: #9ee7cf;
+@mixin underline($color: $textColor) {
+	background-image: linear-gradient($color, $color);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size 0.3s;
+
+	&:hover,
+	&.hover {
+		background-size: 100% 2px;
+	}
+}
+
 body {
 	font-size: 16px;
 	font-family: "GilroyLight";
@@ -7,10 +26,10 @@ body {
 }
 
 * {
-	color: #1e1b22;
+	color: $textColor;
 }
 
-h1 {
+h1, h2, h3 {
 	font-family: "GilroyBold";
 }
 
@@ -33,88 +52,88 @@ a:hover {
 	}
 }
 
-.cool_border {
+.menu {
 	display: block;
 	width: 100vw;
-	height: 100vh;
-	border: 10px solid white;
 	background: none;
-	pointer-events: none;
 	position: fixed;
-	top: 0;
+	top:0;
 	left: 0;
 	z-index: 10;
 	transition: border-color $pageSpeed;
-	.menu {
-		position: absolute;
-		bottom: 3px;
-		left: 0px;
-		font-size: 0;
-		pointer-events: all;
-		span {
-			padding: 5px 10px;
-			background: #e0ede8;
-			font-size: 14px;
-			color: #1e1b22;
-			cursor: pointer;
-			transition: $pageSpeed;
+	.menu_items {
+		display: inline-flex;
+		border-right:.25em solid $pink;
+		border-bottom:.25em solid $pink;
+		.menu_item {
+			display: block;
+			padding: 0.25em 1em;
+			background: white;
+			&:first-child {
+				background-color: $blue;
+			}
+			&:nth-child(2) {
+				background-color: $pink;
+			}
+			&:nth-child(3) {
+				background-color: white;
+			}
+			&:nth-child(4) {
+				background-color: $pink;
+			}
+			a {
+				font-size: 1em;
+				color: $textColor;
+				cursor: pointer;
+				font-weight: bold;
+				transition: .3s ease;
+				@include underline($textColor);
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
-		span:first-child {
-			background-color: #e0ede8;
-		}
-		span:nth-child(2) {
-			background-color: #fa705c;
-		}
-		span:nth-child(3) {
-			background-color: #a755ef;
-		}
-		span:nth-child(4) {
-			background-color: #49d6bc;
-		}
-	}
-	&.active_image {
-		pointer-events: all;
-		background: rgba( 0, 0, 0, 0.566);
 	}
 }
 
 .home {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	color: white;
 	border-color: white;
 	position: relative;
-	font-size: 0px;
+	display: flex;
 	.left {
-		display: inline-block;
-		vertical-align: top;
-		width: 45%;
-		height: 100%;
-		padding: 30px;
+		width: 50%;
+		padding: 2em;
 		border-right: 10px solid white;
 		h1 {
 			font-family: "GilroyBold";
 			text-align: right;
-			font-size: 72px;
+			font-size: 4.5rem;
+			.name {
+				display: block;
+				font-size: 150%;
+				.letter {
+					display: inline-block;
+					line-height: 1em;
+					transform: translateY(-100px);
+					opacity: 0;
+				}
+			}
 		}
 	}
 	.right {
-		display: inline-block;
-		vertical-align: top;
-		height: 100%;
-		width: 55%;
-		padding: 30px;
-		background: #e0ece8;
-		.logo {
-			width: 800px;
-			max-width: 80%;
-			height: auto;
-			display: block;
-			margin: 100px 0px 25px;
+		width: 50%;
+		padding: 2em;
+		background: $pink;
+		h2 {
+			font-family: "GilroyBold";
+			font-size: 4.5rem;
 		}
 	}
 	@media only screen and (max-width: 768px) {
-		background: #e0ece8;
+		background: $pink;
 		.left {
 			width: 100%;
 			height: auto;
@@ -142,21 +161,27 @@ a:hover {
 }
 
 .about {
-	height: 100vh;
 	width: 100%;
-	padding: 30px;
+	padding: 1em;
 	overflow: hidden;
-	border-color: #fa715d;
+	border: 1em solid $olive;
 	.title {
 		margin-top: 0;
 		float: right;
+		.letter {
+			display: inline-block;
+			line-height: 1em;
+			transform: translateY(-100px);
+			opacity: 0;
+		}
 	}
 	p {
-		width: 800px;
-		max-width: 100%;
+		max-width: 800px;
+		width: 100%;
+		font-weight: bolder;
 	}
 	.p_box {
-		background: #fa715d;
+		background: $olive;
 		display: inline-block;
 		width: 100%;
 		padding: 5px 15px 5px 15px;
@@ -166,52 +191,50 @@ a:hover {
 			margin: 0;
 			font-family: "GilroyBold";
 		}
-	}
-	.p_box:last-of-type {
-		margin-bottom: 20px;
-	}
-	.p_box:after {
-		content: "";
-		background: #fa715d;
-		width: 48px;
-		height: 100vh;
-		position: absolute;
-		top: 0;
-		right: 0;
-		border-right: 10px solid #f8f8f8;
-	}
-	.p_box:first-of-type:after {
-		border: none;
-		width: 38px;
-		right: -10px;
-	}
-	.p_box:nth-of-type(2):after {
-		right: 28px;
-		z-index: 2;
-	}
-	.p_box:nth-of-type(3):after {
-		right: 76px;
-		z-index: 3;
-	}
-	.p_box:nth-of-type(4):after {
-		right: 124px;
-		z-index: 4;
-	}
-	.p_box:nth-of-type(5):after {
-		right: 172px;
-		z-index: 5;
-	}
-	.p_box:nth-of-type(6):after {
-		right: 220px;
-		z-index: 6;
-	}
-	.p_box:nth-of-type(7):after {
-		right: 268px;
-		z-index: 7;
-	}
-	.p_box:nth-of-type(8):after {
-		right: 316px;
-		z-index: 7;
+		&:last-of-type {
+			margin-bottom: 20px;
+		}
+		&:after {
+			content: "";
+			background: $olive;
+			width: 48px;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			right: 0;
+			border-right: 10px solid #f8f8f8;
+		}
+		&:first-of-type:after {
+	    right: -20px;
+		}
+		&:nth-of-type(2):after {
+			right: 28px;
+			z-index: 2;
+		}
+		&:nth-of-type(3):after {
+			right: 76px;
+			z-index: 3;
+		}
+		&:nth-of-type(4):after {
+			right: 124px;
+			z-index: 4;
+		}
+		&:nth-of-type(5):after {
+			right: 172px;
+			z-index: 5;
+		}
+		&:nth-of-type(6):after {
+			right: 220px;
+			z-index: 6;
+		}
+		&:nth-of-type(7):after {
+			right: 268px;
+			z-index: 7;
+		}
+		&:nth-of-type(8):after {
+			right: 316px;
+			z-index: 7;
+		}
 	}
 	@media only screen and (max-width: 768px) {
 		padding-bottom: 100px;
@@ -231,33 +254,26 @@ a:hover {
 }
 
 .portfolio {
-	height: 100vh;
 	position: relative;
 	width: 100%;
-	font-size: 0;
 	.portfolio_item {
-		height: 100vh;
-		position: absolute;
+		height: auto;
 		width: 100%;
-		font-size: 0;
+		display: flex;
 		.text {
-			width: 45%;
+			width: 50%;
 			height: 100%;
 			display: inline-block;
 			vertical-align: top;
-			padding: 30px;
-			transform: translateX(-100%);
-			opacity: 0;
+			padding: 2em;
 			transition: $pageSpeed;
 		}
 		.images {
-			width: 55%;
+			width: 50%;
 			height: 100%;
 			display: inline-block;
 			vertical-align: top;
-			padding: 30px;
-			transform: translateX(100%);
-			opacity: 0;
+			padding: 2em;
 			transition: $pageSpeed;
 			img {
 				border: 10px solid white;
@@ -377,29 +393,26 @@ a:hover {
 }
 
 .contact {
-	height: 100vh;
+	min-height: 100vh;
 	position: relative;
 	width: 100%;
-	font-size: 0;
-	border-color: #4bd6bc;
+	display: flex;
 	.text {
 		width: 45%;
-		height: 100%;
 		display: inline-block;
 		vertical-align: top;
-		padding: 30px;
-		background: #4bd6bc;
+		padding: 2em;
+		background: $pink;
 		text-align: right;
-		h1 {
-			font-size: 72px;
+		h3 {
+			font-size: 3em;
 		}
 	}
 	.form {
 		width: 55%;
-		height: 100%;
 		display: inline-block;
 		vertical-align: top;
-		padding: 30px;
+		padding: 2em;
 		font-size: initial;
 		form {
 			width: 100%;
@@ -410,7 +423,7 @@ a:hover {
 				display: block;
 				width: 100% !important;
 				border: none;
-				border-bottom: 3px solid #4bd6bc;
+				border-bottom: 3px solid $blue;
 				background: none;
 				height: 32px;
 				line-height: 30px;
@@ -418,24 +431,24 @@ a:hover {
 				margin: 20px 0;
 				transition: $aniSpeed;
 				&::-webkit-input-placeholder {
-					color: #1e1b22;
+					color: $textColor;
 				}
 				&::-moz-placeholder {
-					color: #1e1b22;
+					color: $textColor;
 				}
 				&:-ms-input-placeholder {
-					color: #1e1b22;
+					color: $textColor;
 				}
 				&:-moz-placeholder {
-					color: #1e1b22;
+					color: $textColor;
 				}
 				&:focus {
 					outline: none;
-					border-bottom: 3px solid #1e1b22;
+					border-bottom: 3px solid $textColor;
 				}
 			}
 			#submit-btn {
-				background: #4bd6bc;
+				background: $blue;
 				display: inline-block;
 				margin-top: 15px;
 				padding: 7px 20px;
@@ -443,8 +456,8 @@ a:hover {
 				cursor: pointer;
 				transition: $aniSpeed;
 				&:hover {
-					background: #1e1b22;
-					color: #4bd6bc;
+					background: $textColor;
+					color: $blue;
 				}
 			}
 		}
@@ -469,29 +482,5 @@ a:hover {
 				padding-top: 0;
 			}
 		}
-	}
-}
-
-.blinker {
-	animation-name: blinker;
-	animation-duration: 2.5s;
-	animation-delay: 0s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-}
-
-@keyframes blinker {
-	0% {
-		opacity: 1;
-	}
-	40% {
-		opacity: .1;
-	}
-	60% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 1;
 	}
 }
