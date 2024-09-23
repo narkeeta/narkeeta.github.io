@@ -1,11 +1,11 @@
 $pageSpeed: .7s cubic-bezier(0.22, 0.61, 0.36, 1);
 $aniSpeed: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-$blue: #5CCEFA;
-$darkBlue: #418FAE;
-$pink: #F6A8B7;
-$darkPink: #A9737E;
+$blue: #6dccf2;
+$darkBlue: hsl(197, 38%, 51%);
+$pink: #d74663;
+$darkPink: #83051e;
 $textColor: #1e1b22;
-$olive: #9ee7cf;
+$olive: #40b996;
 @mixin underline($color: $textColor) {
 	background-image: linear-gradient($color, $color);
 	background-position: 0% 100%;
@@ -66,7 +66,7 @@ a:hover {
 			padding: 0.25em 1em;
 			background: white;
 			&:first-child {
-				background-color: $blue;
+				background-color: white;
 			}
 			&:nth-child(2) {
 				background-color: $pink;
